@@ -713,3 +713,11 @@ python -m pytest
 
 Explain why tests are part of the learning material, not just a quality gate.
 
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [Limitations](13_limitations_of_the_model.md) sets expectations about quality and scope.
+
+Next: [Mermaid Diagrams](diagrams/README.md) adds visual maps for the same flows.
+
+<!-- COURSE_THREAD_END -->

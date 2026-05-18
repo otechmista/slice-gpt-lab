@@ -20,3 +20,12 @@ flowchart TD
     A --> B
 ```
 ````
+
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [File-by-File Lessons](../14_file_by_file_lessons.md) connects every source file to a learning goal.
+
+Next: return to [Course Guide](../00_course_guide.md) when you want to run the project again or choose a chapter to revisit.
+
+<!-- COURSE_THREAD_END -->

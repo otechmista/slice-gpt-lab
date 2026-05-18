@@ -45,3 +45,12 @@ In this project, `torch.optim.AdamW` performs the update.
 ## NaN Protection
 
 `app/train.py` stops if loss becomes NaN. NaN means numerical instability and makes training invalid.
+
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [Forward Pass](07_forward_pass.md) turns token sequences into logits.
+
+Next: [Training Loop](09_training_loop.md) puts dataset, model, loss, optimizer, and checkpointing into one loop.
+
+<!-- COURSE_THREAD_END -->

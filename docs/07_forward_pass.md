@@ -46,3 +46,12 @@ Each position receives one score for every possible next character.
 `block_size` is the context window. If input is longer than `block_size`, the model rejects it.
 
 During raw generation, inference keeps only the latest `block_size` tokens.
+
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [Transformer Blocks](06_transformer_blocks.md) combines attention and feed-forward computation.
+
+Next: [Loss and Backpropagation](08_loss_and_backpropagation.md) compares logits against target tokens and learns from the error.
+
+<!-- COURSE_THREAD_END -->

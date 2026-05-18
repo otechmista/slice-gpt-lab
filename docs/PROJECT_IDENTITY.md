@@ -95,3 +95,11 @@ Every file should help the reader answer one practical question:
 What is this part doing in a GPT-like system?
 ```
 
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: this is the entry point for the study path.
+
+Next: [Course Guide](00_course_guide.md) turns that promise into a study route.
+
+<!-- COURSE_THREAD_END -->

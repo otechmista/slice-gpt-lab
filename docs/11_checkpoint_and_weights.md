@@ -47,3 +47,12 @@ The loader rejects:
 - corrupted load attempts
 
 This keeps inference predictable.
+
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [Training Loop](09_training_loop.md) runs the repeated learning process.
+
+Next: [Inference](10_inference.md) reloads them to generate text token by token.
+
+<!-- COURSE_THREAD_END -->

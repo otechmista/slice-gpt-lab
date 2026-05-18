@@ -43,3 +43,12 @@ That means:
 ## Relation to GPT-like Models
 
 All transformer language models start by embedding tokens. Larger models use much bigger embedding dimensions, but the idea is the same.
+
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [Tokenization](03_tokenization.md) turns text into token IDs.
+
+Next: [Self-Attention](05_self_attention.md) lets each position read previous context.
+
+<!-- COURSE_THREAD_END -->

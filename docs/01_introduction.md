@@ -38,3 +38,11 @@ When you run training, the loss should generally go down. That does not mean the
 
 That distinction matters. GPT-like mechanics and GPT-like product quality are different things.
 
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [Course Guide](00_course_guide.md) sets the route and commands.
+
+Next: [How LLMs Work](02_how_llms_work.md) zooms out to the full GPT-like flow.
+
+<!-- COURSE_THREAD_END -->

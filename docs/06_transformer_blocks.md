@@ -41,3 +41,12 @@ Attention mixes information across positions. Feed-forward layers transform each
 ## Relation to GPT-like Models
 
 Large GPT models stack many transformer blocks. This project stacks only a few so the flow stays readable.
+
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [Self-Attention](05_self_attention.md) mixes previous context with a causal mask.
+
+Next: [Forward Pass](07_forward_pass.md) shows how the full model produces logits.
+
+<!-- COURSE_THREAD_END -->

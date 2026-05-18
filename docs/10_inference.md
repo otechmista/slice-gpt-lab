@@ -67,3 +67,12 @@ The generation path uses:
 7. tokenizer decode
 
 The output may be strange. That is part of the lesson: architecture alone is not enough for ChatGPT-level quality.
+
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [Checkpoint and Weights](11_checkpoint_and_weights.md) stores weights, config, and vocabulary.
+
+Next: [OpenAI API Layer](12_openai_api_layer.md) exposes that generation behind an HTTP chat contract.
+
+<!-- COURSE_THREAD_END -->

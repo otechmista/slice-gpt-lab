@@ -66,3 +66,12 @@ head_dim = 12
 ## Relation to GPT-like Models
 
 Causal self-attention is the central mechanism behind GPT-style text generation.
+
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [Embeddings](04_embeddings.md) turns token IDs into vectors.
+
+Next: [Transformer Blocks](06_transformer_blocks.md) wraps attention with feed-forward layers, normalization, and residual paths.
+
+<!-- COURSE_THREAD_END -->

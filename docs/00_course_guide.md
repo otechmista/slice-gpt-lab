@@ -13,11 +13,16 @@ This is closer to how GPT-style inference works, but at a very small scale. The 
 Follow this order:
 
 1. Read this guide.
-2. Read `docs/14_file_by_file_lessons.md`.
-3. Read the concept chapters from `01_introduction.md` to `15_simple_context_model.md`.
-4. Open each matching file in `app/`.
-5. Run the tests.
-6. Run training and inference.
+2. Read `docs/01_introduction.md`.
+3. Read `docs/02_how_llms_work.md`.
+4. Read `docs/15_simple_context_model.md`.
+5. Continue from `docs/03_tokenization.md` through the model, training, checkpoint, inference, API, and limitations lessons.
+6. Read `docs/14_file_by_file_lessons.md` to connect the concepts back to source files.
+7. Open each matching file in `app/`.
+8. Run the tests.
+9. Run training and inference.
+
+The lesson numbers mostly follow the original writing order. The recommended course thread is slightly different because `15_simple_context_model.md` works best before tokenization: first you learn how chat messages become context, then how context becomes token ids.
 
 ## Lesson Format
 
@@ -122,3 +127,12 @@ target: |user|> What pizz
 ```
 
 Each target is the input shifted one character to the left. This is the same core idea behind GPT-like language modeling, just at a much smaller character level.
+
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [Project Identity](PROJECT_IDENTITY.md) defines the promise of the lab.
+
+Next: [Introduction](01_introduction.md) explains what the project is trying to teach.
+
+<!-- COURSE_THREAD_END -->

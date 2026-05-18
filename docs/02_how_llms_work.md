@@ -53,3 +53,12 @@ To improve output, you can:
 - increase model size carefully
 - use lower temperature for less random decoding
 - improve prompt formatting
+
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [Introduction](01_introduction.md) introduces the project and pizzeria domain.
+
+Next: [Simple Context Model](15_simple_context_model.md) shows how chat messages become model input.
+
+<!-- COURSE_THREAD_END -->

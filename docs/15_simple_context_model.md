@@ -149,3 +149,12 @@ GPT-like chat = messages -> serialized context -> tokens -> model -> next tokens
 ```
 
 The model does not magically know the conversation structure. The structure must be represented in the text it is trained on and in the text it receives during inference.
+
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [How LLMs Work](02_how_llms_work.md) shows the whole training and inference pipeline.
+
+Next: [Tokenization](03_tokenization.md) turns that context into token IDs.
+
+<!-- COURSE_THREAD_END -->

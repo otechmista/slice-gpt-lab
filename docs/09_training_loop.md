@@ -55,3 +55,12 @@ Important values:
 - `num_layers`: transformer block count
 - `max_steps`: number of training updates
 - `learning_rate`: optimizer step size
+
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [Loss and Backpropagation](08_loss_and_backpropagation.md) explains how prediction error updates weights.
+
+Next: [Checkpoint and Weights](11_checkpoint_and_weights.md) saves the learned state so inference can reuse it.
+
+<!-- COURSE_THREAD_END -->

@@ -1,0 +1,37 @@
+@baseUrl = http://127.0.0.1:8000
+@model = slice-gpt-lab
+
+### Health check
+GET {{baseUrl}}/health
+
+### Chat completion - pizzeria question
+POST {{baseUrl}}/v1/chat/completions
+Content-Type: application/json
+
+{
+  "model": "{{model}}",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What pizza do you recommend?"
+    }
+  ],
+  "temperature": 0.7,
+  "max_tokens": 500
+}
+
+### Chat completion - unknown domain
+POST {{baseUrl}}/v1/chat/completions
+Content-Type: application/json
+
+{
+  "model": "{{model}}",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What is the capital of France?"
+    }
+  ],
+  "temperature": 0.7,
+  "max_tokens": 80
+}

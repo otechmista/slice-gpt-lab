@@ -40,3 +40,12 @@ That is why the dataset language matters. The current project keeps public data 
 ## Relation to Real GPT Models
 
 Real GPT-style systems usually use subword tokenizers. They can represent many words with fewer tokens. Character tokenization is less realistic, but much easier to understand.
+
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [Simple Context Model](15_simple_context_model.md) shows messages becoming serialized context.
+
+Next: [Embeddings](04_embeddings.md) turns token IDs into learnable vectors.
+
+<!-- COURSE_THREAD_END -->

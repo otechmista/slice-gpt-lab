@@ -32,3 +32,12 @@ This makes the project more honest as a model study. If the answer is weak, the 
 - clearer prompt format
 
 Use this project to study model behavior, not to judge production chatbot quality.
+
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [OpenAI API Layer](12_openai_api_layer.md) wraps inference in an OpenAI-style endpoint.
+
+Next: [File-by-File Lessons](14_file_by_file_lessons.md) returns to the code and studies each file in detail.
+
+<!-- COURSE_THREAD_END -->

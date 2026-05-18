@@ -15,10 +15,16 @@ app/schemas.py
 uvicorn app.api:app --reload
 ```
 
+Train first if the checkpoint does not exist yet:
+
+```bash
+python app/train.py
+```
+
 Health check:
 
-```txt
-GET /health
+```bash
+curl http://127.0.0.1:8000/health
 ```
 
 Chat completion:
@@ -27,7 +33,25 @@ Chat completion:
 POST /v1/chat/completions
 ```
 
-## Request Example
+## Request Example With curl
+
+```bash
+curl -X POST http://127.0.0.1:8000/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "slice-gpt-lab",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What pizza do you recommend?"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 100
+  }'
+```
+
+## Request Body
 
 ```json
 {
@@ -67,3 +91,11 @@ POST /v1/chat/completions
 
 The API must stay thin. It should not contain model logic. It delegates answering to `app/infer.py`.
 
+<!-- COURSE_THREAD_START -->
+## Course Thread
+
+Previous: [Inference](10_inference.md) generates assistant text from a trained checkpoint.
+
+Next: [Limitations](13_limitations_of_the_model.md) explains what this tiny model still cannot do.
+
+<!-- COURSE_THREAD_END -->
