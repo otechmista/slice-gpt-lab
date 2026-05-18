@@ -1,0 +1,39 @@
+"""Runtime settings and hyperparameters for the study model."""
+
+from dataclasses import asdict, dataclass
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+APP_DIR = Path(__file__).resolve().parent
+DEFAULT_DATASET_PATH = APP_DIR / "dataset.txt"
+DEFAULT_CHECKPOINT_PATH = ROOT_DIR / "checkpoints" / "slice_gpt_lab.pt"
+
+
+@dataclass(frozen=True)
+class ModelConfig:
+    """Small CPU-friendly configuration.
+
+    The values are intentionally tiny so a developer can inspect tensors and run
+    training locally without needing production-scale hardware.
+    """
+
+    block_size: int = 64
+    embedding_dim: int = 48
+    num_heads: int = 4
+    num_layers: int = 2
+    dropout: float = 0.0
+
+    def to_dict(self) -> dict[str, int | float]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class TrainingConfig:
+    batch_size: int = 16
+    max_steps: int = 3000
+    learning_rate: float = 3e-3
+    log_every: int = 250
+    seed: int = 1337
+
+    def to_dict(self) -> dict[str, int | float]:
+        return asdict(self)

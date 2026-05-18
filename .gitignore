@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.test-output/
+.test-tmp/
+pytest-cache-files-*/
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Editors and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Runtime artifacts
+*.pt
+*.pth
+checkpoints/
+logs/

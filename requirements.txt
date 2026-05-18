@@ -1,0 +1,6 @@
+torch
+fastapi
+uvicorn
+pytest
+black
+ruff
