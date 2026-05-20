@@ -7,7 +7,7 @@ It trains a small character-level Transformer with PyTorch on an artificial pizz
 Course site:
 
 ```txt
-https://otechmista.github.io/mini-gpt-study/
+https://otechmista.github.io/slice-gpt-lab/
 ```
 
 The public model identifier is:
