@@ -1,19 +1,19 @@
-# Slice GPT Lab
+# LLM Lessons
 
-Slice GPT Lab is a didactic project for studying how a tiny GPT-like model works from dataset to API.
+LLM Lessons is a didactic project for studying how a tiny GPT-like model works from dataset to API.
 
-It trains a small character-level Transformer with PyTorch on an artificial pizzeria dataset called **The Slice Lab**. The goal is not to build a smart chatbot. The goal is to make the core mechanics visible: tokenization, batches, embeddings, attention, loss, backpropagation, checkpoints, inference, and an OpenAI-style HTTP endpoint.
+It trains a small character-level Transformer with PyTorch on an artificial pizzeria dataset called **Slice Pizza**. The goal is not to build a smart chatbot. The goal is to make the core mechanics visible: tokenization, batches, embeddings, attention, loss, backpropagation, checkpoints, inference, and an OpenAI-style HTTP endpoint.
 
 Course site:
 
 ```txt
-https://otechmista.github.io/slice-gpt-lab/
+https://otechmista.github.io/llm-lessons/
 ```
 
 The public model identifier is:
 
 ```txt
-slice-gpt-lab
+llm-lessons
 ```
 
 ## What This Project Is For
@@ -119,7 +119,7 @@ Example with `curl`:
 curl -X POST http://127.0.0.1:8000/v1/chat/completions \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "slice-gpt-lab",
+    "model": "llm-lessons",
     "messages": [
       {
         "role": "user",
@@ -135,7 +135,7 @@ Example with PowerShell:
 
 ```powershell
 $body = @{
-  model = "slice-gpt-lab"
+  model = "llm-lessons"
   messages = @(
     @{
       role = "user"
@@ -248,3 +248,4 @@ make check
 ## Important Note
 
 If you change `app/dataset.txt`, retrain the model. The checkpoint stores model weights and vocabulary metadata, so inference should use a checkpoint created from the dataset/tokenizer version you are studying.
+

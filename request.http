@@ -1,5 +1,5 @@
 @baseUrl = http://127.0.0.1:8000
-@model = slice-gpt-lab
+@model = llm-lessons
 
 ### Health check
 GET {{baseUrl}}/health
@@ -35,3 +35,4 @@ Content-Type: application/json
   "temperature": 0.7,
   "max_tokens": 80
 }
+

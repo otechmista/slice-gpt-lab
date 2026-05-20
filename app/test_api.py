@@ -17,7 +17,7 @@ def test_api_chat_completion_contract(monkeypatch):
     response = client.post(
         "/v1/chat/completions",
         json={
-            "model": "slice-gpt-lab",
+            "model": "llm-lessons",
             "messages": [{"role": "user", "content": "hello"}],
             "temperature": 0.7,
             "max_tokens": 3,
@@ -37,7 +37,7 @@ def test_api_rejects_missing_messages():
 
     response = client.post(
         "/v1/chat/completions",
-        json={"model": "slice-gpt-lab", "messages": []},
+        json={"model": "llm-lessons", "messages": []},
     )
 
     assert response.status_code == 400

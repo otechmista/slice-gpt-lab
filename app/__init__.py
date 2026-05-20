@@ -1,1 +1,1 @@
-"""Slice GPT Lab application package."""
+"""LLM Lessons application package."""

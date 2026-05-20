@@ -9,7 +9,7 @@ class ChatMessage(BaseModel):
 
 
 class ChatCompletionRequest(BaseModel):
-    model: str = "slice-gpt-lab"
+    model: str = "llm-lessons"
     messages: list[ChatMessage]
     temperature: float = 0.8
     max_tokens: int = 80

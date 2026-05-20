@@ -22,10 +22,10 @@ Regra principal:
 
 ## Resumo do projeto
 
-- Nome do projeto: Slice GPT Lab.
+- Nome do projeto: LLM Lessons.
 - O que ele faz: crie um modelo de dados para IA generativa e teta usando a api da propria solução.
 - Público-alvo: uso pessoal/estudo.
-- Objetivo de negócio: modelo simples, frases simples sobre pizzas de uma pizzaria chamada The Slice Lab.
+- Objetivo de negócio: modelo simples, frases simples sobre pizzas de uma pizzaria chamada Slice Pizza.
 - Estado atual: studies.
 
 ---
@@ -64,7 +64,7 @@ Regras:
 | Caminho | Função | Observações |
 |---|---|---|
 | `app/` | Código da aplicação, scripts e testes | Todos os módulos de aplicação devem permanecer aqui |
-| `app/dataset.txt` | Dataset pequeno de estudo | Dados artificiais sobre a pizzaria The Slice Lab |
+| `app/dataset.txt` | Dataset pequeno de estudo | Dados artificiais sobre a pizzaria Slice Pizza |
 | `app/context.py` | Montagem de contexto de chat | Serializa mensagens no mesmo padrão do dataset |
 | `app/train.py` | Entrada do fluxo de treino | Deve orquestrar treino, perda, backpropagation e checkpoint |
 | `app/infer.py` | Entrada do fluxo de inferência | Deve usar checkpoint e tokenizer compatíveis |
@@ -178,7 +178,7 @@ Regras de negócio críticas:
 - O modelo deve gerar checkpoint serializável e recarregável.
 - O projeto prioriza clareza educacional em vez de performance.
 - Dados de treino devem ser artificiais e não sensíveis.
-- O domínio de resposta é a pizzaria fictícia The Slice Lab.
+- O domínio de resposta é a pizzaria fictícia Slice Pizza.
 - O dataset e as respostas públicas devem usar inglês.
 - Perguntas fora do domínio da pizzaria devem responder: `I do not know how to answer that.`
 
@@ -254,7 +254,7 @@ Cobertura esperada:
 | Criar estrutura inicial sem comportamento completo | Component view está vazia; estrutura já está definida em `04_CODE_VIEW.md` | 2026-05-18 / scaffolding inicial |
 | Manter código em `app/` | Regra explícita da code view | 2026-05-18 / scaffolding inicial |
 | Documentar o projeto como aula arquivo por arquivo | O projeto é educacional e deve explicar como o modelo funciona | 2026-05-18 / documentação de estudo |
-| Nomear o projeto como Slice GPT Lab | Nome mais autoral e didático; mantém o domínio fictício The Slice Lab e comunica laboratório de estudo | 2026-05-18 / identidade do projeto |
+| Nomear o projeto como LLM Lessons | Nome mais autoral e didático; mantém o domínio fictício Slice Pizza e comunica laboratório de estudo | 2026-05-18 / identidade do projeto |
 
 ---
 
@@ -282,4 +282,5 @@ Pare e peça decisão se:
 - Alteração exigir nova dependência sem aprovação.
 - Dados sensíveis, autenticação ou autorização estiverem indefinidos.
 - Testes ou comandos obrigatórios não estiverem claros.
+
 

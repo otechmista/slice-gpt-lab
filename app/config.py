@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parent.parent
 APP_DIR = Path(__file__).resolve().parent
 DEFAULT_DATASET_PATH = APP_DIR / "dataset.txt"
-DEFAULT_CHECKPOINT_PATH = ROOT_DIR / "checkpoints" / "slice_gpt_lab.pt"
+DEFAULT_CHECKPOINT_PATH = ROOT_DIR / "checkpoints" / "llm_lessons.pt"
 
 
 @dataclass(frozen=True)

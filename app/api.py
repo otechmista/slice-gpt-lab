@@ -21,7 +21,7 @@ except ImportError:  # pragma: no cover - supports direct execution contexts
         ChatMessage,
     )
 
-app = FastAPI(title="Slice GPT Lab")
+app = FastAPI(title="LLM Lessons")
 
 
 @app.get("/health")
