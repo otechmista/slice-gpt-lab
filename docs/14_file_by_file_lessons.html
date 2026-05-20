@@ -1,0 +1,243 @@
+﻿<!doctype html><html lang="en" class="scroll-smooth"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>File By File Lessons | Slice GPT Lab</title><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={theme:{extend:{colors:{ink:'#202124',page:'#fffdf8',shell:'#f4f0e8',line:'#e4ded2',soft:'#746d63',coral:'#f06a7a',honey:'#f8c75e',mint:'#6fcfac',sky:'#6caef8',grape:'#9b83f6'},boxShadow:{paper:'0 24px 70px rgba(32,33,36,.12)',lift:'0 12px 34px rgba(32,33,36,.08)'}}}};</script><style>body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.paper-grid{background-image:linear-gradient(rgba(32,33,36,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(32,33,36,.03) 1px,transparent 1px);background-size:28px 28px}.section-link.is-active{background:#fff7df;border-color:#f8c75e;color:#202124}.doc-content{color:#202124;line-height:1.62}.doc-content h1{font-size:clamp(2rem,5vw,3.8rem);font-weight:900;letter-spacing:-.045em;line-height:.96;margin-bottom:1rem}.doc-content h2{border-top:1px solid #e4ded2;font-size:clamp(1.35rem,2.4vw,1.95rem);font-weight:900;letter-spacing:-.03em;line-height:1.1;margin-top:1.55rem;padding-top:1.35rem}.doc-content h3{font-size:1.15rem;font-weight:900;margin-top:1.15rem}.doc-content p,.doc-content li{color:#746d63}.doc-content p{margin-top:.65rem}.doc-content ul,.doc-content ol{display:grid;gap:.28rem;margin-top:.65rem;padding-left:1.4rem}.doc-content blockquote{background:#fff8e5;border:1px solid #f8c75e;border-radius:1rem;margin-top:.75rem;padding:.85rem}.doc-content code{background:white;border:1px solid #e4ded2;border-radius:.45rem;color:#202124;font-size:.9em;font-weight:700;padding:.12rem .32rem}.doc-content pre{background:#202124;border-radius:1rem;color:#fffdf8;margin-top:1rem;overflow-x:auto;padding:1rem}.doc-content pre code{background:transparent;border:0;color:inherit;font-weight:500;padding:0}.doc-content table{border-collapse:separate;border-spacing:0;display:block;margin-top:1rem;overflow-x:auto;width:100%}.doc-content th,.doc-content td{border-bottom:1px solid #e4ded2;padding:.75rem;text-align:left;vertical-align:top}.doc-content th{color:#202124;font-size:.8rem;font-weight:900;text-transform:uppercase}.doc-content a{color:#2f72d6;font-weight:800;text-decoration:none}.doc-content a:hover{text-decoration:underline}@media print{.no-print{display:none!important}body{background:white!important}main{box-shadow:none!important;margin:0!important;max-width:none!important}}</style></head><body class="bg-shell text-ink"><div class="fixed left-0 top-0 z-50 h-1 w-full bg-line no-print"><div id="progress-bar" class="h-full w-0 bg-coral transition-[width] duration-150"></div></div><header class="sticky top-0 z-40 border-b border-line/80 bg-page/90 backdrop-blur-xl no-print"><div class="mx-auto flex w-[min(1220px,calc(100%-28px))] items-center justify-between gap-3 py-3"><a href="index.html" class="flex items-center gap-3 no-underline"><span class="grid h-10 w-10 place-items-center rounded-2xl bg-ink text-page shadow-lift"><i data-lucide="brain-circuit" class="h-5 w-5"></i></span><span><strong class="block text-sm font-black leading-none">Slice GPT Lab</strong><span class="mt-1 block text-xs font-bold text-soft">Minimal AI Course</span></span></a><div class="hidden items-center gap-2 md:flex"><div class="inline-flex h-10 items-center rounded-xl border border-line bg-white p-1 text-xs font-black shadow-sm" aria-label="Language selector"><i data-lucide="languages" class="mx-2 h-4 w-4 text-coral"></i><a class="rounded-lg px-2 py-1 bg-[#fff7df] text-ink" href="14_file_by_file_lessons.html">EN</a><a class="rounded-lg px-2 py-1 text-soft hover:text-ink" href="pt-br/14_file_by_file_lessons.html">PT-BR</a></div><button id="focus-toggle" class="inline-flex h-10 items-center gap-2 rounded-xl border border-line bg-white px-3 text-sm font-black shadow-sm transition hover:-translate-y-0.5 hover:border-honey" type="button"><i data-lucide="focus" class="h-4 w-4"></i>Focus</button><button id="print-button" class="inline-flex h-10 items-center gap-2 rounded-xl bg-ink px-3 text-sm font-black text-page shadow-sm transition hover:-translate-y-0.5" type="button"><i data-lucide="printer" class="h-4 w-4"></i>Print</button></div></div></header><div id="layout" class="mx-auto grid w-[min(1220px,calc(100%-28px))] gap-5 py-5 lg:grid-cols-[300px_minmax(0,1fr)]"><aside id="sidebar" class="no-print hidden lg:block"><div class="sticky top-[86px] rounded-3xl border border-line bg-page p-4 shadow-lift"><div class="mb-4 border-b border-line pb-4"><div class="flex items-center gap-2"><i data-lucide="list-tree" class="h-4 w-4 text-coral"></i><p class="text-xs font-black uppercase tracking-[0.16em] text-soft">Course Map</p></div><label class="mt-4 block"><span class="sr-only">Filter lessons...</span><input id="lesson-filter" class="h-10 w-full rounded-xl border border-line bg-white px-3 text-sm font-bold outline-none transition focus:border-honey" type="search" placeholder="Filter lessons..." /></label></div><nav id="section-nav" class="grid max-h-[calc(100vh-176px)] gap-1 overflow-y-auto pr-1 text-sm font-bold text-soft" aria-label="Course Map"><a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="index.html" data-title="Course Index"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">01</span><span class="min-w-0"><span class="block truncate text-ink">Course Index</span><span class="block truncate text-xs text-soft">Start</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="00_course_guide.html" data-title="Course Guide"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">02</span><span class="min-w-0"><span class="block truncate text-ink">Course Guide</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="01_introduction.html" data-title="Introduction"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">03</span><span class="min-w-0"><span class="block truncate text-ink">Introduction</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="02_how_llms_work.html" data-title="How LLMs Work"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">04</span><span class="min-w-0"><span class="block truncate text-ink">How LLMs Work</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="15_simple_context_model.html" data-title="Simple Context Model"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">05</span><span class="min-w-0"><span class="block truncate text-ink">Simple Context Model</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="03_tokenization.html" data-title="Tokenization"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">06</span><span class="min-w-0"><span class="block truncate text-ink">Tokenization</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="04_embeddings.html" data-title="Embeddings"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">07</span><span class="min-w-0"><span class="block truncate text-ink">Embeddings</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="05_self_attention.html" data-title="Self Attention"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">08</span><span class="min-w-0"><span class="block truncate text-ink">Self Attention</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="06_transformer_blocks.html" data-title="Transformer Blocks"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">09</span><span class="min-w-0"><span class="block truncate text-ink">Transformer Blocks</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="07_forward_pass.html" data-title="Forward Pass"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">10</span><span class="min-w-0"><span class="block truncate text-ink">Forward Pass</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="08_loss_and_backpropagation.html" data-title="Loss And Backpropagation"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">11</span><span class="min-w-0"><span class="block truncate text-ink">Loss And Backpropagation</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="09_training_loop.html" data-title="Training Loop"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">12</span><span class="min-w-0"><span class="block truncate text-ink">Training Loop</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="11_checkpoint_and_weights.html" data-title="Checkpoint And Weights"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">13</span><span class="min-w-0"><span class="block truncate text-ink">Checkpoint And Weights</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="10_inference.html" data-title="Inference"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">14</span><span class="min-w-0"><span class="block truncate text-ink">Inference</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="12_openai_api_layer.html" data-title="Openai Api Layer"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">15</span><span class="min-w-0"><span class="block truncate text-ink">Openai Api Layer</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="13_limitations_of_the_model.html" data-title="Limitations Of The Model"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">16</span><span class="min-w-0"><span class="block truncate text-ink">Limitations Of The Model</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link is-active flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="14_file_by_file_lessons.html" data-title="File By File Lessons"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">17</span><span class="min-w-0"><span class="block truncate text-ink">File By File Lessons</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="16_ai_for_young_builders.html" data-title="Ai For Young Builders"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">18</span><span class="min-w-0"><span class="block truncate text-ink">Ai For Young Builders</span><span class="block truncate text-xs text-soft">Course</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="diagrams/README.html" data-title="Diagrams Index"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">19</span><span class="min-w-0"><span class="block truncate text-ink">Diagrams Index</span><span class="block truncate text-xs text-soft">Diagrams</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="diagrams/training_flow.html" data-title="Training Flow"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">20</span><span class="min-w-0"><span class="block truncate text-ink">Training Flow</span><span class="block truncate text-xs text-soft">Diagrams</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="diagrams/inference_flow.html" data-title="Inference Flow"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">21</span><span class="min-w-0"><span class="block truncate text-ink">Inference Flow</span><span class="block truncate text-xs text-soft">Diagrams</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="diagrams/context_tokens_flow.html" data-title="Context Tokens Flow"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">22</span><span class="min-w-0"><span class="block truncate text-ink">Context Tokens Flow</span><span class="block truncate text-xs text-soft">Diagrams</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="diagrams/checkpoint_flow.html" data-title="Checkpoint Flow"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">23</span><span class="min-w-0"><span class="block truncate text-ink">Checkpoint Flow</span><span class="block truncate text-xs text-soft">Diagrams</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="diagrams/attention_flow.html" data-title="Attention Flow"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">24</span><span class="min-w-0"><span class="block truncate text-ink">Attention Flow</span><span class="block truncate text-xs text-soft">Diagrams</span></span></a>
+<a class="section-link flex items-start gap-3 rounded-2xl border border-transparent px-3 py-2 transition hover:bg-white" href="diagrams/transformer_flow.html" data-title="Transformer Flow"><span class="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-white text-coral">25</span><span class="min-w-0"><span class="block truncate text-ink">Transformer Flow</span><span class="block truncate text-xs text-soft">Diagrams</span></span></a></nav></div></aside><main class="paper-grid mx-auto min-h-screen w-full max-w-[900px] rounded-[1.4rem] border border-line bg-page p-5 shadow-paper sm:p-7 md:p-9"><article class="doc-content"><h1 id="file-by-file-lessons">File-by-File Lessons</h1>
+<p>Now that you understand the concepts, let&#39;s connect them to actual code.</p>
+<p>Each lesson here matches one source file. The goal isn&#39;t just to know <em>what</em> a file does — it&#39;s to understand <em>why</em> it exists and <em>what question</em> it answers inside a GPT-style system.</p>
+<hr />
+<h2 id="1-the-training-data">1. The Training Data</h2>
+<p><strong>File:</strong> <code>app/dataset.txt</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>The model learns from examples. This file <em>is</em> those examples.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>A language model can&#39;t learn without text to train on. This file contains fictional pizzeria conversations that the model will read thousands of times, learning to predict each next character.</p>
+<h3 id="what-to-look-for">What to Look For</h3>
+<p>Open the file and read a few conversations. Notice:</p>
+<ul>
+<li>Every example uses the same format with <code>&lt;|user|&gt;</code>, <code>&lt;|assistant|&gt;</code>, and <code>&lt;|end|&gt;</code> markers</li>
+<li>The conversations are short and consistent</li>
+<li>Unknown-domain examples are also included (&quot;I don&#39;t know how to help with that&quot;) so the model learns to decline gracefully</li>
+</ul>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>What happens to the character vocabulary if you add a French sentence with accents like <code>é</code> or <code>ç</code> to the dataset?</p>
+<hr />
+<h2 id="2-loading-the-data">2. Loading the Data</h2>
+<p><strong>File:</strong> <code>app/dataset.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>Code should have one job. This file&#39;s job: read the text file, check it&#39;s valid, return the text.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>The training loop shouldn&#39;t know about file paths, encoding, or validation. <code>dataset.py</code> owns that. If the file is missing or empty, it fails loudly before any other work begins.</p>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>Why is it better to fail before training starts than to fail halfway through?</p>
+<hr />
+<h2 id="3-building-the-conversation-context">3. Building the Conversation Context</h2>
+<p><strong>File:</strong> <code>app/context.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>The model doesn&#39;t understand &quot;chat messages&quot; — it understands a single long string of text. This file converts one into the other.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>Before tokenization, messages must be serialized into the exact format the model was trained on:</p>
+<pre><code class="language-txt">&lt;|user|&gt;
+What pizza do you recommend?
+&lt;|assistant|&gt;</code></pre>
+<p>The final <code>&lt;|assistant|&gt;</code> without content is the signal: &quot;continue from here as the assistant.&quot;</p>
+<h3 id="try-it">Try It</h3>
+<pre><code class="language-bash">python -m pytest app/test_context.py</code></pre>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>What would break if training used <code>[USER]</code> markers but inference used <code>&lt;|user|&gt;</code> markers?</p>
+<hr />
+<h2 id="4-tokenization">4. Tokenization</h2>
+<p><strong>File:</strong> <code>app/tokenizer.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>Text → numbers. This is the first real transformation in the pipeline.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>Neural networks do math, not string operations. The tokenizer builds a vocabulary from the training data and provides two operations: <code>encode</code> (text → IDs) and <code>decode</code> (IDs → text).</p>
+<h3 id="try-it">Try It</h3>
+<pre><code class="language-python">from app.tokenizer import CharacterTokenizer
+
+tokenizer = CharacterTokenizer.from_text(&quot;pizza is good&quot;)
+print(tokenizer.encode(&quot;pizza&quot;))
+print(tokenizer.decode(tokenizer.encode(&quot;pizza&quot;)))</code></pre>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>If you type a question with an emoji at inference time, what happens and why?</p>
+<hr />
+<h2 id="5-building-batches">5. Building Batches</h2>
+<p><strong>File:</strong> <code>app/batch.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>The training task: given some characters, predict the next one. This file builds the actual training pairs.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>Training needs input sequences and target sequences. The target is always the input shifted one position forward:</p>
+<pre><code class="language-txt">text:   p i z z a
+input:  p i z z
+target: i z z a</code></pre>
+<p>Position 0 sees <code>p</code> and must predict <code>i</code>. Position 1 sees <code>p, i</code> and must predict <code>z</code>. And so on.</p>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>If <code>block_size = 64</code>, how many predictions does the model make per training example?</p>
+<hr />
+<h2 id="6-token-embeddings">6. Token Embeddings</h2>
+<p><strong>File:</strong> <code>app/embedding.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>Numbers → vectors. Token IDs are labels; embeddings give them meaning.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>Token ID <code>32</code> isn&#39;t meaningfully &quot;close to&quot; ID <code>33</code> — they&#39;re just labels. Embeddings replace each ID with a learned vector of numbers that can capture relationships between characters.</p>
+<p>These vectors start random and get adjusted during training. After training, the embeddings represent something useful about each character&#39;s role in the text.</p>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>Why does embedding dimension size affect how much the model can represent?</p>
+<hr />
+<h2 id="7-positional-embeddings">7. Positional Embeddings</h2>
+<p><strong>File:</strong> <code>app/position.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>The model needs to know where each token is in the sequence.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>Without position information, the model would treat &quot;pizza is good&quot; and &quot;good is pizza&quot; identically — they have the same characters in different order.</p>
+<p>Positional embeddings add a unique vector for each position (0, 1, 2, ..., block_size-1). These get added to the token embeddings:</p>
+<pre><code class="language-txt">final vector = token embedding + position embedding</code></pre>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>What would go wrong if you doubled a sentence and the model couldn&#39;t tell character positions apart?</p>
+<hr />
+<h2 id="8-self-attention">8. Self-Attention</h2>
+<p><strong>File:</strong> <code>app/attention.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>The heart of the transformer: how each token looks back at earlier tokens to gather context.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>Predicting the next character requires understanding the previous ones. Attention creates a learned mechanism for each token to selectively gather information from earlier positions.</p>
+<p>The causal mask ensures no token peeks at future positions — keeping training honest.</p>
+<h3 id="try-it">Try It</h3>
+<pre><code class="language-bash">python -m pytest app/test_attention.py</code></pre>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>Why would the model perform worse if the causal mask were removed during training?</p>
+<hr />
+<h2 id="9-feed-forward-network">9. Feed-Forward Network</h2>
+<p><strong>File:</strong> <code>app/feedforward.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>After attention mixes information across positions, the feed-forward network processes each position independently.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>Attention is about <em>relationships between tokens</em>. Feed-forward is about <em>transforming what each token now knows</em>. Together, they cover both aspects of processing.</p>
+<p>The network expands to 4× the embedding dimension internally (to compute richer features), then compresses back down.</p>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>If attention handles communication between tokens, what does feed-forward handle?</p>
+<hr />
+<h2 id="10-transformer-block">10. Transformer Block</h2>
+<p><strong>File:</strong> <code>app/block.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>One complete block: attention + feed-forward + residual connections + layer normalization.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>A transformer block is the repeating unit of GPT-style models. Our model stacks several of them. Each block sees the output of the previous one and refines it further.</p>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>What is the purpose of adding the original input back after each sub-layer (<code>hidden = hidden + attention(hidden)</code>)?</p>
+<hr />
+<h2 id="11-the-full-model">11. The Full Model</h2>
+<p><strong>File:</strong> <code>app/model.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>All pieces assembled into one forward pass.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>This is the <code>MiniGPT</code> class. It orchestrates: embeddings → positional embeddings → transformer blocks → final normalization → output projection → logits.</p>
+<h3 id="try-it">Try It</h3>
+<pre><code class="language-bash">python -m pytest app/test_model.py</code></pre>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>Why does the output have <code>vocab_size</code> scores per position, rather than just one score?</p>
+<hr />
+<h2 id="12-computing-loss">12. Computing Loss</h2>
+<p><strong>File:</strong> <code>app/loss.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>How the model measures its own prediction error.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>Training needs a single number to optimize. Cross-entropy loss compares the model&#39;s predicted distribution over characters against the correct next character. Lower = better.</p>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>If the model assigned 99% probability to the correct next character, would the loss be high or low?</p>
+<hr />
+<h2 id="13-sampling">13. Sampling</h2>
+<p><strong>File:</strong> <code>app/sampling.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>The model produces scores. This file picks one character from those scores.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>Logits must become a single chosen token. At low temperature, the model picks the highest-scoring character (greedy, predictable). At higher temperature, it samples probabilistically (more varied, potentially more creative — or more chaotic).</p>
+<h3 id="try-it">Try It</h3>
+<p>Run inference with different <code>--temperature</code> values and notice how the output changes.</p>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>Why might very high temperature produce text that looks like random keyboard mashing?</p>
+<hr />
+<h2 id="14-checkpoints">14. Checkpoints</h2>
+<p><strong>File:</strong> <code>app/checkpoint.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>How trained model state is saved and reloaded.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>Training stores weights in memory. Inference needs those same weights later. The checkpoint saves model weights, vocabulary, and config — everything needed to reconstruct and use the model.</p>
+<h3 id="try-it">Try It</h3>
+<p>Run training and check that <code>checkpoints/slice_gpt_lab.pt</code> appears. Then run inference without retraining and see that it loads correctly.</p>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>Why must the vocabulary be saved alongside the model weights?</p>
+<hr />
+<h2 id="15-training">15. Training</h2>
+<p><strong>File:</strong> <code>app/train.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>The complete training orchestration: load data → build model → run the learning loop → save checkpoint.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>Training connects everything: dataset, tokenizer, batch builder, model, loss, optimizer, logger, and checkpoint saver. It&#39;s the conductor that runs the full orchestra.</p>
+<h3 id="try-it">Try It</h3>
+<pre><code class="language-bash">python app/train.py</code></pre>
+<p>Watch the loss decrease (generally) over time.</p>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>Why does lower training loss not automatically mean the model will answer questions well?</p>
+<hr />
+<h2 id="16-inference">16. Inference</h2>
+<p><strong>File:</strong> <code>app/infer.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>How a trained model generates text one character at a time.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>Inference loads the checkpoint, formats your prompt, runs the autoregressive generation loop, and extracts the assistant&#39;s answer. This is where training becomes useful.</p>
+<h3 id="try-it">Try It</h3>
+<pre><code class="language-bash">python app/infer.py --prompt &quot;What pizza do you recommend?&quot;
+python app/infer.py --raw-model --prompt &quot;What pizza do you recommend?&quot;</code></pre>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>Why is the <code>--raw-model</code> flag useful for studying model behavior?</p>
+<hr />
+<h2 id="17-api">17. API</h2>
+<p><strong>Files:</strong> <code>app/api.py</code>, <code>app/schemas.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>How to expose a local model through an HTTP interface anyone can use.</p>
+<h3 id="why-it-exists">Why It Exists</h3>
+<p>An API turns the model into a service. <code>api.py</code> handles routes and HTTP logic. <code>schemas.py</code> defines the exact shape of requests and responses — matching the OpenAI API format.</p>
+<h3 id="try-it">Try It</h3>
+<pre><code class="language-bash">uvicorn app.api:app --reload</code></pre>
+<p>Then visit <code>http://127.0.0.1:8000/docs</code> for interactive documentation.</p>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>Why should the API not contain any model logic? What would break if it did?</p>
+<hr />
+<h2 id="18-tests">18. Tests</h2>
+<p><strong>Files:</strong> <code>app/test_*.py</code></p>
+<h3 id="what-youre-learning">What You&#39;re Learning</h3>
+<p>How to verify that code behaves as expected — and how tests serve as living documentation.</p>
+<h3 id="why-they-exist">Why They Exist</h3>
+<p>Tests protect the project as you experiment. If you change the tokenizer, the tests tell you immediately whether the rest of the system still works.</p>
+<h3 id="try-it">Try It</h3>
+<pre><code class="language-bash">python -m pytest</code></pre>
+<p>All tests should pass. If one fails, read the error message — it&#39;s a clue about what changed.</p>
+<h3 id="question-to-answer">Question to Answer</h3>
+<p>How do tests help you understand expected behavior, even before reading the source code?</p>
+<p>&lt;!-- COURSE_THREAD_START --&gt;</p>
+<h2 id="course-thread">Course Thread</h2>
+<p>Previous: <a href="13_limitations_of_the_model.html">Limitations</a> sets expectations about quality and scope.</p>
+<p>Next: <a href="diagrams/README.html">Mermaid Diagrams</a> adds visual maps for the same flows.</p>
+<p>&lt;!-- COURSE_THREAD_END --&gt;</p></article><nav class="no-print mt-10 grid gap-3 border-t border-line pt-6 sm:grid-cols-2" aria-label="Previous and next lesson"><a class="rounded-2xl border border-line bg-white p-4 text-sm font-black text-soft no-underline transition hover:-translate-y-0.5 hover:border-honey hover:text-ink" href="13_limitations_of_the_model.html"><span class="block text-xs uppercase tracking-[0.16em]">Previous</span><span class="mt-1 block">Limitations Of The Model</span></a><a class="rounded-2xl border border-line bg-white p-4 text-right text-sm font-black text-soft no-underline transition hover:-translate-y-0.5 hover:border-honey hover:text-ink" href="16_ai_for_young_builders.html"><span class="block text-xs uppercase tracking-[0.16em]">Next</span><span class="mt-1 block">Ai For Young Builders</span></a></nav></main></div><script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script><script>const progressBar=document.querySelector('#progress-bar'),layout=document.querySelector('#layout'),sidebar=document.querySelector('#sidebar'),focusToggle=document.querySelector('#focus-toggle'),printButton=document.querySelector('#print-button'),filter=document.querySelector('#lesson-filter');function updateProgress(){const m=document.documentElement.scrollHeight-window.innerHeight,p=m>0?window.scrollY/m*100:0;progressBar.style.width=Math.min(p,100)+'%'}filter?.addEventListener('input',()=>{const q=filter.value.trim().toLowerCase();document.querySelectorAll('.section-link').forEach(a=>{a.style.display=a.dataset.title.toLowerCase().includes(q)?'flex':'none'})});window.addEventListener('scroll',updateProgress,{passive:true});focusToggle?.addEventListener('click',()=>{sidebar.classList.toggle('lg:block');sidebar.classList.toggle('lg:hidden');layout.classList.toggle('lg:grid-cols-[300px_minmax(0,1fr)]');layout.classList.toggle('lg:grid-cols-1');focusToggle.classList.toggle('border-honey')});printButton?.addEventListener('click',()=>window.print());if(window.lucide){window.lucide.createIcons()}updateProgress();</script></body></html>
+

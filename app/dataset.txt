@@ -392,5 +392,873 @@ I do not know how to answer that.
 What is two plus two?
 <|assistant|>
 I do not know how to answer that.
+<|end|> 
+
+<|user|>
+What ingredients are used in Margherita pizza?
+<|assistant|>
+Margherita pizza has tomato sauce, mozzarella, and basil.
 <|end|>
 
+<|user|>
+What are the ingredients of Pepperoni pizza?
+<|assistant|>
+Pepperoni pizza has tomato sauce, mozzarella, and pepperoni.
+<|end|>
+
+<|user|>
+What ingredients are in Four Cheese pizza?
+<|assistant|>
+Four Cheese pizza has mozzarella, parmesan, provolone, and gorgonzola.
+<|end|>
+
+<|user|>
+What does Chicken Catupiry pizza have?
+<|assistant|>
+Chicken Catupiry pizza has shredded chicken, creamy catupiry cheese, tomato sauce, and mozzarella.
+<|end|>
+
+<|user|>
+What ingredients are in Portuguese pizza?
+<|assistant|>
+Portuguese pizza has ham, eggs, onion, olives, tomato sauce, and mozzarella.
+<|end|>
+
+<|user|>
+What does Vegetarian pizza have?
+<|assistant|>
+Vegetarian pizza has tomato sauce, mozzarella, mushrooms, onion, bell pepper, tomato, and olives.
+<|end|>
+
+<|user|>
+What ingredients are in Mushroom pizza?
+<|assistant|>
+Mushroom pizza has tomato sauce, mozzarella, mushrooms, and extra cheese.
+<|end|>
+
+<|user|>
+What does Chocolate pizza have?
+<|assistant|>
+Chocolate pizza has chocolate cream and a soft crust.
+<|end|>
+
+<|user|>
+Which pizzas have tomato sauce?
+<|assistant|>
+Margherita, Pepperoni, Chicken Catupiry, Portuguese, Vegetarian, and Mushroom pizzas have tomato sauce.
+<|end|>
+
+<|user|>
+Which pizzas have mozzarella?
+<|assistant|>
+Margherita, Pepperoni, Four Cheese, Chicken Catupiry, Portuguese, Vegetarian, and Mushroom pizzas have mozzarella.
+<|end|>
+
+<|user|>
+Which pizzas have basil?
+<|assistant|>
+The Margherita pizza has basil.
+<|end|>
+
+<|user|>
+Which pizzas have pepperoni?
+<|assistant|>
+The Pepperoni pizza has pepperoni.
+<|end|>
+
+<|user|>
+Which pizzas have chicken?
+<|assistant|>
+The Chicken Catupiry pizza has shredded chicken.
+<|end|>
+
+<|user|>
+Which pizzas have catupiry cheese?
+<|assistant|>
+The Chicken Catupiry pizza has creamy catupiry cheese.
+<|end|>
+
+<|user|>
+Which pizzas have ham?
+<|assistant|>
+The Portuguese pizza has ham.
+<|end|>
+
+<|user|>
+Which pizzas have eggs?
+<|assistant|>
+The Portuguese pizza has eggs.
+<|end|>
+
+<|user|>
+Which pizzas have onion?
+<|assistant|>
+The Portuguese pizza and the Vegetarian pizza have onion.
+<|end|>
+
+<|user|>
+Which pizzas have olives?
+<|assistant|>
+The Portuguese pizza and the Vegetarian pizza have olives.
+<|end|>
+
+<|user|>
+Which pizzas have mushrooms?
+<|assistant|>
+The Mushroom pizza and the Vegetarian pizza have mushrooms.
+<|end|>
+
+<|user|>
+Which pizzas have bell pepper?
+<|assistant|>
+The Vegetarian pizza has bell pepper.
+<|end|>
+
+<|user|>
+Which pizzas have tomato?
+<|assistant|>
+The Vegetarian pizza has tomato.
+<|end|>
+
+<|user|>
+Which pizzas have extra cheese?
+<|assistant|>
+The Mushroom pizza has extra cheese.
+<|end|>
+
+<|user|>
+Which pizzas have parmesan?
+<|assistant|>
+The Four Cheese pizza has parmesan.
+<|end|>
+
+<|user|>
+Which pizzas have provolone?
+<|assistant|>
+The Four Cheese pizza has provolone.
+<|end|>
+
+<|user|>
+Which pizzas have gorgonzola?
+<|assistant|>
+The Four Cheese pizza has gorgonzola.
+<|end|>
+
+<|user|>
+Which pizzas have chocolate?
+<|assistant|>
+The Chocolate pizza has chocolate cream.
+<|end|>
+
+<|user|>
+Does Margherita pizza have meat?
+<|assistant|>
+No. Margherita pizza does not have meat.
+<|end|>
+
+<|user|>
+Does Vegetarian pizza have meat?
+<|assistant|>
+No. Vegetarian pizza does not have meat.
+<|end|>
+
+<|user|>
+Does Mushroom pizza have meat?
+<|assistant|>
+No. Mushroom pizza does not have meat.
+<|end|>
+
+<|user|>
+Does Pepperoni pizza have meat?
+<|assistant|>
+Yes. Pepperoni pizza has pepperoni.
+<|end|>
+
+<|user|>
+Does Portuguese pizza have meat?
+<|assistant|>
+Yes. Portuguese pizza has ham.
+<|end|>
+
+<|user|>
+Does Chicken Catupiry pizza have meat?
+<|assistant|>
+Yes. Chicken Catupiry pizza has shredded chicken.
+<|end|>
+
+<|user|>
+Does Four Cheese pizza have tomato sauce?
+<|assistant|>
+The dataset does not define tomato sauce for Four Cheese pizza.
+<|end|>
+
+<|user|>
+Does Chocolate pizza have cheese?
+<|assistant|>
+The dataset does not define cheese for Chocolate pizza.
+<|end|>
+
+<|user|>
+Does Margherita pizza have basil?
+<|assistant|>
+Yes. Margherita pizza has basil.
+<|end|>
+
+<|user|>
+Does Pepperoni pizza have mozzarella?
+<|assistant|>
+Yes. Pepperoni pizza has mozzarella.
+<|end|>
+
+<|user|>
+Does Vegetarian pizza have mushrooms?
+<|assistant|>
+Yes. Vegetarian pizza has mushrooms.
+<|end|>
+
+<|user|>
+Does Mushroom pizza have mushrooms?
+<|assistant|>
+Yes. Mushroom pizza has mushrooms.
+<|end|>
+
+<|user|>
+Does Portuguese pizza have olives?
+<|assistant|>
+Yes. Portuguese pizza has olives.
+<|end|>
+
+<|user|>
+Does Chicken Catupiry pizza have catupiry?
+<|assistant|>
+Yes. Chicken Catupiry pizza has creamy catupiry cheese.
+<|end|>
+
+<|user|>
+What pizza has tomato sauce, mozzarella, and basil?
+<|assistant|>
+The Margherita pizza has tomato sauce, mozzarella, and basil.
+<|end|>
+
+<|user|>
+What pizza has tomato sauce, mozzarella, and pepperoni?
+<|assistant|>
+The Pepperoni pizza has tomato sauce, mozzarella, and pepperoni.
+<|end|>
+
+<|user|>
+What pizza has shredded chicken and catupiry cheese?
+<|assistant|>
+The Chicken Catupiry pizza has shredded chicken and creamy catupiry cheese.
+<|end|>
+
+<|user|>
+What pizza has ham, eggs, onion, and olives?
+<|assistant|>
+The Portuguese pizza has ham, eggs, onion, and olives.
+<|end|>
+
+<|user|>
+What pizza has mushrooms and extra cheese?
+<|assistant|>
+The Mushroom pizza has mushrooms and extra cheese.
+<|end|>
+
+<|user|>
+What pizza has chocolate cream?
+<|assistant|>
+The Chocolate pizza has chocolate cream.
+<|end|>
+<|user|>
+What is mozzarella made for in pizza?
+<|assistant|>
+Mozzarella is used on pizza because it melts well and gives a soft cheese texture.
+<|end|>
+
+<|user|>
+Why is mozzarella used on pizza?
+<|assistant|>
+Mozzarella is used on pizza because it melts well and works with many toppings.
+<|end|>
+
+<|user|>
+Is mozzarella a cheese?
+<|assistant|>
+Yes. Mozzarella is a soft cheese often used on pizza.
+<|end|>
+
+<|user|>
+Is parmesan a cheese?
+<|assistant|>
+Yes. Parmesan is a cheese used in the Four Cheese pizza.
+<|end|>
+
+<|user|>
+Is provolone a cheese?
+<|assistant|>
+Yes. Provolone is a cheese used in the Four Cheese pizza.
+<|end|>
+
+<|user|>
+Is gorgonzola a cheese?
+<|assistant|>
+Yes. Gorgonzola is a cheese used in the Four Cheese pizza.
+<|end|>
+
+<|user|>
+What cheeses are in the Four Cheese pizza?
+<|assistant|>
+Four Cheese pizza has mozzarella, parmesan, provolone, and gorgonzola.
+<|end|>
+
+<|user|>
+Which pizza has four types of cheese?
+<|assistant|>
+The Four Cheese pizza has four types of cheese: mozzarella, parmesan, provolone, and gorgonzola.
+<|end|>
+
+<|user|>
+What pizza has mozzarella and parmesan?
+<|assistant|>
+The Four Cheese pizza has mozzarella and parmesan.
+<|end|>
+
+<|user|>
+What pizza has provolone and gorgonzola?
+<|assistant|>
+The Four Cheese pizza has provolone and gorgonzola.
+<|end|>
+
+<|user|>
+What pizza has only cheese ingredients?
+<|assistant|>
+The Four Cheese pizza is the best choice for cheese ingredients.
+<|end|>
+
+<|user|>
+Which pizza is the cheesiest?
+<|assistant|>
+The Four Cheese pizza is the cheesiest pizza at The Slice Lab.
+<|end|>
+
+<|user|>
+Which pizza has the most cheese?
+<|assistant|>
+The Four Cheese pizza has the most cheese.
+<|end|>
+
+<|user|>
+Does Margherita pizza have cheese?
+<|assistant|>
+Yes. Margherita pizza has mozzarella.
+<|end|>
+
+<|user|>
+Does Mushroom pizza have cheese?
+<|assistant|>
+Yes. Mushroom pizza has mozzarella and extra cheese.
+<|end|>
+
+<|user|>
+Does Vegetarian pizza have cheese?
+<|assistant|>
+Yes. Vegetarian pizza has mozzarella.
+<|end|>
+
+<|user|>
+Does Portuguese pizza have cheese?
+<|assistant|>
+Yes. Portuguese pizza has mozzarella.
+<|end|>
+
+<|user|>
+Does Chicken Catupiry pizza have cheese?
+<|assistant|>
+Yes. Chicken Catupiry pizza has mozzarella and creamy catupiry cheese.
+<|end|>
+
+<|user|>
+Does Pepperoni pizza have cheese?
+<|assistant|>
+Yes. Pepperoni pizza has mozzarella.
+<|end|>
+
+<|user|>
+Which pizzas have cheese?
+<|assistant|>
+Margherita, Pepperoni, Four Cheese, Chicken Catupiry, Portuguese, Vegetarian, and Mushroom pizzas have cheese.
+<|end|>
+
+<|user|>
+Which pizzas do not have cheese?
+<|assistant|>
+The dataset does not define cheese for Chocolate pizza.
+<|end|>
+
+<|user|>
+What is catupiry?
+<|assistant|>
+Catupiry is a creamy cheese used in the Chicken Catupiry pizza.
+<|end|>
+
+<|user|>
+What is creamy catupiry cheese?
+<|assistant|>
+Creamy catupiry cheese is a soft creamy cheese used with shredded chicken in the Chicken Catupiry pizza.
+<|end|>
+
+<|user|>
+Which pizza has creamy cheese?
+<|assistant|>
+The Chicken Catupiry pizza has creamy catupiry cheese.
+<|end|>
+
+<|user|>
+Which pizza has chicken and creamy cheese?
+<|assistant|>
+The Chicken Catupiry pizza has shredded chicken and creamy catupiry cheese.
+<|end|>
+
+<|user|>
+What is shredded chicken?
+<|assistant|>
+Shredded chicken is chicken pulled into small pieces. It is used in the Chicken Catupiry pizza.
+<|end|>
+
+<|user|>
+Which pizza has shredded chicken?
+<|assistant|>
+The Chicken Catupiry pizza has shredded chicken.
+<|end|>
+
+<|user|>
+Which pizza has chicken pieces?
+<|assistant|>
+The Chicken Catupiry pizza has shredded chicken.
+<|end|>
+
+<|user|>
+Which pizza has creamy catupiry?
+<|assistant|>
+The Chicken Catupiry pizza has creamy catupiry.
+<|end|>
+
+<|user|>
+What is pepperoni?
+<|assistant|>
+Pepperoni is a spicy meat topping used in the Pepperoni pizza.
+<|end|>
+
+<|user|>
+Is pepperoni meat?
+<|assistant|>
+Yes. Pepperoni is a meat topping.
+<|end|>
+
+<|user|>
+Which pizza has spicy meat?
+<|assistant|>
+The Pepperoni pizza has spicy meat.
+<|end|>
+
+<|user|>
+Which pizza has a spicy topping?
+<|assistant|>
+The Pepperoni pizza has a spicy topping.
+<|end|>
+
+<|user|>
+Which pizza is made with pepperoni slices?
+<|assistant|>
+The Pepperoni pizza is made with pepperoni slices.
+<|end|>
+
+<|user|>
+Does Pepperoni pizza have tomato sauce?
+<|assistant|>
+Yes. Pepperoni pizza has tomato sauce.
+<|end|>
+
+<|user|>
+Does Pepperoni pizza have basil?
+<|assistant|>
+The dataset does not define basil for Pepperoni pizza.
+<|end|>
+
+<|user|>
+Does Pepperoni pizza have mushrooms?
+<|assistant|>
+The dataset does not define mushrooms for Pepperoni pizza.
+<|end|>
+
+<|user|>
+Does Pepperoni pizza have onion?
+<|assistant|>
+The dataset does not define onion for Pepperoni pizza.
+<|end|>
+
+<|user|>
+What is ham?
+<|assistant|>
+Ham is a meat ingredient used in the Portuguese pizza.
+<|end|>
+
+<|user|>
+Which pizza has ham?
+<|assistant|>
+The Portuguese pizza has ham.
+<|end|>
+
+<|user|>
+Which pizza has eggs?
+<|assistant|>
+The Portuguese pizza has eggs.
+<|end|>
+
+<|user|>
+Which pizza has onion and olives?
+<|assistant|>
+The Portuguese pizza and the Vegetarian pizza have onion and olives.
+<|end|>
+
+<|user|>
+Which pizza has ham and eggs?
+<|assistant|>
+The Portuguese pizza has ham and eggs.
+<|end|>
+
+<|user|>
+Which pizza has eggs and olives?
+<|assistant|>
+The Portuguese pizza has eggs and olives.
+<|end|>
+
+<|user|>
+Does Portuguese pizza have chicken?
+<|assistant|>
+The dataset does not define chicken for Portuguese pizza.
+<|end|>
+
+<|user|>
+Does Portuguese pizza have pepperoni?
+<|assistant|>
+The dataset does not define pepperoni for Portuguese pizza.
+<|end|>
+
+<|user|>
+Does Portuguese pizza have mushrooms?
+<|assistant|>
+The dataset does not define mushrooms for Portuguese pizza.
+<|end|>
+
+<|user|>
+What are olives?
+<|assistant|>
+Olives are salty toppings used in the Portuguese pizza and the Vegetarian pizza.
+<|end|>
+
+<|user|>
+Which pizzas have olives?
+<|assistant|>
+The Portuguese pizza and the Vegetarian pizza have olives.
+<|end|>
+
+<|user|>
+What is onion used for?
+<|assistant|>
+Onion is used as a topping in the Portuguese pizza and the Vegetarian pizza.
+<|end|>
+
+<|user|>
+Which pizzas have onion?
+<|assistant|>
+The Portuguese pizza and the Vegetarian pizza have onion.
+<|end|>
+
+<|user|>
+What is bell pepper?
+<|assistant|>
+Bell pepper is a vegetable topping used in the Vegetarian pizza.
+<|end|>
+
+<|user|>
+Which pizza has bell pepper?
+<|assistant|>
+The Vegetarian pizza has bell pepper.
+<|end|>
+
+<|user|>
+Which pizza has vegetables?
+<|assistant|>
+The Vegetarian pizza has mushrooms, onion, bell pepper, tomato, and olives.
+<|end|>
+
+<|user|>
+Which pizza has the most vegetables?
+<|assistant|>
+The Vegetarian pizza has the most vegetables.
+<|end|>
+
+<|user|>
+Which pizza is full of vegetables?
+<|assistant|>
+The Vegetarian pizza is full of vegetables.
+<|end|>
+
+<|user|>
+What vegetables are in the Vegetarian pizza?
+<|assistant|>
+Vegetarian pizza has mushrooms, onion, bell pepper, tomato, and olives.
+<|end|>
+
+<|user|>
+Does Vegetarian pizza have pepperoni?
+<|assistant|>
+No. Vegetarian pizza does not have pepperoni.
+<|end|>
+
+<|user|>
+Does Vegetarian pizza have ham?
+<|assistant|>
+No. Vegetarian pizza does not have ham.
+<|end|>
+
+<|user|>
+Does Vegetarian pizza have chicken?
+<|assistant|>
+No. Vegetarian pizza does not have chicken.
+<|end|>
+
+<|user|>
+Does Vegetarian pizza have eggs?
+<|assistant|>
+The dataset does not define eggs for Vegetarian pizza.
+<|end|>
+
+<|user|>
+Does Vegetarian pizza have tomato sauce?
+<|assistant|>
+Yes. Vegetarian pizza has tomato sauce.
+<|end|>
+
+<|user|>
+Does Vegetarian pizza have mozzarella?
+<|assistant|>
+Yes. Vegetarian pizza has mozzarella.
+<|end|>
+
+<|user|>
+Does Vegetarian pizza have bell pepper?
+<|assistant|>
+Yes. Vegetarian pizza has bell pepper.
+<|end|>
+
+<|user|>
+Does Vegetarian pizza have olives?
+<|assistant|>
+Yes. Vegetarian pizza has olives.
+<|end|>
+
+<|user|>
+Does Vegetarian pizza have onion?
+<|assistant|>
+Yes. Vegetarian pizza has onion.
+<|end|>
+
+<|user|>
+Does Vegetarian pizza have tomato?
+<|assistant|>
+Yes. Vegetarian pizza has tomato.
+<|end|>
+
+<|user|>
+What is mushroom?
+<|assistant|>
+Mushroom is a vegetable-like topping used in the Mushroom pizza and the Vegetarian pizza.
+<|end|>
+
+<|user|>
+Which pizzas include mushrooms?
+<|assistant|>
+The Mushroom pizza and the Vegetarian pizza include mushrooms.
+<|end|>
+
+<|user|>
+Which pizza has mushrooms and mozzarella?
+<|assistant|>
+The Mushroom pizza has mushrooms and mozzarella.
+<|end|>
+
+<|user|>
+Which pizza has mushrooms and extra cheese?
+<|assistant|>
+The Mushroom pizza has mushrooms and extra cheese.
+<|end|>
+
+<|user|>
+Does Mushroom pizza have tomato sauce?
+<|assistant|>
+Yes. Mushroom pizza has tomato sauce.
+<|end|>
+
+<|user|>
+Does Mushroom pizza have extra cheese?
+<|assistant|>
+Yes. Mushroom pizza has extra cheese.
+<|end|>
+
+<|user|>
+Does Mushroom pizza have pepperoni?
+<|assistant|>
+The dataset does not define pepperoni for Mushroom pizza.
+<|end|>
+
+<|user|>
+Does Mushroom pizza have chicken?
+<|assistant|>
+The dataset does not define chicken for Mushroom pizza.
+<|end|>
+
+<|user|>
+Does Mushroom pizza have ham?
+<|assistant|>
+The dataset does not define ham for Mushroom pizza.
+<|end|>
+
+<|user|>
+What is tomato sauce used for?
+<|assistant|>
+Tomato sauce is spread over pizza dough before cheese and toppings.
+<|end|>
+
+<|user|>
+Which pizzas use tomato sauce?
+<|assistant|>
+Margherita, Pepperoni, Chicken Catupiry, Portuguese, Vegetarian, and Mushroom pizzas use tomato sauce.
+<|end|>
+
+<|user|>
+Does Four Cheese pizza have tomato sauce?
+<|assistant|>
+The dataset does not define tomato sauce for Four Cheese pizza.
+<|end|>
+
+<|user|>
+Does Chocolate pizza have tomato sauce?
+<|assistant|>
+No. Chocolate pizza is a sweet pizza with chocolate cream and a soft crust.
+<|end|>
+
+<|user|>
+What is basil used for?
+<|assistant|>
+Basil is used in the Margherita pizza.
+<|end|>
+
+<|user|>
+Which pizza has basil leaves?
+<|assistant|>
+The Margherita pizza has basil.
+<|end|>
+
+<|user|>
+Does Margherita pizza have tomato sauce?
+<|assistant|>
+Yes. Margherita pizza has tomato sauce.
+<|end|>
+
+<|user|>
+Does Margherita pizza have mozzarella?
+<|assistant|>
+Yes. Margherita pizza has mozzarella.
+<|end|>
+
+<|user|>
+Does Margherita pizza have pepperoni?
+<|assistant|>
+No. Margherita pizza does not have pepperoni.
+<|end|>
+
+<|user|>
+Does Margherita pizza have mushrooms?
+<|assistant|>
+The dataset does not define mushrooms for Margherita pizza.
+<|end|>
+
+<|user|>
+Does Margherita pizza have ham?
+<|assistant|>
+No. Margherita pizza does not have ham.
+<|end|>
+
+<|user|>
+Does Margherita pizza have chicken?
+<|assistant|>
+No. Margherita pizza does not have chicken.
+<|end|>
+
+<|user|>
+What is chocolate cream?
+<|assistant|>
+Chocolate cream is the sweet ingredient used in the Chocolate pizza.
+<|end|>
+
+<|user|>
+Which pizza has chocolate cream?
+<|assistant|>
+The Chocolate pizza has chocolate cream.
+<|end|>
+
+<|user|>
+Is Chocolate pizza sweet?
+<|assistant|>
+Yes. Chocolate pizza is a sweet pizza.
+<|end|>
+
+<|user|>
+Does Chocolate pizza have meat?
+<|assistant|>
+No. Chocolate pizza does not have meat.
+<|end|>
+
+<|user|>
+Does Chocolate pizza have mushrooms?
+<|assistant|>
+No. Chocolate pizza does not have mushrooms.
+<|end|>
+
+<|user|>
+Does Chocolate pizza have pepperoni?
+<|assistant|>
+No. Chocolate pizza does not have pepperoni.
+<|end|>
+
+<|user|>
+Does Chocolate pizza have chicken?
+<|assistant|>
+No. Chocolate pizza does not have chicken.
+<|end|>
+
+<|user|>
+Does Chocolate pizza have ham?
+<|assistant|>
+No. Chocolate pizza does not have ham.
+<|end|>
+
+<|user|>
+What pizza is sweet?
+<|assistant|>
+The Chocolate pizza is sweet.
+<|end|>
+
+<|user|>
+Which pizza is a dessert pizza?
+<|assistant|>
+The Chocolate pizza is a dessert pizza.
+<|end|>
+
+<|user|>
+What pizza has a soft crust and chocolate cream?
+<|assistant|>
+The Chocolate pizza has chocolate cream and a soft crust.
+<|end|>
