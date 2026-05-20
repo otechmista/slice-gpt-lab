@@ -108,7 +108,7 @@ The target is just the input shifted one character to the right. This simple tri
 <!-- COURSE_THREAD_START -->
 ## Course Thread
 
-Previous: [Project Identity](PROJECT_IDENTITY.md) defines the promise of the lab.
+Previous: [Course Index](README.md) is the entry point for the course.
 
 Next: [Introduction](01_introduction.md) explains what the project is trying to teach.
 

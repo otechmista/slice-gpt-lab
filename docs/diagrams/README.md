@@ -1,25 +1,16 @@
-# Mermaid Diagrams
+# Diagrams
 
-These files contain Mermaid diagrams using the `.mf` extension requested for the project.
+The Mermaid diagrams for this course are embedded directly in their matching lesson files.
 
-## Files
+| Diagram | Lesson |
+|---|---|
+| Chat → tokens flow | [15_simple_context_model.md](../15_simple_context_model.md) |
+| Causal self-attention | [05_self_attention.md](../05_self_attention.md) |
+| Training loop | [09_training_loop.md](../09_training_loop.md) |
+| Checkpoint save and load | [11_checkpoint_and_weights.md](../11_checkpoint_and_weights.md) |
+| Inference loop | [10_inference.md](../10_inference.md) |
 
-- `training_flow.mf`: training from dataset to checkpoint.
-- `inference_flow.mf`: prompt to assistant answer.
-- `attention_flow.mf`: causal self-attention.
-- `context_tokens_flow.mf`: chat messages to tokens and context window.
-- `checkpoint_flow.mf`: checkpoint save and load.
-
-## Rendering Note
-
-Some editors render Mermaid automatically only inside Markdown files. If your editor does not render `.mf`, paste the file contents into a Mermaid renderer or wrap it in a Markdown code block:
-
-````markdown
-```mermaid
-flowchart TD
-    A --> B
-```
-````
+The raw `.mf` source files are kept here for reference. If your editor doesn't render Mermaid automatically, paste a diagram's content into [mermaid.live](https://mermaid.live).
 
 <!-- COURSE_THREAD_START -->
 ## Course Thread

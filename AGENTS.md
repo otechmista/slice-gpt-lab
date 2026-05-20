@@ -70,7 +70,7 @@ Regras:
 | `app/infer.py` | Entrada do fluxo de inferência | Deve usar checkpoint e tokenizer compatíveis |
 | `app/api.py` | Camada FastAPI | Deve permanecer fina e delegar para inferência |
 | `docs/` | Documentação educacional | Explica conceitos, fluxo e limitações do modelo |
-| `docs/PROJECT_IDENTITY.md` | Identidade e rota de estudo | Nome do projeto, promessa didática e links para documentos existentes |
+| `docs/README.md` | Índice e rota de estudo | Capa do curso, promessa didática e links para todos os documentos |
 | `docs/contexts/` | Views de contexto, container, componente e código | Fonte de decisão arquitetural por fase |
 | `requirements.txt` | Dependências Python | Não adicionar dependências fora da lista aprovada sem decisão |
 | `.gitignore` | Arquivos ignorados | Checkpoints `.pt` e artefatos de runtime não devem ser versionados |

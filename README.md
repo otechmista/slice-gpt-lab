@@ -161,7 +161,7 @@ For the API lesson, read [docs/12_openai_api_layer.md](docs/12_openai_api_layer.
 
 Start here:
 
-1. [docs/PROJECT_IDENTITY.md](docs/PROJECT_IDENTITY.md): project identity and learning promise.
+1. [docs/README.md](docs/README.md): course index and learning promise.
 2. [docs/00_course_guide.md](docs/00_course_guide.md): course route and commands.
 3. [docs/01_introduction.md](docs/01_introduction.md): what the project teaches.
 4. [docs/02_how_llms_work.md](docs/02_how_llms_work.md): full GPT-like flow.
@@ -178,7 +178,7 @@ Main documentation:
 | Document | Use it for |
 |---|---|
 | [docs/README.md](docs/README.md) | Full documentation index |
-| [docs/PROJECT_IDENTITY.md](docs/PROJECT_IDENTITY.md) | Project name, purpose, and learning promise |
+| [docs/README.md](docs/README.md) | Course index, project purpose, and learning promise |
 | [docs/00_course_guide.md](docs/00_course_guide.md) | Recommended study order and commands |
 | [docs/14_file_by_file_lessons.md](docs/14_file_by_file_lessons.md) | Source-code walkthrough by file |
 | [docs/diagrams/README.md](docs/diagrams/README.md) | Visual diagrams for training, inference, attention, context, and checkpoints |
