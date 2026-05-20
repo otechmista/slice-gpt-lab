@@ -1,38 +1,25 @@
 # Course Guide
 
-This project is a small classroom for understanding how a GPT-like system is built.
+Welcome to **Slice GPT Lab** — a hands-on mini classroom where you'll build and understand a tiny version of the same technology behind ChatGPT.
 
-It has one answering mechanism: a tiny educational transformer model trained locally with PyTorch.
+You won't just read about AI. You'll train a real model, watch it learn, and talk to it.
 
-There are no hardcoded pizzeria answers in inference. The normal command formats the prompt as a chat transcript, loads the checkpoint, asks the model to generate characters, and extracts the assistant portion of the generated text.
+## What This Project Does
 
-This is closer to how GPT-style inference works, but at a very small scale. The output quality depends on the dataset, model size, training steps, and decoding settings.
+There is a fictional pizzeria called **The Slice Lab**. We trained a small AI on pizza conversations. When you ask it "What pizza do you recommend?", the model generates the answer character by character — just like a real language model does. No cheating, no hardcoded answers.
 
-## How to Study This Project
+## How to Study
 
-Follow this order:
+Follow this order. Each step builds on the last:
 
-1. Read this guide.
-2. Read `docs/01_introduction.md`.
-3. Read `docs/02_how_llms_work.md`.
-4. Read `docs/15_simple_context_model.md`.
-5. Continue from `docs/03_tokenization.md` through the model, training, checkpoint, inference, API, and limitations lessons.
-6. Read `docs/14_file_by_file_lessons.md` to connect the concepts back to source files.
-7. Open each matching file in `app/`.
-8. Run the tests.
-9. Run training and inference.
-
-The lesson numbers mostly follow the original writing order. The recommended course thread is slightly different because `15_simple_context_model.md` works best before tokenization: first you learn how chat messages become context, then how context becomes token ids.
-
-## Lesson Format
-
-Each lesson should answer five questions:
-
-1. What are we learning?
-2. Why does this file or concept exist?
-3. How does it work step by step?
-4. How can you run or inspect it?
-5. What should you be able to explain after reading it?
+1. Read this guide (you're here).
+2. [01_introduction.md](01_introduction.md) — what we're building and why.
+3. [02_how_llms_work.md](02_how_llms_work.md) — the big picture of how AI language models work.
+4. [15_simple_context_model.md](15_simple_context_model.md) — how a conversation becomes model input.
+5. [03_tokenization.md](03_tokenization.md) through [13_limitations_of_the_model.md](13_limitations_of_the_model.md) — one concept at a time.
+6. [14_file_by_file_lessons.md](14_file_by_file_lessons.md) — connect every concept back to real code.
+7. Open the files in `app/` and explore.
+8. Run the tests, train the model, ask it questions.
 
 ## Commands
 
@@ -42,91 +29,81 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-Run training:
+Train the model:
 
 ```bash
 python app/train.py
 ```
 
-Ask a pizzeria question with the trained model:
+Ask the trained model a pizza question:
 
 ```bash
 python app/infer.py --prompt "What pizza do you recommend?"
 ```
 
-Ask an unknown-domain question with the trained model:
+Ask it something it wasn't trained on:
 
 ```bash
 python app/infer.py --prompt "What is the capital of France?"
 ```
 
-Run raw conversation generation for study:
+See the full raw generated conversation:
 
 ```bash
 python app/infer.py --raw-model --prompt "What pizza do you recommend?"
 ```
 
-Run the API:
+Start the API server:
 
 ```bash
 uvicorn app.api:app --reload
 ```
 
-Run tests and checks:
+Run all tests:
 
 ```bash
 python -m pytest
-python -m ruff check .
-python -m black --check app
 ```
 
-## File-by-File Lesson
+## The Files and What They Teach
 
-| File | Lesson |
+| File | What you'll learn |
 |---|---|
-| `app/dataset.txt` | Shows the training examples and the English pizzeria domain |
-| `app/dataset.py` | Shows how local text data enters the system |
-| `app/context.py` | Shows how chat messages become one model context |
-| `app/tokenizer.py` | Shows how text becomes token ids and back again |
-| `app/batch.py` | Shows causal next-token training pairs |
-| `app/embedding.py` | Shows how token ids become learned vectors |
-| `app/position.py` | Shows how sequence position is added |
-| `app/attention.py` | Shows causal self-attention and masking |
-| `app/feedforward.py` | Shows the MLP inside a transformer block |
-| `app/block.py` | Shows attention plus feed-forward with residual paths |
-| `app/model.py` | Shows the full tiny GPT-style forward pass |
-| `app/loss.py` | Shows cross-entropy next-token loss |
-| `app/sampling.py` | Shows how logits become sampled token ids |
-| `app/checkpoint.py` | Shows how weights and metadata are saved and loaded |
-| `app/train.py` | Shows the training loop |
-| `app/infer.py` | Shows model-only autoregressive generation and assistant-answer extraction |
-| `app/api.py` | Shows the OpenAI-style HTTP endpoint |
-| `app/schemas.py` | Shows API request and response shapes |
-| `app/logging_utils.py` | Shows readable study logs |
-| `app/test_*.py` | Shows executable examples of expected behavior |
+| `app/dataset.txt` | The training examples — the pizzeria conversations |
+| `app/dataset.py` | How the model loads its training material |
+| `app/context.py` | How a chat conversation becomes a single text the model reads |
+| `app/tokenizer.py` | How text becomes numbers |
+| `app/batch.py` | How training examples are created from text |
+| `app/embedding.py` | How numbers become learned vectors |
+| `app/position.py` | How the model knows word order |
+| `app/attention.py` | How the model pays attention to previous words |
+| `app/feedforward.py` | The thinking layer inside each transformer block |
+| `app/block.py` | One full transformer block (attention + thinking) |
+| `app/model.py` | The whole model — all pieces together |
+| `app/loss.py` | How the model measures its own mistakes |
+| `app/sampling.py` | How the model picks the next character |
+| `app/checkpoint.py` | How trained knowledge is saved and reloaded |
+| `app/train.py` | The training loop — where learning actually happens |
+| `app/infer.py` | How the model generates answers |
+| `app/api.py` | The web API — talk to the model over HTTP |
+| `app/schemas.py` | The shapes of API requests and responses |
 
-For the full classroom-style walkthrough, read:
+## The Core Idea
 
-```txt
-docs/14_file_by_file_lessons.md
-```
-
-For visual study diagrams, read:
+The model learns one simple skill, over and over:
 
 ```txt
-docs/diagrams/README.md
+Given the previous characters, predict the next character.
 ```
 
-## Key Idea
-
-Training teaches the model to predict the next token:
+Training example:
 
 ```txt
 input:  <|user|> What piz
 target: |user|> What pizz
 ```
 
-Each target is the input shifted one character to the left. This is the same core idea behind GPT-like language modeling, just at a much smaller character level.
+The target is just the input shifted one character to the right. This simple trick is the same idea behind every GPT-style model — just at a tiny scale.
 
 <!-- COURSE_THREAD_START -->
 ## Course Thread

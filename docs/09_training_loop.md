@@ -1,60 +1,86 @@
-# Training Loop
+# The Training Loop: Where Learning Happens
 
-The training loop is where the model learns.
+All the pieces are in place. The training loop ties them together and runs the whole process from start to finish.
 
-## File
+## Where This Lives
 
 ```txt
 app/train.py
 ```
 
-## What Happens
+## What Happens, Step by Step
 
-`train_model()` does this:
+Run `python app/train.py` and this is what executes:
 
-1. Load `app/dataset.txt`.
-2. Build a character vocabulary.
-3. Encode the dataset into token ids.
-4. Create the `MiniGPT` model.
-5. Create the AdamW optimizer.
-6. Build random training batches.
-7. Run the forward pass.
-8. Calculate next-token loss.
-9. Backpropagate.
-10. Update model weights.
-11. Save a checkpoint.
+1. **Load the dataset:** read `app/dataset.txt` into memory
+2. **Build the vocabulary:** collect every unique character from the text
+3. **Encode the text:** convert all characters to token IDs
+4. **Create the model:** build a fresh `MiniGPT` with random weights
+5. **Create the optimizer:** set up AdamW to handle weight updates
 
-## Training Log Example
+Then the loop begins:
+
+6. **Sample a random batch:** pick random windows of text from the encoded dataset
+7. **Forward pass:** feed the batch through the model to get logits
+8. **Compute loss:** compare predictions against the correct next tokens
+9. **Backpropagate:** trace the error back through the network, compute gradients
+10. **Update weights:** AdamW adjusts every parameter slightly
+11. **Log progress:** print the current loss
+12. **Repeat:** go back to step 6
+
+After all steps complete:
+
+13. **Save a checkpoint:** store the model weights, vocabulary, and config to disk
+
+## The Training Log
+
+While training runs, you'll see output like this:
 
 ```txt
 [INFO] train: vocabulary size=54
 [INFO] train: sequence length=3791
 [INFO] train: learning rate=0.003
-[INFO] train: step=20 loss=2.6870
+[INFO] train: step=10  loss=3.1204
+[INFO] train: step=20  loss=2.6870
+[INFO] train: step=30  loss=2.4103
 ```
 
-Loss usually decreases, but it may not be perfectly smooth.
+Loss should generally go down. It might be noisy — jumping around a little — but the trend should be downward.
+
+## What Is a Batch?
+
+Instead of training on one example at a time, we train on many simultaneously. A **batch** is a group of training examples processed together. This is faster and produces more stable gradients.
+
+In `app/config.py`:
+
+```txt
+batch_size = 16   (process 16 examples at once)
+block_size = 64   (each example is 64 characters long)
+```
+
+## Important Settings in `app/config.py`
+
+| Setting | What it controls |
+|---|---|
+| `block_size` | How many characters the model can see at once |
+| `embedding_dim` | Size of each token's vector |
+| `num_heads` | Number of attention heads |
+| `num_layers` | How many transformer blocks to stack |
+| `max_steps` | How many training updates to run |
+| `learning_rate` | How aggressively weights are updated |
+
+Try changing `max_steps` to train longer and watch if loss goes lower.
 
 ## Why the Dataset Is Small
 
-The goal is study, not quality. A small dataset trains quickly and makes it easier to inspect what is happening.
+Training on a small dataset is intentional. The goal is study, not power. Small data = fast training = easy to experiment and observe. You can retrain from scratch in under a minute.
 
-## Important Configuration
+## What You Should Be Able to Explain
 
-The defaults live in:
-
-```txt
-app/config.py
-```
-
-Important values:
-
-- `block_size`: context window length
-- `embedding_dim`: vector size per token
-- `num_heads`: attention head count
-- `num_layers`: transformer block count
-- `max_steps`: number of training updates
-- `learning_rate`: optimizer step size
+- The sequence of steps in one training iteration
+- What a batch is and why we use them
+- Why loss going down means the model is improving
+- What you'd change to train longer or with a bigger model
 
 <!-- COURSE_THREAD_START -->
 ## Course Thread

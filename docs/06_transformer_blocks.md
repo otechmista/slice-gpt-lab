@@ -1,46 +1,87 @@
-# Transformer Blocks
+# Transformer Blocks: The Repeating Unit
 
-A transformer block combines attention, feed-forward layers, normalization, and residual connections.
+Attention alone isn't enough. After tokens gather context from each other, something needs to *think* about that information — to transform it into something more useful.
 
-## Files
+That's where the **transformer block** comes in. It's the core repeating unit of every GPT-style model. Our tiny model stacks a few of them. GPT-4 stacks 96.
+
+## Where This Lives
 
 ```txt
 app/block.py
 app/feedforward.py
 ```
 
-## What the Block Does
+## What a Block Does
 
-The block receives hidden states:
+Each transformer block has two parts that run in sequence:
+
+1. **Self-attention:** tokens look at each other and gather context
+2. **Feed-forward network:** each token independently transforms its information
+
+After both parts, the output flows to the next block (or to the final output if this is the last block).
+
+## The Feed-Forward Network
+
+Think of it as a small neural network that runs on each token individually. It doesn't look at neighboring tokens — it just takes what attention collected and does further computation on it.
+
+The structure is:
 
 ```txt
-[batch, time, embedding_dim]
+Linear layer (expand 4x)
+GELU activation (adds non-linearity)
+Linear layer (compress back)
+Dropout (randomly zeros some values to prevent overfitting)
 ```
 
-Then it applies:
+The expansion to 4x is a convention from the original Transformer paper. It gives the network room to compute more complex features before compressing back.
+
+## Residual Connections: Keep the Original Signal
+
+Here's a subtle but important trick. After each sub-layer (attention and feed-forward), we **add the original input back**:
 
 ```txt
-hidden = hidden + attention(layer_norm(hidden))
-hidden = hidden + feedforward(layer_norm(hidden))
+output = original_input + attention(original_input)
+output = output + feedforward(output)
 ```
 
-## Why Residual Connections Exist
+This is called a **residual connection** (or skip connection).
 
-The `hidden + ...` part is a residual connection.
+Why does it matter? Without it, information from early layers might get lost or distorted as it passes through many blocks. With it, each block only needs to learn the *change* (residual), not rebuild everything from scratch. This makes deep networks much easier to train.
 
-It lets the original signal keep flowing while each layer learns an adjustment. This helps training because gradients can move through the network more easily.
+Analogy: you're taking notes while reading. Instead of rewriting everything from scratch each time, you just add highlights and annotations. The core text is always there.
 
-## Why Layer Normalization Exists
+## Layer Normalization: Keeping Values Stable
 
-Layer normalization keeps values in a more stable range before attention and feed-forward transformations.
+Before passing data to attention and feed-forward, we apply **layer normalization**. It rescales the values so they stay in a well-behaved range.
 
-## Why Feed-Forward Exists
+Without this, numbers can grow very large or shrink very small as they pass through many layers. Normalization keeps training stable.
 
-Attention mixes information across positions. Feed-forward layers transform each position independently. Together, they let the model combine context and compute richer features.
+## One Block, Full Picture
 
-## Relation to GPT-like Models
+```txt
+input
+  ↓
+layer norm
+  ↓
+self-attention
+  ↓
+  + (add original input back)
+  ↓
+layer norm
+  ↓
+feed-forward network
+  ↓
+  + (add again)
+  ↓
+output (goes to next block)
+```
 
-Large GPT models stack many transformer blocks. This project stacks only a few so the flow stays readable.
+## What You Should Be Able to Explain
+
+- What the two sub-layers in a block are
+- Why residual connections exist
+- What layer normalization does
+- Why the feed-forward network processes each token independently (while attention processes them together)
 
 <!-- COURSE_THREAD_START -->
 ## Course Thread

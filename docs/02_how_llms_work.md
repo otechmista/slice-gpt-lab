@@ -1,58 +1,86 @@
 # How LLMs Work
 
-A GPT-like model learns by solving a simple task many times:
+LLM stands for **Large Language Model**. ChatGPT, Gemini, Claude — they're all LLMs. Despite the fancy name, they all learned one humble skill:
+
+> **Given the previous words, predict the next word.**
+
+That's it. No secret magic. Just that task, done millions of times, on enormous amounts of text.
+
+## A Simple Analogy
+
+Imagine you're texting with a friend who finishes your sentences. You type:
 
 ```txt
-Given the previous tokens, predict the next token.
+I'd like a large Margherita pi...
 ```
 
-In this project the tokens are characters. In larger models, tokens are usually chunks of text created by a tokenizer such as BPE.
+Your friend guesses "pizza" because they've seen you say this before. An LLM does the same thing — but it has "seen" billions of sentences and learned all sorts of patterns from them.
 
-## The Full Flow
+## The Training Pipeline
+
+Here's what happens when the model learns:
 
 ```txt
-text
-  -> tokenizer
-  -> token ids
-  -> batches
-  -> embeddings
-  -> positional embeddings
-  -> transformer blocks
-  -> logits
-  -> loss
-  -> backpropagation
-  -> updated weights
+text from dataset
+  → split into tokens (characters, in our case)
+  → convert tokens to IDs (numbers)
+  → group into batches
+  → transform into embeddings (number vectors)
+  → add position information
+  → run through transformer blocks (attention + thinking)
+  → produce a score for every possible next token (logits)
+  → compare to the real next token → calculate the loss (how wrong was the guess?)
+  → backpropagation → adjust the weights slightly
+  → repeat thousands of times
 ```
 
-During inference, the flow is similar, but there is no loss or backpropagation:
+Each step of this pipeline has its own file in this project. You'll understand all of them.
+
+## The Inference Pipeline
+
+When the model answers a question, there's no more learning — just predicting:
 
 ```txt
-prompt
-  -> tokenizer
-  -> model
-  -> logits for next token
-  -> sample one token
-  -> append token to prompt
-  -> repeat
+your prompt
+  → convert to token IDs
+  → run through the model
+  → produce scores for the next token
+  → pick one token (based on those scores)
+  → add it to the prompt
+  → repeat until done
 ```
 
-## What Logits Are
+The model generates one character at a time, feeding each result back into itself. That's called **autoregressive** generation.
 
-Logits are raw scores. If the vocabulary has 54 characters, the model returns 54 scores for each position. The highest or sampled score becomes the next token choice.
+## What Are Logits?
 
-## Why Output Can Still Be Weak
+When the model processes a sequence, it produces a number for every possible next character. These numbers are called **logits**.
 
-This project uses only the trained mini model for inference. There are no hardcoded answers.
+Our model knows 54 different characters. So after reading "What piz", it produces 54 scores like:
 
-The tiny model can still produce broken text because it is very small, character-based, and trained on a tiny dataset. That is expected. GPT-like mechanics and GPT-level quality are different things.
+```txt
+'z' → 8.2   (high! makes sense after "piz")
+'a' → 3.1
+'x' → 0.1   (very unlikely)
+...
+```
 
-To improve output, you can:
+These scores get turned into probabilities, and the model picks one character. That character is added to the sequence, and the process repeats.
 
-- add more dataset examples
-- train for more steps
-- increase model size carefully
-- use lower temperature for less random decoding
-- improve prompt formatting
+## Why the Output Can Be Strange
+
+Our model is tiny. It was trained for a few minutes on a small dataset. Real LLMs are trained for weeks on billions of examples, on racks of specialized hardware.
+
+If our model produces weird text, that's not a bug — it's the lesson. **Architecture alone doesn't create quality.** Scale, data, and training time matter enormously.
+
+To get better output from this model, you could:
+
+- Add more training examples to `app/dataset.txt`
+- Train for more steps
+- Make the model bigger
+- Lower the temperature (makes output less random)
+
+But the goal here isn't impressive output. It's understanding how the machine works.
 
 <!-- COURSE_THREAD_START -->
 ## Course Thread

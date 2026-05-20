@@ -1,717 +1,377 @@
 # File-by-File Lessons
 
-This chapter teaches the project as a sequence of small lessons.
+Now that you understand the concepts, let's connect them to actual code.
 
-The goal is not only to know what each file does. The goal is to understand why the file exists, how it participates in the GPT-like flow, and what you should inspect while studying it.
+Each lesson here matches one source file. The goal isn't just to know *what* a file does — it's to understand *why* it exists and *what question* it answers inside a GPT-style system.
 
-## Lesson 1: The Dataset
+---
 
-File:
+## 1. The Training Data
 
-```txt
-app/dataset.txt
-```
+**File:** `app/dataset.txt`
 
-### What You Are Learning
+### What You're Learning
+The model learns from examples. This file *is* those examples.
 
-You are learning what the model sees during training.
+### Why It Exists
+A language model can't learn without text to train on. This file contains fictional pizzeria conversations that the model will read thousands of times, learning to predict each next character.
 
-The dataset is a list of simple English conversations about the fictional pizzeria The Slice Lab.
+### What to Look For
+Open the file and read a few conversations. Notice:
+- Every example uses the same format with `<|user|>`, `<|assistant|>`, and `<|end|>` markers
+- The conversations are short and consistent
+- Unknown-domain examples are also included ("I don't know how to help with that") so the model learns to decline gracefully
 
-### Why This File Exists
+### Question to Answer
+What happens to the character vocabulary if you add a French sentence with accents like `é` or `ç` to the dataset?
 
-A language model cannot learn without examples. This file is the source text used to build the character vocabulary and training sequence.
+---
 
-### How It Works
+## 2. Loading the Data
 
-The training code reads the whole file as one text string. Then the tokenizer turns every character into a token id.
+**File:** `app/dataset.py`
 
-Example:
+### What You're Learning
+Code should have one job. This file's job: read the text file, check it's valid, return the text.
+
+### Why It Exists
+The training loop shouldn't know about file paths, encoding, or validation. `dataset.py` owns that. If the file is missing or empty, it fails loudly before any other work begins.
+
+### Question to Answer
+Why is it better to fail before training starts than to fail halfway through?
+
+---
+
+## 3. Building the Conversation Context
+
+**File:** `app/context.py`
+
+### What You're Learning
+The model doesn't understand "chat messages" — it understands a single long string of text. This file converts one into the other.
+
+### Why It Exists
+Before tokenization, messages must be serialized into the exact format the model was trained on:
 
 ```txt
 <|user|>
 What pizza do you recommend?
 <|assistant|>
-I recommend the Margherita pizza.
-<|end|>
 ```
 
-The model does not understand this as a human conversation. It sees a long sequence of characters and learns to predict the next character.
+The final `<|assistant|>` without content is the signal: "continue from here as the assistant."
 
 ### Try It
-
-Open the dataset and check:
-
-- Are all examples in English?
-- Are prices written consistently?
-- Are unknown-domain examples present so the model can learn that pattern?
-
-### Check Your Understanding
-
-Explain why adding a new character to the dataset changes the vocabulary.
-
-## Lesson 2: Loading Data
-
-File:
-
-```txt
-app/dataset.py
-```
-
-### What You Are Learning
-
-You are learning how local data enters the system.
-
-### Why This File Exists
-
-The training loop should not know file-reading details. `dataset.py` owns that responsibility.
-
-### How It Works
-
-`load_dataset(path)`:
-
-1. Checks whether the file exists.
-2. Reads text using UTF-8.
-3. Rejects empty content.
-4. Returns the dataset text.
-
-### Try It
-
-Temporarily point training to a missing file in a test and confirm it fails with a readable error.
-
-### Check Your Understanding
-
-Explain why empty datasets should fail before training starts.
-
-## Lesson 3: Context Building
-
-File:
-
-```txt
-app/context.py
-```
-
-### What You Are Learning
-
-You are learning how chat messages become one model input.
-
-### Why This File Exists
-
-GPT-like models do not receive a list of Python objects. They receive a sequence of tokens. Before tokenization, the app serializes messages into text.
-
-### How It Works
-
-The context builder uses markers:
-
-```txt
-<|system|>
-<|user|>
-<|assistant|>
-<|end|>
-```
-
-For a user message, it creates a prompt ending with:
-
-```txt
-<|assistant|>
-```
-
-That final marker tells the model to continue as the assistant.
-
-### Try It
-
-Run:
 
 ```bash
 python -m pytest app/test_context.py
 ```
 
-### Check Your Understanding
+### Question to Answer
+What would break if training used `[USER]` markers but inference used `<|user|>` markers?
 
-Explain why the dataset format and inference format must match.
+---
 
-## Lesson 4: Tokenization
+## 4. Tokenization
 
-File:
+**File:** `app/tokenizer.py`
 
-```txt
-app/tokenizer.py
-```
+### What You're Learning
+Text → numbers. This is the first real transformation in the pipeline.
 
-### What You Are Learning
-
-You are learning how text becomes numbers.
-
-### Why This File Exists
-
-PyTorch models operate on tensors, not raw strings. The tokenizer converts between text and token ids.
-
-### How It Works
-
-`CharacterTokenizer.from_text(text)` builds two maps:
-
-```txt
-stoi: string token -> integer id
-itos: integer id -> string token
-```
-
-Then:
-
-```txt
-encode("pizza") -> [token ids]
-decode([token ids]) -> "pizza"
-```
+### Why It Exists
+Neural networks do math, not string operations. The tokenizer builds a vocabulary from the training data and provides two operations: `encode` (text → IDs) and `decode` (IDs → text).
 
 ### Try It
-
-In a Python shell:
 
 ```python
 from app.tokenizer import CharacterTokenizer
 
-tokenizer = CharacterTokenizer.from_text("pizza")
-ids = tokenizer.encode("pizza")
-print(ids)
-print(tokenizer.decode(ids))
+tokenizer = CharacterTokenizer.from_text("pizza is good")
+print(tokenizer.encode("pizza"))
+print(tokenizer.decode(tokenizer.encode("pizza")))
 ```
 
-### Check Your Understanding
+### Question to Answer
+If you type a question with an emoji at inference time, what happens and why?
 
-Explain why this tokenizer rejects characters it did not see in the training dataset.
+---
 
-## Lesson 4: Building Batches
+## 5. Building Batches
 
-File:
+**File:** `app/batch.py`
+
+### What You're Learning
+The training task: given some characters, predict the next one. This file builds the actual training pairs.
+
+### Why It Exists
+Training needs input sequences and target sequences. The target is always the input shifted one position forward:
 
 ```txt
-app/batch.py
+text:   p i z z a
+input:  p i z z
+target: i z z a
 ```
 
-### What You Are Learning
+Position 0 sees `p` and must predict `i`. Position 1 sees `p, i` and must predict `z`. And so on.
 
-You are learning causal next-token training.
+### Question to Answer
+If `block_size = 64`, how many predictions does the model make per training example?
 
-### Why This File Exists
+---
 
-Training needs input sequences and target sequences. The target is the input shifted one position forward.
+## 6. Token Embeddings
 
-### How It Works
+**File:** `app/embedding.py`
 
-For a sequence:
+### What You're Learning
+Numbers → vectors. Token IDs are labels; embeddings give them meaning.
+
+### Why It Exists
+Token ID `32` isn't meaningfully "close to" ID `33` — they're just labels. Embeddings replace each ID with a learned vector of numbers that can capture relationships between characters.
+
+These vectors start random and get adjusted during training. After training, the embeddings represent something useful about each character's role in the text.
+
+### Question to Answer
+Why does embedding dimension size affect how much the model can represent?
+
+---
+
+## 7. Positional Embeddings
+
+**File:** `app/position.py`
+
+### What You're Learning
+The model needs to know where each token is in the sequence.
+
+### Why It Exists
+Without position information, the model would treat "pizza is good" and "good is pizza" identically — they have the same characters in different order.
+
+Positional embeddings add a unique vector for each position (0, 1, 2, ..., block_size-1). These get added to the token embeddings:
 
 ```txt
-abcdef
+final vector = token embedding + position embedding
 ```
 
-With block size 4:
+### Question to Answer
+What would go wrong if you doubled a sentence and the model couldn't tell character positions apart?
 
-```txt
-input:  abcd
-target: bcde
-```
+---
 
-The model sees `a` and should predict `b`, sees `b` and should predict `c`, and so on.
+## 8. Self-Attention
+
+**File:** `app/attention.py`
+
+### What You're Learning
+The heart of the transformer: how each token looks back at earlier tokens to gather context.
+
+### Why It Exists
+Predicting the next character requires understanding the previous ones. Attention creates a learned mechanism for each token to selectively gather information from earlier positions.
+
+The causal mask ensures no token peeks at future positions — keeping training honest.
 
 ### Try It
-
-Read `test_training.py` and `test_model.py` to see small deterministic examples.
-
-### Check Your Understanding
-
-Explain why the target sequence is shifted by one token.
-
-## Lesson 5: Token Embeddings
-
-File:
-
-```txt
-app/embedding.py
-```
-
-### What You Are Learning
-
-You are learning how token ids become trainable vectors.
-
-### Why This File Exists
-
-Token ids are labels. They are not meaningful numeric values by themselves. Embeddings give each token a learned vector representation.
-
-### How It Works
-
-`nn.Embedding(vocab_size, embedding_dim)` creates a lookup table.
-
-If the input shape is:
-
-```txt
-[batch, time]
-```
-
-the output shape becomes:
-
-```txt
-[batch, time, embedding_dim]
-```
-
-### Try It
-
-Change `embedding_dim` in `ModelConfig` and watch how tensor shapes change.
-
-### Check Your Understanding
-
-Explain why embeddings are trainable parameters.
-
-## Lesson 6: Position Embeddings
-
-File:
-
-```txt
-app/position.py
-```
-
-### What You Are Learning
-
-You are learning how the model knows token order.
-
-### Why This File Exists
-
-The same character can appear at many positions. The model needs a way to distinguish position 0 from position 10.
-
-### How It Works
-
-The file creates a learned vector for each possible position up to `block_size`.
-
-Then it adds position vectors to token vectors:
-
-```txt
-hidden = token_embedding + position_embedding
-```
-
-### Try It
-
-Inspect `ModelConfig.block_size` in `app/config.py`.
-
-### Check Your Understanding
-
-Explain what would be lost if the model had token embeddings but no position embeddings.
-
-## Lesson 7: Causal Self-Attention
-
-File:
-
-```txt
-app/attention.py
-```
-
-### What You Are Learning
-
-You are learning how tokens look back at previous tokens.
-
-### Why This File Exists
-
-Attention lets every position mix information from earlier positions in the context window.
-
-### How It Works
-
-The attention module:
-
-1. Creates query, key, and value projections.
-2. Computes attention scores.
-3. Applies a causal mask.
-4. Converts scores into weights with softmax.
-5. Mixes value vectors using those weights.
-
-The causal mask prevents future-token cheating.
-
-### Try It
-
-Run:
 
 ```bash
 python -m pytest app/test_attention.py
 ```
 
-### Check Your Understanding
+### Question to Answer
+Why would the model perform worse if the causal mask were removed during training?
 
-Explain why position 2 can see positions 0, 1, and 2, but not position 3.
+---
 
-## Lesson 8: Feed-Forward Network
+## 9. Feed-Forward Network
 
-File:
+**File:** `app/feedforward.py`
 
-```txt
-app/feedforward.py
-```
+### What You're Learning
+After attention mixes information across positions, the feed-forward network processes each position independently.
 
-### What You Are Learning
+### Why It Exists
+Attention is about *relationships between tokens*. Feed-forward is about *transforming what each token now knows*. Together, they cover both aspects of processing.
 
-You are learning the second half of a transformer block.
+The network expands to 4× the embedding dimension internally (to compute richer features), then compresses back down.
 
-### Why This File Exists
+### Question to Answer
+If attention handles communication between tokens, what does feed-forward handle?
 
-Attention mixes information across positions. The feed-forward network transforms each position independently.
+---
 
-### How It Works
+## 10. Transformer Block
 
-The module uses:
+**File:** `app/block.py`
 
-```txt
-Linear -> GELU -> Linear -> Dropout
-```
+### What You're Learning
+One complete block: attention + feed-forward + residual connections + layer normalization.
 
-The hidden size expands to `4 * embedding_dim` and then returns to `embedding_dim`.
+### Why It Exists
+A transformer block is the repeating unit of GPT-style models. Our model stacks several of them. Each block sees the output of the previous one and refines it further.
 
-### Try It
+### Question to Answer
+What is the purpose of adding the original input back after each sub-layer (`hidden = hidden + attention(hidden)`)?
 
-Find `4 * embedding_dim` in the code and connect it to the shape discussion.
+---
 
-### Check Your Understanding
+## 11. The Full Model
 
-Explain why attention and feed-forward layers solve different problems.
+**File:** `app/model.py`
 
-## Lesson 9: Transformer Block
+### What You're Learning
+All pieces assembled into one forward pass.
 
-File:
-
-```txt
-app/block.py
-```
-
-### What You Are Learning
-
-You are learning how attention and feed-forward layers are composed.
-
-### Why This File Exists
-
-A transformer block is the repeated unit of GPT-like models.
-
-### How It Works
-
-The block applies:
-
-```txt
-hidden = hidden + attention(layer_norm(hidden))
-hidden = hidden + feedforward(layer_norm(hidden))
-```
-
-The `hidden + ...` parts are residual connections.
+### Why It Exists
+This is the `MiniGPT` class. It orchestrates: embeddings → positional embeddings → transformer blocks → final normalization → output projection → logits.
 
 ### Try It
-
-Change `num_layers` in `ModelConfig` and observe that the model stacks more blocks.
-
-### Check Your Understanding
-
-Explain what residual connections help preserve.
-
-## Lesson 10: The Model
-
-File:
-
-```txt
-app/model.py
-```
-
-### What You Are Learning
-
-You are learning the full forward pass.
-
-### Why This File Exists
-
-This file composes embeddings, positions, transformer blocks, normalization, and logits.
-
-### How It Works
-
-Input:
-
-```txt
-[batch, time]
-```
-
-Output:
-
-```txt
-[batch, time, vocab_size]
-```
-
-Each position receives one score for each possible next token.
-
-### Try It
-
-Run:
 
 ```bash
 python -m pytest app/test_model.py
 ```
 
-### Check Your Understanding
+### Question to Answer
+Why does the output have `vocab_size` scores per position, rather than just one score?
 
-Explain why logits have a vocabulary dimension.
+---
 
-## Lesson 11: Loss
+## 12. Computing Loss
 
-File:
+**File:** `app/loss.py`
 
-```txt
-app/loss.py
-```
+### What You're Learning
+How the model measures its own prediction error.
 
-### What You Are Learning
+### Why It Exists
+Training needs a single number to optimize. Cross-entropy loss compares the model's predicted distribution over characters against the correct next character. Lower = better.
 
-You are learning how the model receives a training signal.
+### Question to Answer
+If the model assigned 99% probability to the correct next character, would the loss be high or low?
 
-### Why This File Exists
+---
 
-The model needs a scalar error value so backpropagation can update weights.
+## 13. Sampling
 
-### How It Works
+**File:** `app/sampling.py`
 
-`next_token_loss(logits, targets)` flattens batch and time dimensions and applies cross-entropy.
+### What You're Learning
+The model produces scores. This file picks one character from those scores.
 
-### Try It
-
-Read the shape validation in `loss.py`.
-
-### Check Your Understanding
-
-Explain why cross-entropy is appropriate for choosing one token from a vocabulary.
-
-## Lesson 12: Sampling
-
-File:
-
-```txt
-app/sampling.py
-```
-
-### What You Are Learning
-
-You are learning how raw logits become a generated token.
-
-### Why This File Exists
-
-During raw model generation, the model returns scores. Sampling turns those scores into one token id.
-
-### How It Works
-
-The function:
-
-1. Divides logits by temperature.
-2. Applies softmax.
-3. Samples one token with `torch.multinomial`.
+### Why It Exists
+Logits must become a single chosen token. At low temperature, the model picks the highest-scoring character (greedy, predictable). At higher temperature, it samples probabilistically (more varied, potentially more creative — or more chaotic).
 
 ### Try It
+Run inference with different `--temperature` values and notice how the output changes.
 
-Compare outputs with different temperature values in `--raw-model` mode.
+### Question to Answer
+Why might very high temperature produce text that looks like random keyboard mashing?
 
-### Check Your Understanding
+---
 
-Explain what can happen when temperature is higher.
+## 14. Checkpoints
 
-## Lesson 13: Checkpoints
+**File:** `app/checkpoint.py`
 
-File:
+### What You're Learning
+How trained model state is saved and reloaded.
 
-```txt
-app/checkpoint.py
-```
-
-### What You Are Learning
-
-You are learning how trained state is saved and restored.
-
-### Why This File Exists
-
-Training creates weights in memory. Inference later needs those same weights and tokenizer metadata.
-
-### How It Works
-
-The checkpoint stores:
-
-```txt
-model_state
-vocabulary
-config
-```
+### Why It Exists
+Training stores weights in memory. Inference needs those same weights later. The checkpoint saves model weights, vocabulary, and config — everything needed to reconstruct and use the model.
 
 ### Try It
+Run training and check that `checkpoints/slice_gpt_lab.pt` appears. Then run inference without retraining and see that it loads correctly.
 
-Run training and check that `checkpoints/slice_gpt_lab.pt` appears.
+### Question to Answer
+Why must the vocabulary be saved alongside the model weights?
 
-### Check Your Understanding
+---
 
-Explain why tokenizer metadata must be saved with the model weights.
+## 15. Training
 
-## Lesson 14: Training
+**File:** `app/train.py`
 
-File:
+### What You're Learning
+The complete training orchestration: load data → build model → run the learning loop → save checkpoint.
 
-```txt
-app/train.py
-```
-
-### What You Are Learning
-
-You are learning the complete learning loop.
-
-### Why This File Exists
-
-Training is orchestration. It connects dataset, tokenizer, batches, model, loss, optimizer, logs, and checkpointing.
-
-### How It Works
-
-The loop repeats:
-
-```txt
-batch -> model -> loss -> backward -> optimizer step
-```
+### Why It Exists
+Training connects everything: dataset, tokenizer, batch builder, model, loss, optimizer, logger, and checkpoint saver. It's the conductor that runs the full orchestra.
 
 ### Try It
-
-Run:
 
 ```bash
 python app/train.py
 ```
 
-Watch the loss values in the console.
+Watch the loss decrease (generally) over time.
 
-### Check Your Understanding
+### Question to Answer
+Why does lower training loss not automatically mean the model will answer questions well?
 
-Explain why lower loss does not automatically mean ChatGPT-level quality.
+---
 
-## Lesson 15: Inference
+## 16. Inference
 
-File:
+**File:** `app/infer.py`
 
-```txt
-app/infer.py
-```
+### What You're Learning
+How a trained model generates text one character at a time.
 
-### What You Are Learning
-
-You are learning model-only autoregressive generation.
-
-### Why This File Exists
-
-The app should answer by loading the trained checkpoint and generating text. It should not contain fixed pizzeria answers.
-
-### How It Works
-
-Normal mode:
-
-```txt
-prompt -> chat formatting -> model generation -> assistant answer extraction
-```
-
-Raw mode:
-
-```txt
-prompt -> chat formatting -> tokenizer -> model -> sampling -> full generated text
-```
+### Why It Exists
+Inference loads the checkpoint, formats your prompt, runs the autoregressive generation loop, and extracts the assistant's answer. This is where training becomes useful.
 
 ### Try It
-
-Normal:
 
 ```bash
 python app/infer.py --prompt "What pizza do you recommend?"
-```
-
-Unknown:
-
-```bash
-python app/infer.py --prompt "What is the capital of France?"
-```
-
-Raw:
-
-```bash
 python app/infer.py --raw-model --prompt "What pizza do you recommend?"
 ```
 
-### Check Your Understanding
+### Question to Answer
+Why is the `--raw-model` flag useful for studying model behavior?
 
-Explain why model-only output can be weak when the dataset, training time, or model size is too small.
+---
 
-## Lesson 16: API
+## 17. API
 
-Files:
+**Files:** `app/api.py`, `app/schemas.py`
 
-```txt
-app/api.py
-app/schemas.py
-```
+### What You're Learning
+How to expose a local model through an HTTP interface anyone can use.
 
-### What You Are Learning
-
-You are learning how the local model is exposed through an HTTP contract.
-
-### Why These Files Exist
-
-`api.py` exposes FastAPI routes. `schemas.py` defines request and response shapes.
-
-### How It Works
-
-`POST /v1/chat/completions` receives messages, builds a prompt, calls `generate_text()`, and returns an OpenAI-style response.
+### Why It Exists
+An API turns the model into a service. `api.py` handles routes and HTTP logic. `schemas.py` defines the exact shape of requests and responses — matching the OpenAI API format.
 
 ### Try It
-
-Run:
 
 ```bash
 uvicorn app.api:app --reload
 ```
 
-Then open:
+Then visit `http://127.0.0.1:8000/docs` for interactive documentation.
 
-```txt
-http://127.0.0.1:8000/docs
-```
+### Question to Answer
+Why should the API not contain any model logic? What would break if it did?
 
-### Check Your Understanding
+---
 
-Explain why the API layer should not contain model logic.
+## 18. Tests
 
-## Lesson 17: Tests
+**Files:** `app/test_*.py`
 
-Files:
+### What You're Learning
+How to verify that code behaves as expected — and how tests serve as living documentation.
 
-```txt
-app/test_*.py
-```
-
-### What You Are Learning
-
-You are learning how behavior is protected.
-
-### Why These Files Exist
-
-Tests make the study project safer to change.
-
-### How They Work
-
-The tests cover:
-
-- tokenizer round trips
-- invalid tokens
-- causal masks
-- model output shape
-- context overflow
-- checkpoint usage
-- API response shape
-- model-only inference through checkpoint loading
+### Why They Exist
+Tests protect the project as you experiment. If you change the tokenizer, the tests tell you immediately whether the rest of the system still works.
 
 ### Try It
-
-Run:
 
 ```bash
 python -m pytest
 ```
 
-### Check Your Understanding
+All tests should pass. If one fails, read the error message — it's a clue about what changed.
 
-Explain why tests are part of the learning material, not just a quality gate.
+### Question to Answer
+How do tests help you understand expected behavior, even before reading the source code?
 
 <!-- COURSE_THREAD_START -->
 ## Course Thread

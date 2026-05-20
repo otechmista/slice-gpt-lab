@@ -1,71 +1,87 @@
-# Self-Attention
+# Self-Attention: How the Model Looks Back
 
-Self-attention lets each token decide which previous tokens matter.
+Predicting the next character requires context. You can't predict what comes after "The Slice L" without knowing what came before.
 
-## File
+**Self-attention** is the mechanism that lets each position in a sequence look back at earlier positions and decide which ones are relevant.
+
+## Where This Lives
 
 ```txt
 app/attention.py
 ```
 
-## The Problem Attention Solves
+## A Simple Analogy
 
-To predict the next character, the model needs context.
+Imagine you're reading a novel and you reach the word "it". You need to figure out what "it" refers to. So you glance back at earlier sentences to find the relevant noun.
 
-For example:
+Self-attention does the same thing for tokens. Each token asks: "which earlier tokens should I pay attention to right now?" Then it collects information from those tokens.
 
-```txt
-The Slice
-```
+## The Three Projections: Query, Key, Value
 
-The next character depends on what came before. Attention gives each position a way to look back at earlier positions.
+Every token creates three vectors from its embedding:
 
-## Query, Key, Value
+- **Query:** what this token is looking for
+- **Key:** what this token has to offer others
+- **Value:** the actual information this token will share if chosen
 
-The model creates three projections:
-
-- Query: what this token is looking for
-- Key: what each token offers for comparison
-- Value: the information each token can contribute
-
-The simplified math:
+The match between a Query and a Key produces a score. High score = pay more attention. Then the model collects Value vectors weighted by those scores.
 
 ```txt
-scores = query @ key.T
-weights = softmax(scores)
-context = weights @ value
+scores = query × key  (how much does this token care about that one?)
+weights = softmax(scores)  (turn scores into percentages that sum to 1)
+output = weights × value  (collect information proportionally)
 ```
 
-## Causal Mask
+## The Causal Mask: No Peeking at the Future
 
-During training, the target answer is already present in the sequence. Without masking, the model could cheat by looking at future tokens.
+Here's a tricky part. During training, the model sees the entire sequence at once — including the correct next characters. Without protection, it could cheat by looking ahead.
 
-The causal mask looks like this:
+To prevent this, we apply a **causal mask**. It blocks attention to future positions:
 
 ```txt
-1 0 0 0
-1 1 0 0
-1 1 1 0
-1 1 1 1
+Position 0 can see: [0]
+Position 1 can see: [0, 1]
+Position 2 can see: [0, 1, 2]
+Position 3 can see: [0, 1, 2, 3]
 ```
 
-A position can see itself and the past, never the future.
+The mask looks like a triangle:
 
-## Multi-Head Attention
+```txt
+✓ ✗ ✗ ✗
+✓ ✓ ✗ ✗
+✓ ✓ ✓ ✗
+✓ ✓ ✓ ✓
+```
 
-The model splits the embedding dimension into multiple heads. Each head can learn a different kind of relationship.
+Each row is a token. Each column is a past token it can see. The `✗` positions are zeroed out before softmax.
+
+This makes the model honest. It has to predict the next token using only what it could have known before.
+
+## Multiple Heads
+
+Instead of running attention once, the model runs it several times in parallel with different projections. Each "head" can learn to attend to different kinds of relationships:
+
+- one head might focus on nearby characters
+- another might focus on repeated patterns
+- another might track special markers like `<|assistant|>`
 
 In this project:
 
 ```txt
 embedding_dim = 48
-num_heads = 4
-head_dim = 12
+num_heads     = 4
+head_dim      = 12   (48 ÷ 4)
 ```
 
-## Relation to GPT-like Models
+The results from all heads are combined into one output.
 
-Causal self-attention is the central mechanism behind GPT-style text generation.
+## What You Should Be Able to Explain
+
+- Why attention exists (tokens need to see context)
+- What Query, Key, and Value mean
+- Why the causal mask is necessary
+- Why multiple heads can capture different patterns
 
 <!-- COURSE_THREAD_START -->
 ## Course Thread

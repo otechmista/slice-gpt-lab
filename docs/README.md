@@ -1,104 +1,76 @@
-# Slice GPT Lab Documentation
+# Slice GPT Lab: Documentation
 
-This folder is the classroom for the project.
+This is a teaching project. Its goal is to show how a GPT-style language model works — step by step, in real code you can read and run.
 
-Slice GPT Lab is a small educational project for understanding how a GPT-like model works internally.
+## What Is This Project?
 
-It does not try to build a powerful assistant like ChatGPT. Instead, it builds a tiny local version that is simple enough to inspect and study. The model is trained with artificial English phrases about a fictional pizzeria called **The Slice Lab**.
+**Slice GPT Lab** is a tiny AI trained to answer questions about a fictional pizzeria called The Slice Lab.
 
-The central idea is next-token prediction: given previous text, the model tries to predict what comes next. In this project, tokens are characters, which makes the mechanics easier to see.
+But the pizzeria is just a prop. The real subject is the model itself: how it reads text, learns from it, and generates answers one character at a time. Every step — tokenization, attention, loss, training, inference — is visible in small, readable files.
 
-The project shows the full learning path:
+This project teaches the core mechanics of language models like ChatGPT, at a scale small enough to understand completely.
 
-1. read a text dataset
-2. turn text into token IDs
-3. build training examples for next-token prediction
-4. run the token IDs through a tiny Transformer
-5. calculate prediction error
-6. update model weights with backpropagation
-7. save a `.pt` checkpoint
-8. reload the checkpoint for inference
-9. expose local generation through an OpenAI-style API
+## Who This Is For
 
-The main value of the project is educational. It makes tokenization, embeddings, attention, loss, training, checkpoints, and inference visible in a small codebase.
+Anyone who wants to understand how AI language models work from the inside. You don't need a machine learning background — just curiosity and Python installed.
 
-Course site:
+## The Core Idea
+
+The model learns one skill, repeated thousands of times:
+
+> Given the previous characters, predict the next character.
+
+That same idea powers every GPT-style model. Here it's small enough to see clearly.
+
+## Course Site
 
 ```txt
 https://otechmista.github.io/mini-gpt-study/
 ```
 
-Start here:
+## Where to Start
 
 ```txt
-PROJECT_IDENTITY.md
-00_course_guide.md
+PROJECT_IDENTITY.md   ← what this project is and what you'll learn
+00_course_guide.md    ← commands and study path
 ```
 
-## Project Identity
+## The Lesson Path
 
-- `PROJECT_IDENTITY.md`: project name, purpose, learning promise, and map to existing documents.
-
-## Lessons
-
-The course is threaded. Each lesson has a `Course Thread` section that links the previous idea to the next idea.
-
-Recommended path:
-
-| Step | Document | Why it comes here |
+| Step | Document | What You'll Learn |
 |---|---|---|
-| 1 | [PROJECT_IDENTITY.md](PROJECT_IDENTITY.md) | Defines the project name, promise, and audience |
-| 2 | [00_course_guide.md](00_course_guide.md) | Turns the promise into a study route |
-| 3 | [01_introduction.md](01_introduction.md) | Introduces the project and pizzeria domain |
-| 4 | [02_how_llms_work.md](02_how_llms_work.md) | Shows the full GPT-like flow |
-| 5 | [15_simple_context_model.md](15_simple_context_model.md) | Shows how chat messages become model context |
-| 6 | [03_tokenization.md](03_tokenization.md) | Turns context text into token ids |
-| 7 | [04_embeddings.md](04_embeddings.md) | Turns token ids into vectors |
-| 8 | [05_self_attention.md](05_self_attention.md) | Lets tokens read previous context |
-| 9 | [06_transformer_blocks.md](06_transformer_blocks.md) | Combines attention with feed-forward layers |
-| 10 | [07_forward_pass.md](07_forward_pass.md) | Shows how the model produces logits |
-| 11 | [08_loss_and_backpropagation.md](08_loss_and_backpropagation.md) | Explains how the model learns from error |
-| 12 | [09_training_loop.md](09_training_loop.md) | Puts the learning pieces into one loop |
-| 13 | [11_checkpoint_and_weights.md](11_checkpoint_and_weights.md) | Saves weights, config, and vocabulary |
-| 14 | [10_inference.md](10_inference.md) | Uses the checkpoint to generate text |
-| 15 | [12_openai_api_layer.md](12_openai_api_layer.md) | Wraps inference in an HTTP contract |
-| 16 | [13_limitations_of_the_model.md](13_limitations_of_the_model.md) | Explains the limits of the mini model |
-| 17 | [14_file_by_file_lessons.md](14_file_by_file_lessons.md) | Connects each source file to the concepts |
+| 1 | [PROJECT_IDENTITY.md](PROJECT_IDENTITY.md) | What this project teaches and who it's for |
+| 2 | [00_course_guide.md](00_course_guide.md) | Commands and study order |
+| 3 | [01_introduction.md](01_introduction.md) | What we're building and why |
+| 4 | [02_how_llms_work.md](02_how_llms_work.md) | The full GPT-like pipeline |
+| 5 | [15_simple_context_model.md](15_simple_context_model.md) | How a conversation becomes model input |
+| 6 | [03_tokenization.md](03_tokenization.md) | How text becomes numbers |
+| 7 | [04_embeddings.md](04_embeddings.md) | How numbers become vectors |
+| 8 | [05_self_attention.md](05_self_attention.md) | How tokens read previous context |
+| 9 | [06_transformer_blocks.md](06_transformer_blocks.md) | Attention + feed-forward together |
+| 10 | [07_forward_pass.md](07_forward_pass.md) | How the model produces predictions |
+| 11 | [08_loss_and_backpropagation.md](08_loss_and_backpropagation.md) | How the model learns from mistakes |
+| 12 | [09_training_loop.md](09_training_loop.md) | The complete training process |
+| 13 | [11_checkpoint_and_weights.md](11_checkpoint_and_weights.md) | How trained knowledge is saved |
+| 14 | [10_inference.md](10_inference.md) | How the model generates answers |
+| 15 | [12_openai_api_layer.md](12_openai_api_layer.md) | The web API |
+| 16 | [13_limitations_of_the_model.md](13_limitations_of_the_model.md) | Why this isn't ChatGPT — and what that means |
+| 17 | [14_file_by_file_lessons.md](14_file_by_file_lessons.md) | Every source file explained |
 
-## Diagrams
-
-Mermaid diagrams live in:
-
-```txt
-diagrams/
-```
-
-Start with:
+## Visual Diagrams
 
 ```txt
 diagrams/README.md
 ```
 
-## API Usage
-
-The API guide lives in:
-
-- [12_openai_api_layer.md](12_openai_api_layer.md)
-
-It shows the local `POST /v1/chat/completions` contract used by the project.
-
 ## Architecture Views
 
-Project context and implementation contracts live in:
+For deeper context on design decisions:
 
 ```txt
 contexts/
+  01_CONTEXT_VIEW.md    ← problem, goals, and boundaries
+  02_CONTAINER_VIEW.md  ← runtime components
+  03_COMPONENT_VIEW.md  ← internal structure
+  04_CODE_VIEW.md       ← contracts and rules
 ```
-
-Read these when changing architecture, behavior, contracts, or commands.
-
-- `contexts/01_CONTEXT_VIEW.md`: problem, goals, boundaries, and business rules.
-- `contexts/02_CONTAINER_VIEW.md`: runtime containers and responsibilities.
-- `contexts/03_COMPONENT_VIEW.md`: internal components and ownership.
-- `contexts/04_CODE_VIEW.md`: implementation contracts, commands, and code rules.
-

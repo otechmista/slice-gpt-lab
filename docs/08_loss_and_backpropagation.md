@@ -1,50 +1,70 @@
-# Loss and Backpropagation
+# Loss and Backpropagation: How the Model Learns from Mistakes
 
-Training needs a way to measure error. This project uses cross-entropy loss.
+The model makes a guess. The guess is wrong. The model adjusts. Repeat millions of times.
 
-## File
+That's training, at a high level. But how does the model actually adjust? That's what **loss** and **backpropagation** are for.
+
+## Where This Lives
 
 ```txt
 app/loss.py
+app/train.py
 ```
 
-## What Loss Compares
+## What Is Loss?
 
-The model outputs logits:
+Loss is a number that measures how wrong the model's prediction was.
+
+The model produces logits — a score for every possible next character. The correct next character is known (it's in the training data). **Cross-entropy loss** compares those scores against the correct answer:
+
+- If the model gave a high score to the correct character: **low loss** (good job)
+- If the model gave a low score to the correct character: **high loss** (bad guess)
+
+Loss is a single number. Lower is better. The goal of training is to make this number go down.
+
+## A Scoring Analogy
+
+Imagine a multiple-choice quiz where you must rank your confidence in each answer from 0 to 100. You spread your confidence across all choices. The scoring penalizes you more harshly the more confidence you placed on wrong answers.
+
+Cross-entropy works the same way: it rewards the model for putting high probability on the right character, and penalizes it for spreading probability to wrong ones.
+
+## What Is Backpropagation?
+
+After computing the loss, we need to answer one question:
+
+> Which parameters caused this error, and by how much?
+
+**Backpropagation** traces the loss backwards through the entire network — from the output projection, through the transformer blocks, through the embeddings — and calculates a **gradient** for every single parameter.
+
+A gradient tells us: "if you increase this weight slightly, does the loss go up or down, and by how much?"
+
+Then the optimizer uses those gradients to update the weights:
 
 ```txt
-[batch, time, vocab]
+weight = weight - learning_rate × gradient
 ```
 
-The targets contain the correct next token ids:
+A small `learning_rate` (like `0.003`) means we adjust weights gently. Too large and training becomes unstable. Too small and it learns too slowly.
 
-```txt
-[batch, time]
-```
+## The Optimizer: AdamW
 
-Cross-entropy asks:
+This project uses **AdamW** — a popular optimizer that improves on basic gradient descent by keeping track of momentum and adapting the learning rate per parameter. You don't need to understand all its math right now. The key idea is:
 
-```txt
-How much probability did the model assign to the correct next token?
-```
+> AdamW takes gradients and figures out smart weight updates.
 
-Lower loss means the model is doing better on this prediction task.
+## NaN: When Training Goes Wrong
 
-## Backpropagation
+Sometimes the loss becomes `NaN` (Not a Number). This happens when numbers overflow or explode during computation. The training loop stops immediately if this happens.
 
-Backpropagation calculates how each parameter affected the loss.
+A `NaN` loss is a sign of numerical instability — usually from a learning rate that's too high or a poorly configured model.
 
-Then the optimizer updates the weights:
+## What You Should Be Able to Explain
 
-```txt
-weights = weights - learning_rate * gradient
-```
-
-In this project, `torch.optim.AdamW` performs the update.
-
-## NaN Protection
-
-`app/train.py` stops if loss becomes NaN. NaN means numerical instability and makes training invalid.
+- What loss measures
+- Why lower loss means better predictions
+- What a gradient is
+- What backpropagation does
+- Why the learning rate matters
 
 <!-- COURSE_THREAD_START -->
 ## Course Thread

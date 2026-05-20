@@ -1,39 +1,37 @@
-# OpenAI API Layer
+# The API Layer: Talking to the Model Over HTTP
 
-The API layer exposes a small OpenAI-style chat completion endpoint.
+The model can answer questions from the command line. But what if you want to build a web app, a chatbot interface, or connect it to other tools?
 
-## Files
+That's where the **API** comes in. It wraps the model in an HTTP server that anyone can send requests to — just like the real OpenAI API.
+
+## Where This Lives
 
 ```txt
 app/api.py
 app/schemas.py
 ```
 
-## Run the API
+## Start the Server
 
-```bash
-uvicorn app.api:app --reload
-```
-
-Train first if the checkpoint does not exist yet:
+First, make sure you've trained the model:
 
 ```bash
 python app/train.py
 ```
 
-Health check:
+Then start the API:
+
+```bash
+uvicorn app.api:app --reload
+```
+
+Check it's alive:
 
 ```bash
 curl http://127.0.0.1:8000/health
 ```
 
-Chat completion:
-
-```txt
-POST /v1/chat/completions
-```
-
-## Request Example With curl
+## Send a Question
 
 ```bash
 curl -X POST http://127.0.0.1:8000/v1/chat/completions \
@@ -41,33 +39,29 @@ curl -X POST http://127.0.0.1:8000/v1/chat/completions \
   -d '{
     "model": "slice-gpt-lab",
     "messages": [
-      {
-        "role": "user",
-        "content": "What pizza do you recommend?"
-      }
+      {"role": "user", "content": "What pizza do you recommend?"}
     ],
     "temperature": 0.7,
     "max_tokens": 100
   }'
 ```
 
-## Request Body
+## What the Request Looks Like
 
 ```json
 {
   "model": "slice-gpt-lab",
   "messages": [
-    {
-      "role": "user",
-      "content": "What pizza do you recommend?"
-    }
+    {"role": "user", "content": "What pizza do you recommend?"}
   ],
   "temperature": 0.7,
   "max_tokens": 100
 }
 ```
 
-## Response Shape
+`temperature` controls how random the output is. `0.05` = more predictable, `0.9` = more creative (and chaotic).
+
+## What the Response Looks Like
 
 ```json
 {
@@ -79,7 +73,7 @@ curl -X POST http://127.0.0.1:8000/v1/chat/completions \
       "index": 0,
       "message": {
         "role": "assistant",
-        "content": "I recommend the Margherita pizza. It is simple, fresh, and the best first choice at The Slice Lab."
+        "content": "I recommend the Margherita pizza."
       },
       "finish_reason": "stop"
     }
@@ -87,9 +81,39 @@ curl -X POST http://127.0.0.1:8000/v1/chat/completions \
 }
 ```
 
-## Design Rule
+This format intentionally mirrors the OpenAI API. If you know how to use ChatGPT's API, you already know this shape.
 
-The API must stay thin. It should not contain model logic. It delegates answering to `app/infer.py`.
+## Why This Format Matters
+
+Real-world apps are built around the OpenAI API format. By following the same shape, our local model becomes a drop-in replacement — useful for testing, privacy-focused apps, or offline environments.
+
+## The API Is Thin By Design
+
+The API doesn't contain any model logic. It:
+
+1. Receives the request
+2. Validates it
+3. Calls `generate_text()` from `app/infer.py`
+4. Wraps the result in the response shape
+
+All intelligence stays in the model pipeline. The API is just a translator between HTTP and inference.
+
+## Explore the Auto-Generated Docs
+
+FastAPI generates interactive documentation automatically. While the server is running, open:
+
+```txt
+http://127.0.0.1:8000/docs
+```
+
+You can test the API directly from your browser — no `curl` needed.
+
+## What You Should Be Able to Explain
+
+- Why an API layer is useful on top of a model
+- What `temperature` and `max_tokens` control
+- Why this API format mirrors OpenAI's
+- Why the API should not contain model logic
 
 <!-- COURSE_THREAD_START -->
 ## Course Thread

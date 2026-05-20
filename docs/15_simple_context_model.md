@@ -1,154 +1,103 @@
-# Simple Context Model Lesson
+# How a Conversation Becomes Model Input
 
-This lesson explains the simplest version of a GPT-style context model used in this project.
+Before the model can do anything, it needs to read your question. But here's the catch: the model doesn't understand "questions" or "conversations." It only understands **a sequence of numbers**.
 
-## Lesson Goal
+So how does a chat conversation become a number sequence? That's what this lesson is about.
 
-After this lesson, you should be able to explain:
+## The Model Doesn't See a Chat — It Sees a Blob of Text
 
-- what a GPT-like model receives as input
-- why chat messages must be serialized
-- what tokens are
-- what a context window is
-- why long conversations must be trimmed
-- why this mini model is educational but not ChatGPT-quality
-
-## What Is a GPT-like Model?
-
-A GPT-like model is a neural network trained to predict the next token.
-
-It does not receive meaning directly. It receives a sequence:
+When you use ChatGPT, you see a nice chat interface: your message on the right, the AI's reply on the left. Behind the scenes, all of that gets squashed into a single flat string of text, with special markers to separate the parts:
 
 ```txt
-token_1, token_2, token_3, ...
-```
-
-During training, the model repeatedly answers this question:
-
-```txt
-Given the previous tokens, what token probably comes next?
-```
-
-## From Chat Messages to Context
-
-Users think in messages:
-
-```txt
-system: You are a pizzeria assistant.
-user: hi
-assistant: Hello!
-user: What pizza do you recommend?
-```
-
-The model receives one serialized text context. In this mini project, `system` is supported as a role, but normal inference keeps the prompt small and uses the same `user` to `assistant` pattern found in the dataset:
-
-```txt
-<|user|>
-hi
-<|assistant|>
-Hello!
 <|user|>
 What pizza do you recommend?
 <|assistant|>
 ```
 
-Then the tokenizer turns that text into token ids.
+The model reads this whole string and continues it. The assistant marker at the end is a hint: "now it's your turn to respond."
 
-In this project, `app/context.py` owns this serialization step.
+This formatting is handled by `app/context.py`.
 
-## Simple Graph: Chat to Tokens
+## Why the Format Has to Match the Training Data
 
-```txt
-messages
-  |
-  v
-context builder
-  |
-  v
-"<|user|>\nhi\n<|assistant|>\n"
-  |
-  v
-character tokenizer
-  |
-  v
-[12, 44, 51, 18, ...]
-  |
-  v
-MiniGPT
-  |
-  v
-next token logits
-```
-
-## What Are Tokens?
-
-Tokens are numeric units of text.
-
-In real GPT systems, tokens are often pieces of words. In this study project, tokens are characters:
+Look at `app/dataset.txt`. Every training example uses the same markers:
 
 ```txt
-"pizza" -> ["p", "i", "z", "z", "a"]
+<|user|>
+What pizza do you recommend?
+<|assistant|>
+I recommend the Margherita pizza.
+<|end|>
 ```
 
-Then each character becomes an integer id:
+The model learned that text after `<|assistant|>` is the kind of thing assistants say. So when inference puts `<|assistant|>` at the end of your prompt, the model naturally continues with assistant-style text.
+
+If training used one format and inference used a different format, the model would be confused. It's like teaching someone to respond to "Marco!" with "Polo!" — then shouting "Hey!" and wondering why they don't respond.
+
+## What Is a Token?
+
+Before the text reaches the model, the tokenizer splits it into small pieces called **tokens**. In this project, each character is one token:
 
 ```txt
-"pizza" -> [token_id_p, token_id_i, token_id_z, token_id_z, token_id_a]
+"pizza" → ['p', 'i', 'z', 'z', 'a']
 ```
 
-Character tokens are easier to study, but they make learning harder because the model must learn spelling and meaning at the same time.
+Then each character gets an integer ID from the vocabulary:
+
+```txt
+['p', 'i', 'z', 'z', 'a'] → [32, 17, 51, 51, 8]
+```
+
+Now the model can process numbers.
+
+In real GPT models, tokens are usually small word-pieces (like "piz" and "za"), not single characters. That's more efficient, but harder to understand. We use characters to make every step visible.
 
 ## What Is a Context Window?
 
-The context window is the maximum amount of previous text the model can see.
+The model can't look at infinite history. It has a memory limit called the **context window**.
 
-In this project:
-
-```txt
-block_size = 64
-```
-
-That means the model sees at most 64 character tokens at once.
-
-## Simple Graph: Context Window
+In this project, `block_size = 64` — meaning the model sees at most 64 characters at a time.
 
 ```txt
-long conversation
-  |
-  v
-[old text][middle text][latest text]
-                       ^^^^^^^^^^^^^
-                       model sees this part
+This is a long conversation that went on for a while...
+                                        ^^^^^^^^^^^^^^
+                                        model only sees this part
 ```
 
-## Classroom Exercise
+When a conversation gets too long, the oldest parts get cut off. The model always sees the most recent text.
 
-Open:
+## The Full Path: Chat → Tokens
 
 ```txt
-app/context.py
+chat messages
+    ↓
+context builder (app/context.py)
+    ↓
+"<|user|>\nWhat pizza do you recommend?\n<|assistant|>\n"
+    ↓
+tokenizer (app/tokenizer.py)
+    ↓
+[12, 44, 51, 3, 22, ...]
+    ↓
+MiniGPT (app/model.py)
+    ↓
+scores for the next character
 ```
 
-Find:
+## Try It Yourself
 
-```txt
-build_chat_context(...)
-```
+Open `app/context.py` and find the `build_chat_context` function. Then answer these questions:
 
-Then answer:
-
-1. What role markers does it use?
-2. Why does it add an assistant marker at the end?
-3. What would happen if the dataset used one format and inference used another?
+1. What markers does it use to separate the user and assistant?
+2. Why does the context always end with `<|assistant|>`?
+3. What would break if inference used `[USER]` instead of `<|user|>`?
 4. Why does a context window need a maximum size?
 
 ## Mini Summary
 
-```txt
-GPT-like chat = messages -> serialized context -> tokens -> model -> next tokens
-```
+The model doesn't understand conversations. It understands sequences of numbers. Every message, every role, every line break gets flattened into one long string, then converted to token IDs, then fed into the model.
 
-The model does not magically know the conversation structure. The structure must be represented in the text it is trained on and in the text it receives during inference.
+The structure isn't magic — it's a pattern the model learned from training data.
 
 <!-- COURSE_THREAD_START -->
 ## Course Thread

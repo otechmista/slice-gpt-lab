@@ -1,42 +1,60 @@
 # Introduction
 
-Slice GPT Lab is an educational project for learning how a tiny GPT-like model works.
+## What Are We Actually Building?
 
-The project is not trying to compete with ChatGPT. It is a study system. The purpose is to make the hidden steps visible:
+You've probably heard of ChatGPT. It's impressive — it can write essays, answer questions, explain code. But how does it work?
 
-- text becomes token ids
-- token ids become vectors
-- vectors receive position information
-- attention mixes previous context
-- the model predicts the next token
-- loss measures the prediction error
-- backpropagation updates weights
-- a checkpoint saves the learned state
-- inference generates text one token at a time
+The honest answer is: it learned to predict text. Given some words, it guesses what word comes next. It does this so well, so fast, across so much knowledge, that the result feels like thinking.
 
-## The Pizzeria Domain
+**Slice GPT Lab** is a tiny version of that same idea.
 
-The training dataset is about a fictional pizzeria called The Slice Lab.
+We're not trying to build the next ChatGPT. We're building something small enough to understand completely — a model you can train in minutes on your own computer, then watch it generate answers character by character.
 
-The dataset and public prompts are in English only.
+## The Pizzeria Setting
 
-Inference is model-only. `app/infer.py` does not contain hardcoded pizzeria answers. It formats the prompt as:
+To keep things concrete, we trained the model on a fictional pizzeria called **The Slice Lab**.
+
+The training data is a set of simple English conversations:
 
 ```txt
 <|user|>
-<question>
+What pizza do you recommend?
 <|assistant|>
+I recommend the Margherita pizza.
+<|end|>
 ```
 
-Then the trained checkpoint generates the answer character by character.
+The model reads thousands of these characters and learns to continue them. When you ask "What pizza do you recommend?", it generates the answer — not by looking up a hardcoded string, but by predicting one character at a time.
 
-A tiny character-level model trained in minutes cannot reliably behave like a full GPT model. If it produces weak text, the lesson is not that inference needs hardcoded answers. The lesson is that model quality depends on data, scale, training time, and decoding.
+## What You Should Pay Attention To
 
-## What You Should Notice
+When you run training, you'll see a number called **loss** printed each step:
 
-When you run training, the loss should generally go down. That does not mean the model became intelligent. It means the model got better at predicting characters from this tiny dataset.
+```txt
+step=10  loss=3.1204
+step=20  loss=2.6870
+step=30  loss=2.4103
+```
 
-That distinction matters. GPT-like mechanics and GPT-like product quality are different things.
+Loss going down = the model is getting better at predicting characters from this dataset.
+
+But here's the important part: **lower loss does not mean the model became smart.** It means it got better at repeating patterns from a tiny dataset. ChatGPT's quality comes from training on billions of examples for weeks. Our model trains for minutes. That gap matters.
+
+The point of this project is to understand the *mechanics*, not to produce impressive outputs.
+
+## The Invisible Steps
+
+When you send a question to ChatGPT, a lot happens in milliseconds. This project makes those steps visible:
+
+- Text becomes numbers (tokenization)
+- Numbers become vectors (embeddings)
+- Vectors pick up position information
+- Attention connects each word to earlier words
+- A score is produced for every possible next word (logits)
+- The model picks one word and repeats
+- The answer arrives character by character
+
+By the end of this course, you'll understand every one of these steps.
 
 <!-- COURSE_THREAD_START -->
 ## Course Thread

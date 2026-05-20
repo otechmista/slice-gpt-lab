@@ -1,48 +1,70 @@
-# Embeddings
+# Embeddings: Giving Numbers Meaning
 
-Embeddings convert token ids into learned vectors.
+After tokenization, we have a list of IDs like `[32, 17, 51, 51, 8]`. But these numbers are just labels. The ID `32` for `'p'` isn't mathematically related to `33` for `'q'` in any meaningful way.
 
-## File
+The model needs something richer than labels. It needs **vectors** — lists of numbers that can actually represent relationships between tokens.
+
+That's what embeddings do.
+
+## The Idea
+
+An embedding turns each token ID into a vector of learned numbers:
+
+```txt
+token ID 32 ('p') → [0.12, -0.44, 0.31, 0.09, ...]
+token ID 17 ('i') → [-0.73, 0.21, 0.88, -0.15, ...]
+```
+
+At the start of training, these vectors are random. Over time, backpropagation adjusts them until similar tokens have similar vectors, and the vectors become useful for prediction.
+
+## Where This Lives
 
 ```txt
 app/embedding.py
 ```
 
-## Why Embeddings Exist
+## The Lookup Table Analogy
 
-A token id is just a label. The number `7` is not mathematically closer to `8` in any meaningful language sense.
+Think of the embedding table as a giant spreadsheet:
 
-The embedding layer gives each token a trainable vector:
+| Token ID | Dim 1 | Dim 2 | Dim 3 | ... |
+|---|---|---|---|---|
+| 0 | 0.12 | -0.44 | 0.31 | ... |
+| 1 | -0.73 | 0.21 | 0.88 | ... |
+| 2 | 0.04 | 0.67 | -0.22 | ... |
+
+When the model sees token ID `17`, it looks up row 17 and gets that token's vector. That vector is what flows through the rest of the network.
+
+## What Shape Does This Produce?
+
+If we process a batch of text sequences:
 
 ```txt
-token id -> [0.12, -0.44, 0.31, ...]
+batch size: 16   (process 16 examples at once)
+context length: 64   (each example is 64 tokens long)
+embedding dimension: 48   (each token becomes a 48-number vector)
 ```
 
-During training, backpropagation changes these vectors so they become useful for prediction.
-
-## Shape Intuition
-
-If:
-
-- batch size is `16`
-- context length is `64`
-- embedding dimension is `48`
-
-then token embeddings have shape:
+Then the output of the embedding layer has shape:
 
 ```txt
 [16, 64, 48]
 ```
 
-That means:
+That means: 16 sequences, each with 64 tokens, each token described by 48 numbers.
 
-- 16 examples in the batch
-- 64 token positions per example
-- 48 learned values per token
+## Why Embeddings Are Trainable
 
-## Relation to GPT-like Models
+The embedding values start random. But because they're parameters, backpropagation updates them during training — just like any other weight in the network.
 
-All transformer language models start by embedding tokens. Larger models use much bigger embedding dimensions, but the idea is the same.
+After enough training, `'z'` and `'z'` will have very similar vectors (they're the same character). Related characters like `'a'` through `'z'` will develop internal patterns. The model learns what makes each character useful for predicting the next one.
+
+## What You Should Be Able to Explain
+
+- Why token IDs alone aren't enough for a neural network
+- What an embedding vector is
+- Why embedding vectors are learned, not predefined
+- What the output shape `[batch, time, embedding_dim]` means
 
 <!-- COURSE_THREAD_START -->
 ## Course Thread

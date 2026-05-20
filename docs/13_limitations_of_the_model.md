@@ -1,37 +1,52 @@
-# Limitations of the Model
+# Limitations: Why This Isn't ChatGPT
 
-This project is educational. It is not a production chatbot.
+Slice GPT Lab is not a product. It's a study project. Understanding what it *can't* do is just as important as understanding what it can.
 
-## Main Limitations
+## What This Model Can't Do
 
-- The tokenizer is character-level.
-- The dataset is tiny.
-- The model is tiny.
-- Training runs for few steps.
-- It runs on CPU-friendly settings.
-- Model output can be broken or repetitive.
-- It does not understand the world.
-- It does not call external APIs.
+- Answer reliably about topics not in the training data
+- Handle long conversations (64-character context window is tiny)
+- Use emoji or non-English characters (not in the vocabulary)
+- Produce fluent, consistent text (the model is too small)
+- Understand the world in any meaningful sense
+- Call APIs, search the web, or remember past sessions
 
-## Why It Does Not Answer Like ChatGPT
+## Why It Doesn't Sound Like ChatGPT
 
-ChatGPT-like quality comes from enormous datasets, large model capacity, long training, instruction tuning, preference optimization, safety systems, and production inference infrastructure.
+The gap isn't a bug — it's a scale difference:
 
-This project implements the core mechanics only.
+| Factor | Slice GPT Lab | ChatGPT-like models |
+|---|---|---|
+| Parameters | ~tens of thousands | billions |
+| Training data | ~4,000 characters | hundreds of billions of tokens |
+| Training time | minutes, on a laptop | weeks, on thousands of GPUs |
+| Tokens | characters | subword pieces |
+| Context window | 64 characters | thousands of tokens |
+| Instruction tuning | none | extensive |
+
+ChatGPT quality comes from an enormous amount of work at every level: data collection, filtering, model design, training infrastructure, instruction tuning (teaching the model to follow instructions), safety systems, and production-grade inference.
+
+This project implements **the core mechanics**. Those mechanics are real — the same architecture, the same training idea, the same inference loop. But quality requires scale.
 
 ## Why There Are No Hardcoded Answers
 
-`app/infer.py` uses the trained checkpoint for answers. It does not contain fixed pizzeria responses.
+It might be tempting to make `app/infer.py` check "if the user asks about pizza, return this string." But that would defeat the purpose.
 
-This makes the project more honest as a model study. If the answer is weak, the improvement should come from model-related changes:
+This is a model study. If the model's output is weak, the right response is to understand *why* and improve model-related things:
 
-- better dataset examples
-- longer training
-- larger model configuration
-- better decoding settings
-- clearer prompt format
+- More diverse training examples
+- More training steps
+- Bigger model (more layers, wider embeddings)
+- Lower temperature for more consistent output
+- Better prompt format matching the training data
 
-Use this project to study model behavior, not to judge production chatbot quality.
+Hardcoding answers would hide the model's actual behavior. We want to see it honestly.
+
+## The Real Lesson
+
+The architecture of GPT-style models is learnable. The mechanics — tokenization, embeddings, attention, loss, backpropagation, inference — are all visible in this small codebase.
+
+What you build here is a foundation. Everything in ChatGPT, Claude, Gemini, and Llama is an extension of these same ideas, just at a larger scale.
 
 <!-- COURSE_THREAD_START -->
 ## Course Thread

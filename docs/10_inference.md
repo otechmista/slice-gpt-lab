@@ -1,72 +1,95 @@
-# Inference
+# Inference: The Model Answers Your Question
 
-Inference is how the system answers prompts.
+Training is over. Weights are saved. Now you want to actually use the model.
 
-## File
+**Inference** is the process of using a trained model to generate text. No more learning happens here — just predicting, one character at a time.
+
+## Where This Lives
 
 ```txt
 app/infer.py
 ```
 
-## Model-Only Answer Path
+## How to Run It
 
-The normal command uses the trained model checkpoint:
+Ask a pizza question:
 
 ```bash
 python app/infer.py --prompt "What pizza do you recommend?"
 ```
 
-Possible output after training:
-
-```txt
-I recommend the Margherita pizza.
-```
-
-Unknown-domain prompt:
+Ask something outside the training domain:
 
 ```bash
 python app/infer.py --prompt "What is the capital of France?"
 ```
 
-The model will only answer this correctly if the dataset and training made that pattern likely. There is no hardcoded fallback in inference.
-
-## Why Output Is Not Guaranteed
-
-The tiny model is educational. It is not strong enough to reliably answer like ChatGPT.
-
-If it outputs strange text, inspect:
-
-- the dataset examples
-- training loss
-- checkpoint freshness
-- temperature
-- max token count
-- model size
-
-## Raw Conversation Path
-
-To see the full generated conversation instead of only the extracted assistant answer:
+See the full raw generated conversation:
 
 ```bash
 python app/infer.py --raw-model --prompt "What pizza do you recommend?"
 ```
 
-Both normal and raw modes use the model. The difference is output formatting:
+## The Autoregressive Loop
 
-- normal mode returns only the assistant answer
-- raw mode returns the full generated transcript
+The model generates text one character at a time. Here's the full loop:
 
-The generation path uses:
+1. Take your prompt: `"What pizza do you recommend?"`
+2. Format it as a conversation with markers:
+   ```txt
+   <|user|>
+   What pizza do you recommend?
+   <|assistant|>
+   ```
+3. Encode to token IDs
+4. Feed into the model → get logits (scores for each possible next character)
+5. Pick one character based on those scores (sampling)
+6. Add it to the sequence
+7. Go back to step 4 with the longer sequence
+8. Stop when the model generates `<|end|>` or we hit the max token limit
 
-1. checkpoint load
-2. tokenizer encode
-3. model forward pass
-4. logits
-5. sampling
-6. token append
-7. tokenizer decode
+This is called **autoregressive** generation because each step feeds on the output of the previous one.
 
-The output may be strange. That is part of the lesson: architecture alone is not enough for ChatGPT-level quality.
+## Two Output Modes
+
+**Normal mode:** returns only the assistant's answer:
+
+```txt
+I recommend the Margherita pizza.
+```
+
+**Raw mode** (`--raw-model`): returns the entire generated conversation transcript:
+
+```txt
+<|user|>
+What pizza do you recommend?
+<|assistant|>
+I recommend the Margherita pizza.
+<|end|>
+```
+
+Both modes use the same model. The difference is just which part of the output gets shown.
+
+## Why the Output Might Be Weird
+
+This model is tiny. It was trained for a few minutes on a small pizzeria dataset. If it generates strange text, that's expected and educational.
+
+Things to inspect if the output is poor:
+
+- How long did training run? (Check `max_steps` in `config.py`)
+- What was the final loss?
+- Is the checkpoint fresh?
+- Is the `temperature` setting high (more random) or low (more predictable)?
+- Does the dataset have enough examples of the kind of question you're asking?
+
+Fixing these things is how you improve an LLM — not by hardcoding answers.
+
+## What You Should Be Able to Explain
+
+- What "autoregressive" means
+- Why the model generates one character at a time
+- The difference between normal mode and raw mode
+- Why output quality depends on training data and model size
 
 <!-- COURSE_THREAD_START -->
 ## Course Thread

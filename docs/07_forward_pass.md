@@ -1,8 +1,8 @@
-# Forward Pass
+# The Forward Pass: Putting It All Together
 
-The forward pass turns token ids into logits.
+The **forward pass** is what happens when you feed text into the model and it produces a prediction. All the pieces we've seen — embeddings, position, attention, feed-forward — run in sequence.
 
-## File
+## Where This Lives
 
 ```txt
 app/model.py
@@ -10,42 +10,57 @@ app/model.py
 
 ## Step by Step
 
-The `MiniGPT` model does this:
+The `MiniGPT` model runs these steps every time it processes a sequence:
 
-1. Validate input shape `[batch, time]`.
-2. Convert token ids into token embeddings.
-3. Add positional embeddings.
-4. Run transformer blocks.
-5. Apply final layer normalization.
-6. Project hidden states into vocabulary logits.
+### 1. Token Embedding
+Each token ID is looked up in the embedding table and replaced with a learned vector.
+
+```txt
+[32, 17, 51] → [[0.12, -0.44, ...], [-0.73, 0.21, ...], [0.04, 0.67, ...]]
+```
+
+### 2. Positional Embedding
+Position vectors are added to token vectors. This tells the model where each token is in the sequence.
+
+```txt
+token vector + position vector → combined vector
+```
+
+### 3. Transformer Blocks
+The combined vectors pass through each block (attention → feed-forward). Each block refines the representation.
+
+### 4. Final Layer Normalization
+The output is normalized one more time for stability.
+
+### 5. Output Projection
+The final vectors are projected from `embedding_dim` down to `vocab_size`. This gives one score per possible next character — the **logits**.
 
 ## Shape Example
 
-Suppose:
-
-- batch size: `16`
-- context length: `64`
-- vocabulary size: `54`
-
-Input:
+Let's trace the shapes through a real example:
 
 ```txt
-[16, 64]
+Input token IDs:          [16, 64]     (16 examples, 64 tokens each)
+After token embedding:    [16, 64, 48] (each token → 48-dim vector)
+After position embedding: [16, 64, 48] (same shape, but position added)
+After transformer blocks: [16, 64, 48] (same shape, information refined)
+After output projection:  [16, 64, 54] (each token → 54 scores, one per character)
 ```
 
-Output logits:
+That final `[16, 64, 54]` tensor holds **one prediction per position per example**. At position 10, the model's guess about what character comes at position 11 is the scores at `[:, 10, :]`.
 
-```txt
-[16, 64, 54]
-```
+## What `block_size` Limits
 
-Each position receives one score for every possible next character.
+`block_size` is the maximum sequence length the model accepts. If you feed in a sequence longer than `block_size`, the model rejects it.
 
-## Why `block_size` Matters
+During inference, when the generated sequence grows longer than `block_size`, the oldest tokens are dropped so we always pass in a valid-length window.
 
-`block_size` is the context window. If input is longer than `block_size`, the model rejects it.
+## What You Should Be Able to Explain
 
-During raw generation, inference keeps only the latest `block_size` tokens.
+- The five steps of the forward pass in order
+- What logits are and why there are `vocab_size` of them per position
+- What the output shape `[batch, time, vocab_size]` means
+- Why `block_size` matters
 
 <!-- COURSE_THREAD_START -->
 ## Course Thread
