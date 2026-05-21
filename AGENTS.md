@@ -72,8 +72,9 @@ Regras:
 | `docs/` | Documentação educacional | Explica conceitos, fluxo e limitações do modelo |
 | `docs/README.md` | Índice e rota de estudo | Capa do curso, promessa didática e links para todos os documentos |
 | `docs/contexts/` | Views de contexto, container, componente e código | Fonte de decisão arquitetural por fase |
+| `checkpoints/llm_lessons.pt` | Checkpoint treinado do modelo | Artefato pequeno de estudo; deve entrar no versionamento para a API funcionar após clone |
 | `requirements.txt` | Dependências Python | Não adicionar dependências fora da lista aprovada sem decisão |
-| `.gitignore` | Arquivos ignorados | Checkpoints `.pt` e artefatos de runtime não devem ser versionados |
+| `.gitignore` | Arquivos ignorados | Não deve ignorar `checkpoints/llm_lessons.pt`; outros artefatos temporários continuam fora do versionamento |
 
 ---
 
@@ -255,6 +256,7 @@ Cobertura esperada:
 | Manter código em `app/` | Regra explícita da code view | 2026-05-18 / scaffolding inicial |
 | Documentar o projeto como aula arquivo por arquivo | O projeto é educacional e deve explicar como o modelo funciona | 2026-05-18 / documentação de estudo |
 | Nomear o projeto como LLM Lessons | Nome mais autoral e didático; mantém o domínio fictício Slice Pizza e comunica laboratório de estudo | 2026-05-18 / identidade do projeto |
+| Versionar `checkpoints/llm_lessons.pt` | O site/API de estudo deve funcionar após clone sem exigir treino local antes do primeiro teste | 2026-05-21 / decisão de distribuição do modelo gerado |
 
 ---
 

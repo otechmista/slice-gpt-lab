@@ -22,7 +22,4 @@ env/
 Thumbs.db
 
 # Runtime artifacts
-*.pt
-*.pth
-checkpoints/
 logs/
