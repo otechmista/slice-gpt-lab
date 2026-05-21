@@ -21,8 +21,8 @@ permissions:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
-  DEPLOY_HOST: 62.171.156.26
-  DEPLOY_PORT: 8000
+  DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
+  DEPLOY_PORT: ${{ vars.DEPLOY_PORT }}
 
 jobs:
   test:
@@ -81,30 +81,33 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Prepare SSH key
-        env:
-          K8S_SSH_PRIVATE_KEY: ${{ secrets.K8S_SSH_PRIVATE_KEY }}
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+
+      - name: Prepare SSH known hosts
         run: |
-          test -n "$K8S_SSH_PRIVATE_KEY"
           mkdir -p ~/.ssh
-          printf "%s" "$K8S_SSH_PRIVATE_KEY" > ~/.ssh/k8s_deploy_key
-          chmod 600 ~/.ssh/k8s_deploy_key
           ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
 
       - name: Render Kubernetes manifest
         env:
           IMAGE: ${{ needs.build-and-push.outputs.image }}
         run: |
-          sed "s|ghcr.io/otechmista/mini-gpt-study:latest|$IMAGE|g" \
+          sed \
+            -e "s|ghcr.io/otechmista/mini-gpt-study:latest|$IMAGE|g" \
+            -e "s|DEPLOY_HOST_PLACEHOLDER|$DEPLOY_HOST|g" \
+            -e "s|DEPLOY_PORT_PLACEHOLDER|$DEPLOY_PORT|g" \
             k8s/llm-lessons-api.yaml > /tmp/llm-lessons-api.yaml
 
       - name: Apply manifest on Kubernetes host
         env:
           K8S_SSH_USER: ${{ secrets.K8S_SSH_USER }}
+          K8S_SSH_PASSWORD: ${{ secrets.K8S_SSH_PASSWORD }}
         run: |
           test -n "$K8S_SSH_USER"
-          scp -i ~/.ssh/k8s_deploy_key /tmp/llm-lessons-api.yaml "$K8S_SSH_USER@$DEPLOY_HOST:/tmp/llm-lessons-api.yaml"
-          ssh -i ~/.ssh/k8s_deploy_key "$K8S_SSH_USER@$DEPLOY_HOST" \
+          test -n "$K8S_SSH_PASSWORD"
+          sshpass -p "$K8S_SSH_PASSWORD" scp /tmp/llm-lessons-api.yaml "$K8S_SSH_USER@$DEPLOY_HOST:/tmp/llm-lessons-api.yaml"
+          sshpass -p "$K8S_SSH_PASSWORD" ssh "$K8S_SSH_USER@$DEPLOY_HOST" \
             "kubectl apply -f /tmp/llm-lessons-api.yaml && kubectl -n llm-lessons rollout status deployment/llm-lessons-api --timeout=180s"
 
       - name: Print deployed URL

@@ -2962,6 +2962,3978 @@ Assistant: Slice Pizza is a fictional pizzeria created for a study project. It h
 
 
 
+# Templated Conversations
+
+Customer: hi
+Assistant: Hello! I am the Slice Pizza assistant. What can I help you with?
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add a coke
+Assistant: Your order has one Margherita pizza and one Coke. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Coke. Total is $38.00.
+
+Customer: thanks
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hi
+Assistant: Hello! I am the Slice Pizza assistant. What can I help you with?
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add a sprite
+Assistant: Your order has one Pepperoni pizza and one Sprite. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Sprite. Total is $46.00.
+
+Customer: thank you
+Assistant: You are welcome! Enjoy your Slice Pizza order.
+
+
+Customer: hi
+Assistant: Hello! I am the Slice Pizza assistant. What can I help you with?
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add a guarana
+Assistant: Your order has one Four Cheese pizza and one Guarana. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Guarana. Total is $44.00.
+
+Customer: great, thanks
+Assistant: You are welcome! Your order is confirmed. Enjoy!
+
+
+Customer: hi
+Assistant: Hello! I am the Slice Pizza assistant. What can I help you with?
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Chicken Catupiry pizza and one Sprite. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Sprite. Total is $43.00.
+
+Customer: perfect, thanks
+Assistant: You are welcome! Enjoy your pizza.
+
+
+Customer: hi
+Assistant: Hello! I am the Slice Pizza assistant. What can I help you with?
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add one coke please
+Assistant: Your order has one Portuguese pizza and one Coke. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Coke. Total is $42.00.
+
+Customer: awesome
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: hi
+Assistant: Hello! I am the Slice Pizza assistant. What can I help you with?
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Vegetarian pizza and one Guarana. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Guarana. Total is $42.00.
+
+Customer: all good, bye
+Assistant: Goodbye! Thank you for ordering at Slice Pizza.
+
+
+Customer: hi
+Assistant: Hello! I am the Slice Pizza assistant. What can I help you with?
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add a coke
+Assistant: Your order has one Mushroom pizza and one Coke. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Coke. Total is $45.00.
+
+Customer: confirmed, thank you
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hi
+Assistant: Hello! I am the Slice Pizza assistant. What can I help you with?
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add a sprite
+Assistant: Your order has one Chocolate pizza and one Sprite. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Sprite. Total is $41.00.
+
+Customer: thx
+Assistant: You are welcome! Ask me anytime about Slice Pizza.
+
+
+Customer: hello
+Assistant: Hello! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add a sprite
+Assistant: Your order has one Margherita pizza and one Sprite. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Sprite. Total is $38.00.
+
+Customer: thank you
+Assistant: You are welcome! Enjoy your Slice Pizza order.
+
+
+Customer: hello
+Assistant: Hello! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add a guarana
+Assistant: Your order has one Pepperoni pizza and one Guarana. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Guarana. Total is $46.00.
+
+Customer: great, thanks
+Assistant: You are welcome! Your order is confirmed. Enjoy!
+
+
+Customer: hello
+Assistant: Hello! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Four Cheese pizza and one Sprite. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Sprite. Total is $44.00.
+
+Customer: perfect, thanks
+Assistant: You are welcome! Enjoy your pizza.
+
+
+Customer: hello
+Assistant: Hello! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add one coke please
+Assistant: Your order has one Chicken Catupiry pizza and one Coke. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Coke. Total is $43.00.
+
+Customer: awesome
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: hello
+Assistant: Hello! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Portuguese pizza and one Guarana. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Guarana. Total is $42.00.
+
+Customer: all good, bye
+Assistant: Goodbye! Thank you for ordering at Slice Pizza.
+
+
+Customer: hello
+Assistant: Hello! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add a coke
+Assistant: Your order has one Vegetarian pizza and one Coke. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Coke. Total is $42.00.
+
+Customer: confirmed, thank you
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hello
+Assistant: Hello! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add a sprite
+Assistant: Your order has one Mushroom pizza and one Sprite. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Sprite. Total is $45.00.
+
+Customer: thx
+Assistant: You are welcome! Ask me anytime about Slice Pizza.
+
+
+Customer: hello
+Assistant: Hello! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add a guarana
+Assistant: Your order has one Chocolate pizza and one Guarana. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Guarana. Total is $41.00.
+
+Customer: ty
+Assistant: You are welcome! Enjoy your order.
+
+
+Customer: hey
+Assistant: Hey! Welcome to Slice Pizza. What would you like?
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add a guarana
+Assistant: Your order has one Margherita pizza and one Guarana. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Guarana. Total is $38.00.
+
+Customer: great, thanks
+Assistant: You are welcome! Your order is confirmed. Enjoy!
+
+
+Customer: hey
+Assistant: Hey! Welcome to Slice Pizza. What would you like?
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Pepperoni pizza and one Sprite. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Sprite. Total is $46.00.
+
+Customer: perfect, thanks
+Assistant: You are welcome! Enjoy your pizza.
+
+
+Customer: hey
+Assistant: Hey! Welcome to Slice Pizza. What would you like?
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add one coke please
+Assistant: Your order has one Four Cheese pizza and one Coke. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Coke. Total is $44.00.
+
+Customer: awesome
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: hey
+Assistant: Hey! Welcome to Slice Pizza. What would you like?
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Chicken Catupiry pizza and one Guarana. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Guarana. Total is $43.00.
+
+Customer: all good, bye
+Assistant: Goodbye! Thank you for ordering at Slice Pizza.
+
+
+Customer: hey
+Assistant: Hey! Welcome to Slice Pizza. What would you like?
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add a coke
+Assistant: Your order has one Portuguese pizza and one Coke. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Coke. Total is $42.00.
+
+Customer: confirmed, thank you
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hey
+Assistant: Hey! Welcome to Slice Pizza. What would you like?
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add a sprite
+Assistant: Your order has one Vegetarian pizza and one Sprite. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Sprite. Total is $42.00.
+
+Customer: thx
+Assistant: You are welcome! Ask me anytime about Slice Pizza.
+
+
+Customer: hey
+Assistant: Hey! Welcome to Slice Pizza. What would you like?
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add a guarana
+Assistant: Your order has one Mushroom pizza and one Guarana. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Guarana. Total is $45.00.
+
+Customer: ty
+Assistant: You are welcome! Enjoy your order.
+
+
+Customer: hey
+Assistant: Hey! Welcome to Slice Pizza. What would you like?
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Chocolate pizza and one Sprite. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Sprite. Total is $41.00.
+
+Customer: cheers
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: good morning
+Assistant: Good morning! How can I help you at Slice Pizza?
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Margherita pizza and one Sprite. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Sprite. Total is $38.00.
+
+Customer: perfect, thanks
+Assistant: You are welcome! Enjoy your pizza.
+
+
+Customer: good morning
+Assistant: Good morning! How can I help you at Slice Pizza?
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add one coke please
+Assistant: Your order has one Pepperoni pizza and one Coke. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Coke. Total is $46.00.
+
+Customer: awesome
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: good morning
+Assistant: Good morning! How can I help you at Slice Pizza?
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Four Cheese pizza and one Guarana. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Guarana. Total is $44.00.
+
+Customer: all good, bye
+Assistant: Goodbye! Thank you for ordering at Slice Pizza.
+
+
+Customer: good morning
+Assistant: Good morning! How can I help you at Slice Pizza?
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add a coke
+Assistant: Your order has one Chicken Catupiry pizza and one Coke. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Coke. Total is $43.00.
+
+Customer: confirmed, thank you
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: good morning
+Assistant: Good morning! How can I help you at Slice Pizza?
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add a sprite
+Assistant: Your order has one Portuguese pizza and one Sprite. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Sprite. Total is $42.00.
+
+Customer: thx
+Assistant: You are welcome! Ask me anytime about Slice Pizza.
+
+
+Customer: good morning
+Assistant: Good morning! How can I help you at Slice Pizza?
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add a guarana
+Assistant: Your order has one Vegetarian pizza and one Guarana. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Guarana. Total is $42.00.
+
+Customer: ty
+Assistant: You are welcome! Enjoy your order.
+
+
+Customer: good morning
+Assistant: Good morning! How can I help you at Slice Pizza?
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Mushroom pizza and one Sprite. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Sprite. Total is $45.00.
+
+Customer: cheers
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: good morning
+Assistant: Good morning! How can I help you at Slice Pizza?
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add one coke please
+Assistant: Your order has one Chocolate pizza and one Coke. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Coke. Total is $41.00.
+
+Customer: that is all
+Assistant: Thank you! Enjoy your Slice Pizza meal.
+
+
+Customer: good afternoon
+Assistant: Good afternoon! What can I help you with at Slice Pizza?
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add one coke please
+Assistant: Your order has one Margherita pizza and one Coke. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Coke. Total is $38.00.
+
+Customer: awesome
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: good afternoon
+Assistant: Good afternoon! What can I help you with at Slice Pizza?
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Pepperoni pizza and one Guarana. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Guarana. Total is $46.00.
+
+Customer: all good, bye
+Assistant: Goodbye! Thank you for ordering at Slice Pizza.
+
+
+Customer: good afternoon
+Assistant: Good afternoon! What can I help you with at Slice Pizza?
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add a coke
+Assistant: Your order has one Four Cheese pizza and one Coke. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Coke. Total is $44.00.
+
+Customer: confirmed, thank you
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: good afternoon
+Assistant: Good afternoon! What can I help you with at Slice Pizza?
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add a sprite
+Assistant: Your order has one Chicken Catupiry pizza and one Sprite. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Sprite. Total is $43.00.
+
+Customer: thx
+Assistant: You are welcome! Ask me anytime about Slice Pizza.
+
+
+Customer: good afternoon
+Assistant: Good afternoon! What can I help you with at Slice Pizza?
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add a guarana
+Assistant: Your order has one Portuguese pizza and one Guarana. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Guarana. Total is $42.00.
+
+Customer: ty
+Assistant: You are welcome! Enjoy your order.
+
+
+Customer: good afternoon
+Assistant: Good afternoon! What can I help you with at Slice Pizza?
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Vegetarian pizza and one Sprite. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Sprite. Total is $42.00.
+
+Customer: cheers
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: good afternoon
+Assistant: Good afternoon! What can I help you with at Slice Pizza?
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add one coke please
+Assistant: Your order has one Mushroom pizza and one Coke. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Coke. Total is $45.00.
+
+Customer: that is all
+Assistant: Thank you! Enjoy your Slice Pizza meal.
+
+
+Customer: good afternoon
+Assistant: Good afternoon! What can I help you with at Slice Pizza?
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Chocolate pizza and one Guarana. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Guarana. Total is $41.00.
+
+Customer: nothing else
+Assistant: Thank you for ordering at Slice Pizza. Enjoy!
+
+
+Customer: good evening
+Assistant: Good evening! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Margherita pizza and one Guarana. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Guarana. Total is $38.00.
+
+Customer: all good, bye
+Assistant: Goodbye! Thank you for ordering at Slice Pizza.
+
+
+Customer: good evening
+Assistant: Good evening! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add a coke
+Assistant: Your order has one Pepperoni pizza and one Coke. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Coke. Total is $46.00.
+
+Customer: confirmed, thank you
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: good evening
+Assistant: Good evening! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add a sprite
+Assistant: Your order has one Four Cheese pizza and one Sprite. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Sprite. Total is $44.00.
+
+Customer: thx
+Assistant: You are welcome! Ask me anytime about Slice Pizza.
+
+
+Customer: good evening
+Assistant: Good evening! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add a guarana
+Assistant: Your order has one Chicken Catupiry pizza and one Guarana. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Guarana. Total is $43.00.
+
+Customer: ty
+Assistant: You are welcome! Enjoy your order.
+
+
+Customer: good evening
+Assistant: Good evening! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Portuguese pizza and one Sprite. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Sprite. Total is $42.00.
+
+Customer: cheers
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: good evening
+Assistant: Good evening! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add one coke please
+Assistant: Your order has one Vegetarian pizza and one Coke. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Coke. Total is $42.00.
+
+Customer: that is all
+Assistant: Thank you! Enjoy your Slice Pizza meal.
+
+
+Customer: good evening
+Assistant: Good evening! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Mushroom pizza and one Guarana. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Guarana. Total is $45.00.
+
+Customer: nothing else
+Assistant: Thank you for ordering at Slice Pizza. Enjoy!
+
+
+Customer: good evening
+Assistant: Good evening! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add a coke
+Assistant: Your order has one Chocolate pizza and one Coke. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Coke. Total is $41.00.
+
+Customer: i am done
+Assistant: Thank you! Your order is ready. Enjoy your Slice Pizza meal.
+
+
+Customer: hi there
+Assistant: Hi there! What can I help you with today at Slice Pizza?
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add a coke
+Assistant: Your order has one Margherita pizza and one Coke. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Coke. Total is $38.00.
+
+Customer: confirmed, thank you
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hi there
+Assistant: Hi there! What can I help you with today at Slice Pizza?
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add a sprite
+Assistant: Your order has one Pepperoni pizza and one Sprite. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Sprite. Total is $46.00.
+
+Customer: thx
+Assistant: You are welcome! Ask me anytime about Slice Pizza.
+
+
+Customer: hi there
+Assistant: Hi there! What can I help you with today at Slice Pizza?
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add a guarana
+Assistant: Your order has one Four Cheese pizza and one Guarana. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Guarana. Total is $44.00.
+
+Customer: ty
+Assistant: You are welcome! Enjoy your order.
+
+
+Customer: hi there
+Assistant: Hi there! What can I help you with today at Slice Pizza?
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Chicken Catupiry pizza and one Sprite. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Sprite. Total is $43.00.
+
+Customer: cheers
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: hi there
+Assistant: Hi there! What can I help you with today at Slice Pizza?
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add one coke please
+Assistant: Your order has one Portuguese pizza and one Coke. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Coke. Total is $42.00.
+
+Customer: that is all
+Assistant: Thank you! Enjoy your Slice Pizza meal.
+
+
+Customer: hi there
+Assistant: Hi there! What can I help you with today at Slice Pizza?
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Vegetarian pizza and one Guarana. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Guarana. Total is $42.00.
+
+Customer: nothing else
+Assistant: Thank you for ordering at Slice Pizza. Enjoy!
+
+
+Customer: hi there
+Assistant: Hi there! What can I help you with today at Slice Pizza?
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add a coke
+Assistant: Your order has one Mushroom pizza and one Coke. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Coke. Total is $45.00.
+
+Customer: i am done
+Assistant: Thank you! Your order is ready. Enjoy your Slice Pizza meal.
+
+
+Customer: hi there
+Assistant: Hi there! What can I help you with today at Slice Pizza?
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add a sprite
+Assistant: Your order has one Chocolate pizza and one Sprite. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Sprite. Total is $41.00.
+
+Customer: see you
+Assistant: See you! Come back to Slice Pizza anytime.
+
+
+Customer: hello there
+Assistant: Hello! I am the Slice Pizza assistant. Ask me about the menu.
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add a sprite
+Assistant: Your order has one Margherita pizza and one Sprite. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Sprite. Total is $38.00.
+
+Customer: thx
+Assistant: You are welcome! Ask me anytime about Slice Pizza.
+
+
+Customer: hello there
+Assistant: Hello! I am the Slice Pizza assistant. Ask me about the menu.
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add a guarana
+Assistant: Your order has one Pepperoni pizza and one Guarana. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Guarana. Total is $46.00.
+
+Customer: ty
+Assistant: You are welcome! Enjoy your order.
+
+
+Customer: hello there
+Assistant: Hello! I am the Slice Pizza assistant. Ask me about the menu.
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Four Cheese pizza and one Sprite. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Sprite. Total is $44.00.
+
+Customer: cheers
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: hello there
+Assistant: Hello! I am the Slice Pizza assistant. Ask me about the menu.
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add one coke please
+Assistant: Your order has one Chicken Catupiry pizza and one Coke. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Coke. Total is $43.00.
+
+Customer: that is all
+Assistant: Thank you! Enjoy your Slice Pizza meal.
+
+
+Customer: hello there
+Assistant: Hello! I am the Slice Pizza assistant. Ask me about the menu.
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Portuguese pizza and one Guarana. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Guarana. Total is $42.00.
+
+Customer: nothing else
+Assistant: Thank you for ordering at Slice Pizza. Enjoy!
+
+
+Customer: hello there
+Assistant: Hello! I am the Slice Pizza assistant. Ask me about the menu.
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add a coke
+Assistant: Your order has one Vegetarian pizza and one Coke. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Coke. Total is $42.00.
+
+Customer: i am done
+Assistant: Thank you! Your order is ready. Enjoy your Slice Pizza meal.
+
+
+Customer: hello there
+Assistant: Hello! I am the Slice Pizza assistant. Ask me about the menu.
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add a sprite
+Assistant: Your order has one Mushroom pizza and one Sprite. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Sprite. Total is $45.00.
+
+Customer: see you
+Assistant: See you! Come back to Slice Pizza anytime.
+
+
+Customer: hello there
+Assistant: Hello! I am the Slice Pizza assistant. Ask me about the menu.
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add a guarana
+Assistant: Your order has one Chocolate pizza and one Guarana. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Guarana. Total is $41.00.
+
+Customer: goodbye
+Assistant: Goodbye! Thank you for visiting Slice Pizza.
+
+
+Customer: hey there
+Assistant: Hey! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add a guarana
+Assistant: Your order has one Margherita pizza and one Guarana. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Guarana. Total is $38.00.
+
+Customer: ty
+Assistant: You are welcome! Enjoy your order.
+
+
+Customer: hey there
+Assistant: Hey! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Pepperoni pizza and one Sprite. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Sprite. Total is $46.00.
+
+Customer: cheers
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: hey there
+Assistant: Hey! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add one coke please
+Assistant: Your order has one Four Cheese pizza and one Coke. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Coke. Total is $44.00.
+
+Customer: that is all
+Assistant: Thank you! Enjoy your Slice Pizza meal.
+
+
+Customer: hey there
+Assistant: Hey! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Chicken Catupiry pizza and one Guarana. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Guarana. Total is $43.00.
+
+Customer: nothing else
+Assistant: Thank you for ordering at Slice Pizza. Enjoy!
+
+
+Customer: hey there
+Assistant: Hey! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add a coke
+Assistant: Your order has one Portuguese pizza and one Coke. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Coke. Total is $42.00.
+
+Customer: i am done
+Assistant: Thank you! Your order is ready. Enjoy your Slice Pizza meal.
+
+
+Customer: hey there
+Assistant: Hey! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add a sprite
+Assistant: Your order has one Vegetarian pizza and one Sprite. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Sprite. Total is $42.00.
+
+Customer: see you
+Assistant: See you! Come back to Slice Pizza anytime.
+
+
+Customer: hey there
+Assistant: Hey! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add a guarana
+Assistant: Your order has one Mushroom pizza and one Guarana. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Guarana. Total is $45.00.
+
+Customer: goodbye
+Assistant: Goodbye! Thank you for visiting Slice Pizza.
+
+
+Customer: hey there
+Assistant: Hey! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Chocolate pizza and one Sprite. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Sprite. Total is $41.00.
+
+Customer: take care
+Assistant: Take care! Enjoy your pizza.
+
+
+Customer: howdy
+Assistant: Hello! Welcome to Slice Pizza. What can I get for you?
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Margherita pizza and one Sprite. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Sprite. Total is $38.00.
+
+Customer: cheers
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: howdy
+Assistant: Hello! Welcome to Slice Pizza. What can I get for you?
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add one coke please
+Assistant: Your order has one Pepperoni pizza and one Coke. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Coke. Total is $46.00.
+
+Customer: that is all
+Assistant: Thank you! Enjoy your Slice Pizza meal.
+
+
+Customer: howdy
+Assistant: Hello! Welcome to Slice Pizza. What can I get for you?
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Four Cheese pizza and one Guarana. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Guarana. Total is $44.00.
+
+Customer: nothing else
+Assistant: Thank you for ordering at Slice Pizza. Enjoy!
+
+
+Customer: howdy
+Assistant: Hello! Welcome to Slice Pizza. What can I get for you?
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add a coke
+Assistant: Your order has one Chicken Catupiry pizza and one Coke. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Coke. Total is $43.00.
+
+Customer: i am done
+Assistant: Thank you! Your order is ready. Enjoy your Slice Pizza meal.
+
+
+Customer: howdy
+Assistant: Hello! Welcome to Slice Pizza. What can I get for you?
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add a sprite
+Assistant: Your order has one Portuguese pizza and one Sprite. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Sprite. Total is $42.00.
+
+Customer: see you
+Assistant: See you! Come back to Slice Pizza anytime.
+
+
+Customer: howdy
+Assistant: Hello! Welcome to Slice Pizza. What can I get for you?
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add a guarana
+Assistant: Your order has one Vegetarian pizza and one Guarana. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Guarana. Total is $42.00.
+
+Customer: goodbye
+Assistant: Goodbye! Thank you for visiting Slice Pizza.
+
+
+Customer: howdy
+Assistant: Hello! Welcome to Slice Pizza. What can I get for you?
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Mushroom pizza and one Sprite. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Sprite. Total is $45.00.
+
+Customer: take care
+Assistant: Take care! Enjoy your pizza.
+
+
+Customer: howdy
+Assistant: Hello! Welcome to Slice Pizza. What can I get for you?
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add one coke please
+Assistant: Your order has one Chocolate pizza and one Coke. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Coke. Total is $41.00.
+
+Customer: thanks
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: greetings
+Assistant: Greetings! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add one coke please
+Assistant: Your order has one Margherita pizza and one Coke. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Coke. Total is $38.00.
+
+Customer: that is all
+Assistant: Thank you! Enjoy your Slice Pizza meal.
+
+
+Customer: greetings
+Assistant: Greetings! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Pepperoni pizza and one Guarana. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Guarana. Total is $46.00.
+
+Customer: nothing else
+Assistant: Thank you for ordering at Slice Pizza. Enjoy!
+
+
+Customer: greetings
+Assistant: Greetings! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add a coke
+Assistant: Your order has one Four Cheese pizza and one Coke. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Coke. Total is $44.00.
+
+Customer: i am done
+Assistant: Thank you! Your order is ready. Enjoy your Slice Pizza meal.
+
+
+Customer: greetings
+Assistant: Greetings! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add a sprite
+Assistant: Your order has one Chicken Catupiry pizza and one Sprite. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Sprite. Total is $43.00.
+
+Customer: see you
+Assistant: See you! Come back to Slice Pizza anytime.
+
+
+Customer: greetings
+Assistant: Greetings! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add a guarana
+Assistant: Your order has one Portuguese pizza and one Guarana. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Guarana. Total is $42.00.
+
+Customer: goodbye
+Assistant: Goodbye! Thank you for visiting Slice Pizza.
+
+
+Customer: greetings
+Assistant: Greetings! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Vegetarian pizza and one Sprite. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Sprite. Total is $42.00.
+
+Customer: take care
+Assistant: Take care! Enjoy your pizza.
+
+
+Customer: greetings
+Assistant: Greetings! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add one coke please
+Assistant: Your order has one Mushroom pizza and one Coke. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Coke. Total is $45.00.
+
+Customer: thanks
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: greetings
+Assistant: Greetings! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Chocolate pizza and one Guarana. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Guarana. Total is $41.00.
+
+Customer: thank you
+Assistant: You are welcome! Enjoy your Slice Pizza order.
+
+
+Customer: yo
+Assistant: Hello! Welcome to Slice Pizza. What would you like to order?
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Margherita pizza and one Guarana. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Guarana. Total is $38.00.
+
+Customer: nothing else
+Assistant: Thank you for ordering at Slice Pizza. Enjoy!
+
+
+Customer: yo
+Assistant: Hello! Welcome to Slice Pizza. What would you like to order?
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add a coke
+Assistant: Your order has one Pepperoni pizza and one Coke. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Coke. Total is $46.00.
+
+Customer: i am done
+Assistant: Thank you! Your order is ready. Enjoy your Slice Pizza meal.
+
+
+Customer: yo
+Assistant: Hello! Welcome to Slice Pizza. What would you like to order?
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add a sprite
+Assistant: Your order has one Four Cheese pizza and one Sprite. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Sprite. Total is $44.00.
+
+Customer: see you
+Assistant: See you! Come back to Slice Pizza anytime.
+
+
+Customer: yo
+Assistant: Hello! Welcome to Slice Pizza. What would you like to order?
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add a guarana
+Assistant: Your order has one Chicken Catupiry pizza and one Guarana. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Guarana. Total is $43.00.
+
+Customer: goodbye
+Assistant: Goodbye! Thank you for visiting Slice Pizza.
+
+
+Customer: yo
+Assistant: Hello! Welcome to Slice Pizza. What would you like to order?
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Portuguese pizza and one Sprite. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Sprite. Total is $42.00.
+
+Customer: take care
+Assistant: Take care! Enjoy your pizza.
+
+
+Customer: yo
+Assistant: Hello! Welcome to Slice Pizza. What would you like to order?
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add one coke please
+Assistant: Your order has one Vegetarian pizza and one Coke. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Coke. Total is $42.00.
+
+Customer: thanks
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: yo
+Assistant: Hello! Welcome to Slice Pizza. What would you like to order?
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Mushroom pizza and one Guarana. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Guarana. Total is $45.00.
+
+Customer: thank you
+Assistant: You are welcome! Enjoy your Slice Pizza order.
+
+
+Customer: yo
+Assistant: Hello! Welcome to Slice Pizza. What would you like to order?
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add a coke
+Assistant: Your order has one Chocolate pizza and one Coke. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Coke. Total is $41.00.
+
+Customer: great, thanks
+Assistant: You are welcome! Your order is confirmed. Enjoy!
+
+
+Customer: hiya
+Assistant: Hi! Welcome to Slice Pizza. What can I help you with?
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add a coke
+Assistant: Your order has one Margherita pizza and one Coke. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Coke. Total is $38.00.
+
+Customer: i am done
+Assistant: Thank you! Your order is ready. Enjoy your Slice Pizza meal.
+
+
+Customer: hiya
+Assistant: Hi! Welcome to Slice Pizza. What can I help you with?
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add a sprite
+Assistant: Your order has one Pepperoni pizza and one Sprite. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Sprite. Total is $46.00.
+
+Customer: see you
+Assistant: See you! Come back to Slice Pizza anytime.
+
+
+Customer: hiya
+Assistant: Hi! Welcome to Slice Pizza. What can I help you with?
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add a guarana
+Assistant: Your order has one Four Cheese pizza and one Guarana. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Guarana. Total is $44.00.
+
+Customer: goodbye
+Assistant: Goodbye! Thank you for visiting Slice Pizza.
+
+
+Customer: hiya
+Assistant: Hi! Welcome to Slice Pizza. What can I help you with?
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Chicken Catupiry pizza and one Sprite. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Sprite. Total is $43.00.
+
+Customer: take care
+Assistant: Take care! Enjoy your pizza.
+
+
+Customer: hiya
+Assistant: Hi! Welcome to Slice Pizza. What can I help you with?
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add one coke please
+Assistant: Your order has one Portuguese pizza and one Coke. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Coke. Total is $42.00.
+
+Customer: thanks
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hiya
+Assistant: Hi! Welcome to Slice Pizza. What can I help you with?
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Vegetarian pizza and one Guarana. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Guarana. Total is $42.00.
+
+Customer: thank you
+Assistant: You are welcome! Enjoy your Slice Pizza order.
+
+
+Customer: hiya
+Assistant: Hi! Welcome to Slice Pizza. What can I help you with?
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add a coke
+Assistant: Your order has one Mushroom pizza and one Coke. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Coke. Total is $45.00.
+
+Customer: great, thanks
+Assistant: You are welcome! Your order is confirmed. Enjoy!
+
+
+Customer: hiya
+Assistant: Hi! Welcome to Slice Pizza. What can I help you with?
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add a sprite
+Assistant: Your order has one Chocolate pizza and one Sprite. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Sprite. Total is $41.00.
+
+Customer: perfect, thanks
+Assistant: You are welcome! Enjoy your pizza.
+
+
+Customer: sup
+Assistant: Hello! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add a sprite
+Assistant: Your order has one Margherita pizza and one Sprite. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Sprite. Total is $38.00.
+
+Customer: see you
+Assistant: See you! Come back to Slice Pizza anytime.
+
+
+Customer: sup
+Assistant: Hello! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add a guarana
+Assistant: Your order has one Pepperoni pizza and one Guarana. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Guarana. Total is $46.00.
+
+Customer: goodbye
+Assistant: Goodbye! Thank you for visiting Slice Pizza.
+
+
+Customer: sup
+Assistant: Hello! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Four Cheese pizza and one Sprite. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Sprite. Total is $44.00.
+
+Customer: take care
+Assistant: Take care! Enjoy your pizza.
+
+
+Customer: sup
+Assistant: Hello! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add one coke please
+Assistant: Your order has one Chicken Catupiry pizza and one Coke. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Coke. Total is $43.00.
+
+Customer: thanks
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: sup
+Assistant: Hello! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Portuguese pizza and one Guarana. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Guarana. Total is $42.00.
+
+Customer: thank you
+Assistant: You are welcome! Enjoy your Slice Pizza order.
+
+
+Customer: sup
+Assistant: Hello! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add a coke
+Assistant: Your order has one Vegetarian pizza and one Coke. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Coke. Total is $42.00.
+
+Customer: great, thanks
+Assistant: You are welcome! Your order is confirmed. Enjoy!
+
+
+Customer: sup
+Assistant: Hello! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add a sprite
+Assistant: Your order has one Mushroom pizza and one Sprite. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Sprite. Total is $45.00.
+
+Customer: perfect, thanks
+Assistant: You are welcome! Enjoy your pizza.
+
+
+Customer: sup
+Assistant: Hello! Welcome to Slice Pizza. How can I help you today?
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add a guarana
+Assistant: Your order has one Chocolate pizza and one Guarana. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Guarana. Total is $41.00.
+
+Customer: awesome
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: what is up
+Assistant: Hello! I am the Slice Pizza assistant. What can I help with?
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add a guarana
+Assistant: Your order has one Margherita pizza and one Guarana. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Guarana. Total is $38.00.
+
+Customer: goodbye
+Assistant: Goodbye! Thank you for visiting Slice Pizza.
+
+
+Customer: what is up
+Assistant: Hello! I am the Slice Pizza assistant. What can I help with?
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Pepperoni pizza and one Sprite. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Sprite. Total is $46.00.
+
+Customer: take care
+Assistant: Take care! Enjoy your pizza.
+
+
+Customer: what is up
+Assistant: Hello! I am the Slice Pizza assistant. What can I help with?
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add one coke please
+Assistant: Your order has one Four Cheese pizza and one Coke. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Coke. Total is $44.00.
+
+Customer: thanks
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: what is up
+Assistant: Hello! I am the Slice Pizza assistant. What can I help with?
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Chicken Catupiry pizza and one Guarana. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Guarana. Total is $43.00.
+
+Customer: thank you
+Assistant: You are welcome! Enjoy your Slice Pizza order.
+
+
+Customer: what is up
+Assistant: Hello! I am the Slice Pizza assistant. What can I help with?
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add a coke
+Assistant: Your order has one Portuguese pizza and one Coke. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Coke. Total is $42.00.
+
+Customer: great, thanks
+Assistant: You are welcome! Your order is confirmed. Enjoy!
+
+
+Customer: what is up
+Assistant: Hello! I am the Slice Pizza assistant. What can I help with?
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add a sprite
+Assistant: Your order has one Vegetarian pizza and one Sprite. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Sprite. Total is $42.00.
+
+Customer: perfect, thanks
+Assistant: You are welcome! Enjoy your pizza.
+
+
+Customer: what is up
+Assistant: Hello! I am the Slice Pizza assistant. What can I help with?
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add a guarana
+Assistant: Your order has one Mushroom pizza and one Guarana. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Guarana. Total is $45.00.
+
+Customer: awesome
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: what is up
+Assistant: Hello! I am the Slice Pizza assistant. What can I help with?
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Chocolate pizza and one Sprite. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Sprite. Total is $41.00.
+
+Customer: all good, bye
+Assistant: Goodbye! Thank you for ordering at Slice Pizza.
+
+
+Customer: good day
+Assistant: Good day! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Margherita pizza
+Assistant: Margherita pizza is a classic pizza with tomato sauce, mozzarella, and basil. It costs $32.00.
+
+Customer: ok, one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Margherita pizza and one Sprite. The total is $38.00.
+
+Customer: confirm
+Assistant: Confirmed. One Margherita pizza and one Sprite. Total is $38.00.
+
+Customer: take care
+Assistant: Take care! Enjoy your pizza.
+
+
+Customer: good day
+Assistant: Good day! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Pepperoni pizza
+Assistant: Pepperoni pizza is a spicy pizza with tomato sauce, mozzarella, and pepperoni. It costs $40.00.
+
+Customer: ok, one Pepperoni pizza please
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: add one coke please
+Assistant: Your order has one Pepperoni pizza and one Coke. The total is $46.00.
+
+Customer: confirm
+Assistant: Confirmed. One Pepperoni pizza and one Coke. Total is $46.00.
+
+Customer: thanks
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: good day
+Assistant: Good day! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Four Cheese pizza
+Assistant: Four Cheese pizza is a cheesy pizza with mozzarella, parmesan, provolone, and gorgonzola — no tomato sauce. It costs $38.00.
+
+Customer: ok, one Four Cheese pizza please
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add one guarana please
+Assistant: Your order has one Four Cheese pizza and one Guarana. The total is $44.00.
+
+Customer: confirm
+Assistant: Confirmed. One Four Cheese pizza and one Guarana. Total is $44.00.
+
+Customer: thank you
+Assistant: You are welcome! Enjoy your Slice Pizza order.
+
+
+Customer: good day
+Assistant: Good day! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Chicken Catupiry pizza
+Assistant: Chicken Catupiry pizza is a creamy pizza with shredded chicken and catupiry cheese. It costs $37.00.
+
+Customer: ok, one Chicken Catupiry pizza please
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: add a coke
+Assistant: Your order has one Chicken Catupiry pizza and one Coke. The total is $43.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chicken Catupiry pizza and one Coke. Total is $43.00.
+
+Customer: great, thanks
+Assistant: You are welcome! Your order is confirmed. Enjoy!
+
+
+Customer: good day
+Assistant: Good day! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Portuguese pizza
+Assistant: Portuguese pizza is a hearty pizza with ham, eggs, onion, and olives. It costs $36.00.
+
+Customer: ok, one Portuguese pizza please
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: add a sprite
+Assistant: Your order has one Portuguese pizza and one Sprite. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Portuguese pizza and one Sprite. Total is $42.00.
+
+Customer: perfect, thanks
+Assistant: You are welcome! Enjoy your pizza.
+
+
+Customer: good day
+Assistant: Good day! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Vegetarian pizza
+Assistant: Vegetarian pizza is a veggie pizza with mushrooms, onion, bell pepper, tomato, and olives. It costs $36.00.
+
+Customer: ok, one Vegetarian pizza please
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add a guarana
+Assistant: Your order has one Vegetarian pizza and one Guarana. The total is $42.00.
+
+Customer: confirm
+Assistant: Confirmed. One Vegetarian pizza and one Guarana. Total is $42.00.
+
+Customer: awesome
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: good day
+Assistant: Good day! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Mushroom pizza
+Assistant: Mushroom pizza is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: ok, one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add one sprite please
+Assistant: Your order has one Mushroom pizza and one Sprite. The total is $45.00.
+
+Customer: confirm
+Assistant: Confirmed. One Mushroom pizza and one Sprite. Total is $45.00.
+
+Customer: all good, bye
+Assistant: Goodbye! Thank you for ordering at Slice Pizza.
+
+
+Customer: good day
+Assistant: Good day! Welcome to Slice Pizza. How can I help?
+
+Customer: tell me about the Chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream — no tomato sauce, no cheese. It costs $35.00.
+
+Customer: ok, one Chocolate pizza please
+Assistant: Your order has one Chocolate pizza. It costs $35.00.
+
+Customer: add one coke please
+Assistant: Your order has one Chocolate pizza and one Coke. The total is $41.00.
+
+Customer: confirm
+Assistant: Confirmed. One Chocolate pizza and one Coke. Total is $41.00.
+
+Customer: confirmed, thank you
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hi
+Assistant: Hello! I am the Slice Pizza assistant. What can I help you with?
+
+Customer: what is the cheapest pizza
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: thanks
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hello
+Assistant: Hello! Welcome to Slice Pizza. How can I help?
+
+Customer: i want the most affordable pizza
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: thank you
+Assistant: You are welcome! Enjoy your Slice Pizza order.
+
+
+Customer: hey
+Assistant: Hey! Welcome to Slice Pizza. What would you like?
+
+Customer: what is the best budget option
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: great, thanks
+Assistant: You are welcome! Your order is confirmed. Enjoy!
+
+
+Customer: good morning
+Assistant: Good morning! How can I help you at Slice Pizza?
+
+Customer: i do not have much money, what do you recommend
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: perfect, thanks
+Assistant: You are welcome! Enjoy your pizza.
+
+
+Customer: good afternoon
+Assistant: Good afternoon! What can I help you with at Slice Pizza?
+
+Customer: what is under 35 dollars
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: awesome
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: good evening
+Assistant: Good evening! Welcome to Slice Pizza. How can I help?
+
+Customer: what is the cheapest pizza
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: all good, bye
+Assistant: Goodbye! Thank you for ordering at Slice Pizza.
+
+
+Customer: hi there
+Assistant: Hi there! What can I help you with today at Slice Pizza?
+
+Customer: i want the most affordable pizza
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: confirmed, thank you
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hello there
+Assistant: Hello! I am the Slice Pizza assistant. Ask me about the menu.
+
+Customer: what is the best budget option
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: thx
+Assistant: You are welcome! Ask me anytime about Slice Pizza.
+
+
+Customer: hey there
+Assistant: Hey! Welcome to Slice Pizza. How can I help you today?
+
+Customer: i do not have much money, what do you recommend
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: ty
+Assistant: You are welcome! Enjoy your order.
+
+
+Customer: howdy
+Assistant: Hello! Welcome to Slice Pizza. What can I get for you?
+
+Customer: what is under 35 dollars
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: cheers
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: greetings
+Assistant: Greetings! Welcome to Slice Pizza. How can I help?
+
+Customer: what is the cheapest pizza
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: that is all
+Assistant: Thank you! Enjoy your Slice Pizza meal.
+
+
+Customer: yo
+Assistant: Hello! Welcome to Slice Pizza. What would you like to order?
+
+Customer: i want the most affordable pizza
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: nothing else
+Assistant: Thank you for ordering at Slice Pizza. Enjoy!
+
+
+Customer: hiya
+Assistant: Hi! Welcome to Slice Pizza. What can I help you with?
+
+Customer: what is the best budget option
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: i am done
+Assistant: Thank you! Your order is ready. Enjoy your Slice Pizza meal.
+
+
+Customer: sup
+Assistant: Hello! Welcome to Slice Pizza. How can I help you today?
+
+Customer: i do not have much money, what do you recommend
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: see you
+Assistant: See you! Come back to Slice Pizza anytime.
+
+
+Customer: what is up
+Assistant: Hello! I am the Slice Pizza assistant. What can I help with?
+
+Customer: what is under 35 dollars
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: goodbye
+Assistant: Goodbye! Thank you for visiting Slice Pizza.
+
+
+Customer: good day
+Assistant: Good day! Welcome to Slice Pizza. How can I help?
+
+Customer: what is the cheapest pizza
+Assistant: The cheapest whole pizza is Margherita at $32.00.
+
+Customer: one margherita please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: take care
+Assistant: Take care! Enjoy your pizza.
+
+
+Customer: hi
+Assistant: Hello! I am the Slice Pizza assistant. What can I help you with?
+
+Customer: what do you recommend
+Assistant: I recommend the Margherita pizza. It is simple, fresh, and the best first choice at Slice Pizza.
+
+Customer: one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Margherita pizza and one Chocolate slice. The total is $40.75.
+
+Customer: thanks
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hello
+Assistant: Hello! Welcome to Slice Pizza. How can I help?
+
+Customer: what should i get
+Assistant: I recommend the Margherita pizza for first-timers. It is the most popular at Slice Pizza.
+
+Customer: one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Margherita pizza and one Chocolate slice. The total is $40.75.
+
+Customer: thank you
+Assistant: You are welcome! Enjoy your Slice Pizza order.
+
+
+Customer: hey
+Assistant: Hey! Welcome to Slice Pizza. What would you like?
+
+Customer: surprise me
+Assistant: I suggest the Mushroom pizza. It is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Mushroom pizza and one Chocolate slice. The total is $47.75.
+
+Customer: great, thanks
+Assistant: You are welcome! Your order is confirmed. Enjoy!
+
+
+Customer: good morning
+Assistant: Good morning! How can I help you at Slice Pizza?
+
+Customer: what is popular here
+Assistant: The Margherita pizza is the most popular. The Mushroom pizza is the house special.
+
+Customer: one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Margherita pizza and one Chocolate slice. The total is $40.75.
+
+Customer: perfect, thanks
+Assistant: You are welcome! Enjoy your pizza.
+
+
+Customer: good afternoon
+Assistant: Good afternoon! What can I help you with at Slice Pizza?
+
+Customer: help me choose
+Assistant: I recommend the Margherita pizza. It is simple, fresh, and a crowd favorite.
+
+Customer: one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Margherita pizza and one Chocolate slice. The total is $40.75.
+
+Customer: awesome
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: good evening
+Assistant: Good evening! Welcome to Slice Pizza. How can I help?
+
+Customer: what do you recommend
+Assistant: I recommend the Margherita pizza. It is simple, fresh, and the best first choice at Slice Pizza.
+
+Customer: one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Margherita pizza and one Chocolate slice. The total is $40.75.
+
+Customer: all good, bye
+Assistant: Goodbye! Thank you for ordering at Slice Pizza.
+
+
+Customer: hi there
+Assistant: Hi there! What can I help you with today at Slice Pizza?
+
+Customer: what should i get
+Assistant: I recommend the Margherita pizza for first-timers. It is the most popular at Slice Pizza.
+
+Customer: one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Margherita pizza and one Chocolate slice. The total is $40.75.
+
+Customer: confirmed, thank you
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hello there
+Assistant: Hello! I am the Slice Pizza assistant. Ask me about the menu.
+
+Customer: surprise me
+Assistant: I suggest the Mushroom pizza. It is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Mushroom pizza and one Chocolate slice. The total is $47.75.
+
+Customer: thx
+Assistant: You are welcome! Ask me anytime about Slice Pizza.
+
+
+Customer: hey there
+Assistant: Hey! Welcome to Slice Pizza. How can I help you today?
+
+Customer: what is popular here
+Assistant: The Margherita pizza is the most popular. The Mushroom pizza is the house special.
+
+Customer: one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Margherita pizza and one Chocolate slice. The total is $40.75.
+
+Customer: ty
+Assistant: You are welcome! Enjoy your order.
+
+
+Customer: howdy
+Assistant: Hello! Welcome to Slice Pizza. What can I get for you?
+
+Customer: help me choose
+Assistant: I recommend the Margherita pizza. It is simple, fresh, and a crowd favorite.
+
+Customer: one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Margherita pizza and one Chocolate slice. The total is $40.75.
+
+Customer: cheers
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: greetings
+Assistant: Greetings! Welcome to Slice Pizza. How can I help?
+
+Customer: what do you recommend
+Assistant: I recommend the Margherita pizza. It is simple, fresh, and the best first choice at Slice Pizza.
+
+Customer: one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Margherita pizza and one Chocolate slice. The total is $40.75.
+
+Customer: that is all
+Assistant: Thank you! Enjoy your Slice Pizza meal.
+
+
+Customer: yo
+Assistant: Hello! Welcome to Slice Pizza. What would you like to order?
+
+Customer: what should i get
+Assistant: I recommend the Margherita pizza for first-timers. It is the most popular at Slice Pizza.
+
+Customer: one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Margherita pizza and one Chocolate slice. The total is $40.75.
+
+Customer: nothing else
+Assistant: Thank you for ordering at Slice Pizza. Enjoy!
+
+
+Customer: hiya
+Assistant: Hi! Welcome to Slice Pizza. What can I help you with?
+
+Customer: surprise me
+Assistant: I suggest the Mushroom pizza. It is the house special with mushrooms and extra cheese. It costs $39.00.
+
+Customer: one Mushroom pizza please
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Mushroom pizza and one Chocolate slice. The total is $47.75.
+
+Customer: i am done
+Assistant: Thank you! Your order is ready. Enjoy your Slice Pizza meal.
+
+
+Customer: sup
+Assistant: Hello! Welcome to Slice Pizza. How can I help you today?
+
+Customer: what is popular here
+Assistant: The Margherita pizza is the most popular. The Mushroom pizza is the house special.
+
+Customer: one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Margherita pizza and one Chocolate slice. The total is $40.75.
+
+Customer: see you
+Assistant: See you! Come back to Slice Pizza anytime.
+
+
+Customer: what is up
+Assistant: Hello! I am the Slice Pizza assistant. What can I help with?
+
+Customer: help me choose
+Assistant: I recommend the Margherita pizza. It is simple, fresh, and a crowd favorite.
+
+Customer: one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Margherita pizza and one Chocolate slice. The total is $40.75.
+
+Customer: goodbye
+Assistant: Goodbye! Thank you for visiting Slice Pizza.
+
+
+Customer: good day
+Assistant: Good day! Welcome to Slice Pizza. How can I help?
+
+Customer: what do you recommend
+Assistant: I recommend the Margherita pizza. It is simple, fresh, and the best first choice at Slice Pizza.
+
+Customer: one Margherita pizza please
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: can i add a chocolate slice for dessert
+Assistant: Your order has one Margherita pizza and one Chocolate slice. The total is $40.75.
+
+Customer: take care
+Assistant: Take care! Enjoy your pizza.
+
+
+Customer: hi
+Assistant: Hello! I am the Slice Pizza assistant. What can I help you with?
+
+Customer: i do not eat meat, what can i get
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Margherita
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add a Coke
+Assistant: Your order has one Margherita pizza and one Coke. The total is $38.00.
+
+Customer: thanks
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hello
+Assistant: Hello! Welcome to Slice Pizza. How can I help?
+
+Customer: i am vegetarian, what are my options
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Vegetarian
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add a Sprite
+Assistant: Your order has one Vegetarian pizza and one Sprite. The total is $42.00.
+
+Customer: thank you
+Assistant: You are welcome! Enjoy your Slice Pizza order.
+
+
+Customer: hey
+Assistant: Hey! Welcome to Slice Pizza. What would you like?
+
+Customer: no meat please, what do you have
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Mushroom
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add a Guarana
+Assistant: Your order has one Mushroom pizza and one Guarana. The total is $45.00.
+
+Customer: great, thanks
+Assistant: You are welcome! Your order is confirmed. Enjoy!
+
+
+Customer: good morning
+Assistant: Good morning! How can I help you at Slice Pizza?
+
+Customer: what pizzas have no meat
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Four Cheese
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add a Coke
+Assistant: Your order has one Four Cheese pizza and one Coke. The total is $44.00.
+
+Customer: perfect, thanks
+Assistant: You are welcome! Enjoy your pizza.
+
+
+Customer: good afternoon
+Assistant: Good afternoon! What can I help you with at Slice Pizza?
+
+Customer: i want a meat-free pizza
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Margherita
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add a Sprite
+Assistant: Your order has one Margherita pizza and one Sprite. The total is $38.00.
+
+Customer: awesome
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: good evening
+Assistant: Good evening! Welcome to Slice Pizza. How can I help?
+
+Customer: do you have vegetarian options
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Vegetarian
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add a Guarana
+Assistant: Your order has one Vegetarian pizza and one Guarana. The total is $42.00.
+
+Customer: all good, bye
+Assistant: Goodbye! Thank you for ordering at Slice Pizza.
+
+
+Customer: hi there
+Assistant: Hi there! What can I help you with today at Slice Pizza?
+
+Customer: i need a pizza without any meat
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Mushroom
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add a Coke
+Assistant: Your order has one Mushroom pizza and one Coke. The total is $45.00.
+
+Customer: confirmed, thank you
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hello there
+Assistant: Hello! I am the Slice Pizza assistant. Ask me about the menu.
+
+Customer: i do not eat meat, what can i get
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Four Cheese
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add a Sprite
+Assistant: Your order has one Four Cheese pizza and one Sprite. The total is $44.00.
+
+Customer: thx
+Assistant: You are welcome! Ask me anytime about Slice Pizza.
+
+
+Customer: hey there
+Assistant: Hey! Welcome to Slice Pizza. How can I help you today?
+
+Customer: i am vegetarian, what are my options
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Margherita
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add a Guarana
+Assistant: Your order has one Margherita pizza and one Guarana. The total is $38.00.
+
+Customer: ty
+Assistant: You are welcome! Enjoy your order.
+
+
+Customer: howdy
+Assistant: Hello! Welcome to Slice Pizza. What can I get for you?
+
+Customer: no meat please, what do you have
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Vegetarian
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add a Coke
+Assistant: Your order has one Vegetarian pizza and one Coke. The total is $42.00.
+
+Customer: cheers
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: greetings
+Assistant: Greetings! Welcome to Slice Pizza. How can I help?
+
+Customer: what pizzas have no meat
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Mushroom
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add a Sprite
+Assistant: Your order has one Mushroom pizza and one Sprite. The total is $45.00.
+
+Customer: that is all
+Assistant: Thank you! Enjoy your Slice Pizza meal.
+
+
+Customer: yo
+Assistant: Hello! Welcome to Slice Pizza. What would you like to order?
+
+Customer: i want a meat-free pizza
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Four Cheese
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add a Guarana
+Assistant: Your order has one Four Cheese pizza and one Guarana. The total is $44.00.
+
+Customer: nothing else
+Assistant: Thank you for ordering at Slice Pizza. Enjoy!
+
+
+Customer: hiya
+Assistant: Hi! Welcome to Slice Pizza. What can I help you with?
+
+Customer: do you have vegetarian options
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Margherita
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: add a Coke
+Assistant: Your order has one Margherita pizza and one Coke. The total is $38.00.
+
+Customer: i am done
+Assistant: Thank you! Your order is ready. Enjoy your Slice Pizza meal.
+
+
+Customer: sup
+Assistant: Hello! Welcome to Slice Pizza. How can I help you today?
+
+Customer: i need a pizza without any meat
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Vegetarian
+Assistant: Your order has one Vegetarian pizza. It costs $36.00.
+
+Customer: add a Sprite
+Assistant: Your order has one Vegetarian pizza and one Sprite. The total is $42.00.
+
+Customer: see you
+Assistant: See you! Come back to Slice Pizza anytime.
+
+
+Customer: what is up
+Assistant: Hello! I am the Slice Pizza assistant. What can I help with?
+
+Customer: i do not eat meat, what can i get
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Mushroom
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: add a Guarana
+Assistant: Your order has one Mushroom pizza and one Guarana. The total is $45.00.
+
+Customer: goodbye
+Assistant: Goodbye! Thank you for visiting Slice Pizza.
+
+
+Customer: good day
+Assistant: Good day! Welcome to Slice Pizza. How can I help?
+
+Customer: i am vegetarian, what are my options
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: i will go with Four Cheese
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: add a Coke
+Assistant: Your order has one Four Cheese pizza and one Coke. The total is $44.00.
+
+Customer: take care
+Assistant: Take care! Enjoy your pizza.
+
+
+Customer: hi
+Assistant: Hello! I am the Slice Pizza assistant. What can I help you with?
+
+Customer: how much is Margherita pizza
+Assistant: A whole Margherita pizza costs $32.00.
+
+Customer: how much is a slice of Margherita
+Assistant: A Margherita slice costs $8.00.
+
+Customer: one Margherita slice and one Coke please
+Assistant: Your order has one Margherita slice and one Coke. The total is $14.00.
+
+Customer: confirmed
+Assistant: Confirmed. One Margherita slice and one Coke. Total is $14.00.
+
+Customer: thanks
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hello
+Assistant: Hello! Welcome to Slice Pizza. How can I help?
+
+Customer: how much is Pepperoni pizza
+Assistant: A whole Pepperoni pizza costs $40.00.
+
+Customer: how much is a slice of Pepperoni
+Assistant: A Pepperoni slice costs $10.00.
+
+Customer: one Pepperoni slice and one Sprite please
+Assistant: Your order has one Pepperoni slice and one Sprite. The total is $16.00.
+
+Customer: confirmed
+Assistant: Confirmed. One Pepperoni slice and one Sprite. Total is $16.00.
+
+Customer: thank you
+Assistant: You are welcome! Enjoy your Slice Pizza order.
+
+
+Customer: hey
+Assistant: Hey! Welcome to Slice Pizza. What would you like?
+
+Customer: how much is Four Cheese pizza
+Assistant: A whole Four Cheese pizza costs $38.00.
+
+Customer: how much is a slice of Four Cheese
+Assistant: A Four Cheese slice costs $9.50.
+
+Customer: one Four Cheese slice and one Guarana please
+Assistant: Your order has one Four Cheese slice and one Guarana. The total is $15.50.
+
+Customer: confirmed
+Assistant: Confirmed. One Four Cheese slice and one Guarana. Total is $15.50.
+
+Customer: great, thanks
+Assistant: You are welcome! Your order is confirmed. Enjoy!
+
+
+Customer: good morning
+Assistant: Good morning! How can I help you at Slice Pizza?
+
+Customer: how much is Chicken Catupiry pizza
+Assistant: A whole Chicken Catupiry pizza costs $37.00.
+
+Customer: how much is a slice of Chicken Catupiry
+Assistant: A Chicken Catupiry slice costs $9.25.
+
+Customer: one Chicken Catupiry slice and one Coke please
+Assistant: Your order has one Chicken Catupiry slice and one Coke. The total is $15.25.
+
+Customer: confirmed
+Assistant: Confirmed. One Chicken Catupiry slice and one Coke. Total is $15.25.
+
+Customer: perfect, thanks
+Assistant: You are welcome! Enjoy your pizza.
+
+
+Customer: good afternoon
+Assistant: Good afternoon! What can I help you with at Slice Pizza?
+
+Customer: how much is Portuguese pizza
+Assistant: A whole Portuguese pizza costs $36.00.
+
+Customer: how much is a slice of Portuguese
+Assistant: A Portuguese slice costs $9.00.
+
+Customer: one Portuguese slice and one Sprite please
+Assistant: Your order has one Portuguese slice and one Sprite. The total is $15.00.
+
+Customer: confirmed
+Assistant: Confirmed. One Portuguese slice and one Sprite. Total is $15.00.
+
+Customer: awesome
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: good evening
+Assistant: Good evening! Welcome to Slice Pizza. How can I help?
+
+Customer: how much is Vegetarian pizza
+Assistant: A whole Vegetarian pizza costs $36.00.
+
+Customer: how much is a slice of Vegetarian
+Assistant: A Vegetarian slice costs $9.00.
+
+Customer: one Vegetarian slice and one Guarana please
+Assistant: Your order has one Vegetarian slice and one Guarana. The total is $15.00.
+
+Customer: confirmed
+Assistant: Confirmed. One Vegetarian slice and one Guarana. Total is $15.00.
+
+Customer: all good, bye
+Assistant: Goodbye! Thank you for ordering at Slice Pizza.
+
+
+Customer: hi there
+Assistant: Hi there! What can I help you with today at Slice Pizza?
+
+Customer: how much is Mushroom pizza
+Assistant: A whole Mushroom pizza costs $39.00.
+
+Customer: how much is a slice of Mushroom
+Assistant: A Mushroom slice costs $9.75.
+
+Customer: one Mushroom slice and one Coke please
+Assistant: Your order has one Mushroom slice and one Coke. The total is $15.75.
+
+Customer: confirmed
+Assistant: Confirmed. One Mushroom slice and one Coke. Total is $15.75.
+
+Customer: confirmed, thank you
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hello there
+Assistant: Hello! I am the Slice Pizza assistant. Ask me about the menu.
+
+Customer: how much is Chocolate pizza
+Assistant: A whole Chocolate pizza costs $35.00.
+
+Customer: how much is a slice of Chocolate
+Assistant: A Chocolate slice costs $8.75.
+
+Customer: one Chocolate slice and one Sprite please
+Assistant: Your order has one Chocolate slice and one Sprite. The total is $14.75.
+
+Customer: confirmed
+Assistant: Confirmed. One Chocolate slice and one Sprite. Total is $14.75.
+
+Customer: thx
+Assistant: You are welcome! Ask me anytime about Slice Pizza.
+
+
+Customer: hey there
+Assistant: Hey! Welcome to Slice Pizza. How can I help you today?
+
+Customer: how much is Margherita pizza
+Assistant: A whole Margherita pizza costs $32.00.
+
+Customer: how much is a slice of Margherita
+Assistant: A Margherita slice costs $8.00.
+
+Customer: one Margherita slice and one Guarana please
+Assistant: Your order has one Margherita slice and one Guarana. The total is $14.00.
+
+Customer: confirmed
+Assistant: Confirmed. One Margherita slice and one Guarana. Total is $14.00.
+
+Customer: ty
+Assistant: You are welcome! Enjoy your order.
+
+
+Customer: howdy
+Assistant: Hello! Welcome to Slice Pizza. What can I get for you?
+
+Customer: how much is Pepperoni pizza
+Assistant: A whole Pepperoni pizza costs $40.00.
+
+Customer: how much is a slice of Pepperoni
+Assistant: A Pepperoni slice costs $10.00.
+
+Customer: one Pepperoni slice and one Coke please
+Assistant: Your order has one Pepperoni slice and one Coke. The total is $16.00.
+
+Customer: confirmed
+Assistant: Confirmed. One Pepperoni slice and one Coke. Total is $16.00.
+
+Customer: cheers
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: greetings
+Assistant: Greetings! Welcome to Slice Pizza. How can I help?
+
+Customer: how much is Four Cheese pizza
+Assistant: A whole Four Cheese pizza costs $38.00.
+
+Customer: how much is a slice of Four Cheese
+Assistant: A Four Cheese slice costs $9.50.
+
+Customer: one Four Cheese slice and one Sprite please
+Assistant: Your order has one Four Cheese slice and one Sprite. The total is $15.50.
+
+Customer: confirmed
+Assistant: Confirmed. One Four Cheese slice and one Sprite. Total is $15.50.
+
+Customer: that is all
+Assistant: Thank you! Enjoy your Slice Pizza meal.
+
+
+Customer: yo
+Assistant: Hello! Welcome to Slice Pizza. What would you like to order?
+
+Customer: how much is Chicken Catupiry pizza
+Assistant: A whole Chicken Catupiry pizza costs $37.00.
+
+Customer: how much is a slice of Chicken Catupiry
+Assistant: A Chicken Catupiry slice costs $9.25.
+
+Customer: one Chicken Catupiry slice and one Guarana please
+Assistant: Your order has one Chicken Catupiry slice and one Guarana. The total is $15.25.
+
+Customer: confirmed
+Assistant: Confirmed. One Chicken Catupiry slice and one Guarana. Total is $15.25.
+
+Customer: nothing else
+Assistant: Thank you for ordering at Slice Pizza. Enjoy!
+
+
+Customer: hiya
+Assistant: Hi! Welcome to Slice Pizza. What can I help you with?
+
+Customer: how much is Portuguese pizza
+Assistant: A whole Portuguese pizza costs $36.00.
+
+Customer: how much is a slice of Portuguese
+Assistant: A Portuguese slice costs $9.00.
+
+Customer: one Portuguese slice and one Coke please
+Assistant: Your order has one Portuguese slice and one Coke. The total is $15.00.
+
+Customer: confirmed
+Assistant: Confirmed. One Portuguese slice and one Coke. Total is $15.00.
+
+Customer: i am done
+Assistant: Thank you! Your order is ready. Enjoy your Slice Pizza meal.
+
+
+Customer: sup
+Assistant: Hello! Welcome to Slice Pizza. How can I help you today?
+
+Customer: how much is Vegetarian pizza
+Assistant: A whole Vegetarian pizza costs $36.00.
+
+Customer: how much is a slice of Vegetarian
+Assistant: A Vegetarian slice costs $9.00.
+
+Customer: one Vegetarian slice and one Sprite please
+Assistant: Your order has one Vegetarian slice and one Sprite. The total is $15.00.
+
+Customer: confirmed
+Assistant: Confirmed. One Vegetarian slice and one Sprite. Total is $15.00.
+
+Customer: see you
+Assistant: See you! Come back to Slice Pizza anytime.
+
+
+Customer: what is up
+Assistant: Hello! I am the Slice Pizza assistant. What can I help with?
+
+Customer: how much is Mushroom pizza
+Assistant: A whole Mushroom pizza costs $39.00.
+
+Customer: how much is a slice of Mushroom
+Assistant: A Mushroom slice costs $9.75.
+
+Customer: one Mushroom slice and one Guarana please
+Assistant: Your order has one Mushroom slice and one Guarana. The total is $15.75.
+
+Customer: confirmed
+Assistant: Confirmed. One Mushroom slice and one Guarana. Total is $15.75.
+
+Customer: goodbye
+Assistant: Goodbye! Thank you for visiting Slice Pizza.
+
+
+Customer: good day
+Assistant: Good day! Welcome to Slice Pizza. How can I help?
+
+Customer: how much is Chocolate pizza
+Assistant: A whole Chocolate pizza costs $35.00.
+
+Customer: how much is a slice of Chocolate
+Assistant: A Chocolate slice costs $8.75.
+
+Customer: one Chocolate slice and one Coke please
+Assistant: Your order has one Chocolate slice and one Coke. The total is $14.75.
+
+Customer: confirmed
+Assistant: Confirmed. One Chocolate slice and one Coke. Total is $14.75.
+
+Customer: take care
+Assistant: Take care! Enjoy your pizza.
+
+
+Customer: hi
+Assistant: Hello! I am the Slice Pizza assistant. What can I help you with?
+
+Customer: which pizza has basil
+Assistant: Only the Margherita pizza has basil.
+
+Customer: i love that ingredient, give me one Margherita pizza
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: and a Coke
+Assistant: Your order has one Margherita pizza and one Coke. The total is $38.00.
+
+Customer: thanks
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hello
+Assistant: Hello! Welcome to Slice Pizza. How can I help?
+
+Customer: which pizza has mushrooms
+Assistant: The Mushroom pizza and the Vegetarian pizza have mushrooms.
+
+Customer: i love that ingredient, give me one Mushroom pizza
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: and a Sprite
+Assistant: Your order has one Mushroom pizza and one Sprite. The total is $45.00.
+
+Customer: thank you
+Assistant: You are welcome! Enjoy your Slice Pizza order.
+
+
+Customer: hey
+Assistant: Hey! Welcome to Slice Pizza. What would you like?
+
+Customer: which pizza has ham
+Assistant: Only the Portuguese pizza has ham.
+
+Customer: i love that ingredient, give me one Portuguese pizza
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: and a Guarana
+Assistant: Your order has one Portuguese pizza and one Guarana. The total is $42.00.
+
+Customer: great, thanks
+Assistant: You are welcome! Your order is confirmed. Enjoy!
+
+
+Customer: good morning
+Assistant: Good morning! How can I help you at Slice Pizza?
+
+Customer: which pizza has pepperoni
+Assistant: Only the Pepperoni pizza has pepperoni.
+
+Customer: i love that ingredient, give me one Pepperoni pizza
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: and a Coke
+Assistant: Your order has one Pepperoni pizza and one Coke. The total is $46.00.
+
+Customer: perfect, thanks
+Assistant: You are welcome! Enjoy your pizza.
+
+
+Customer: good afternoon
+Assistant: Good afternoon! What can I help you with at Slice Pizza?
+
+Customer: which pizza has chicken
+Assistant: Only the Chicken Catupiry pizza has chicken.
+
+Customer: i love that ingredient, give me one Chicken Catupiry pizza
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: and a Sprite
+Assistant: Your order has one Chicken Catupiry pizza and one Sprite. The total is $43.00.
+
+Customer: awesome
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: good evening
+Assistant: Good evening! Welcome to Slice Pizza. How can I help?
+
+Customer: which pizza has olives
+Assistant: The Portuguese pizza and the Vegetarian pizza have olives.
+
+Customer: i love that ingredient, give me one Portuguese pizza
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: and a Guarana
+Assistant: Your order has one Portuguese pizza and one Guarana. The total is $42.00.
+
+Customer: all good, bye
+Assistant: Goodbye! Thank you for ordering at Slice Pizza.
+
+
+Customer: hi there
+Assistant: Hi there! What can I help you with today at Slice Pizza?
+
+Customer: which pizza has eggs
+Assistant: Only the Portuguese pizza has eggs.
+
+Customer: i love that ingredient, give me one Portuguese pizza
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: and a Coke
+Assistant: Your order has one Portuguese pizza and one Coke. The total is $42.00.
+
+Customer: confirmed, thank you
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hello there
+Assistant: Hello! I am the Slice Pizza assistant. Ask me about the menu.
+
+Customer: which pizza has four types of cheese
+Assistant: The Four Cheese pizza has four types of cheese.
+
+Customer: i love that ingredient, give me one Four Cheese pizza
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: and a Sprite
+Assistant: Your order has one Four Cheese pizza and one Sprite. The total is $44.00.
+
+Customer: thx
+Assistant: You are welcome! Ask me anytime about Slice Pizza.
+
+
+Customer: hey there
+Assistant: Hey! Welcome to Slice Pizza. How can I help you today?
+
+Customer: which pizza has basil
+Assistant: Only the Margherita pizza has basil.
+
+Customer: i love that ingredient, give me one Margherita pizza
+Assistant: Your order has one Margherita pizza. It costs $32.00.
+
+Customer: and a Guarana
+Assistant: Your order has one Margherita pizza and one Guarana. The total is $38.00.
+
+Customer: ty
+Assistant: You are welcome! Enjoy your order.
+
+
+Customer: howdy
+Assistant: Hello! Welcome to Slice Pizza. What can I get for you?
+
+Customer: which pizza has mushrooms
+Assistant: The Mushroom pizza and the Vegetarian pizza have mushrooms.
+
+Customer: i love that ingredient, give me one Mushroom pizza
+Assistant: Your order has one Mushroom pizza. It costs $39.00.
+
+Customer: and a Coke
+Assistant: Your order has one Mushroom pizza and one Coke. The total is $45.00.
+
+Customer: cheers
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: greetings
+Assistant: Greetings! Welcome to Slice Pizza. How can I help?
+
+Customer: which pizza has ham
+Assistant: Only the Portuguese pizza has ham.
+
+Customer: i love that ingredient, give me one Portuguese pizza
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: and a Sprite
+Assistant: Your order has one Portuguese pizza and one Sprite. The total is $42.00.
+
+Customer: that is all
+Assistant: Thank you! Enjoy your Slice Pizza meal.
+
+
+Customer: yo
+Assistant: Hello! Welcome to Slice Pizza. What would you like to order?
+
+Customer: which pizza has pepperoni
+Assistant: Only the Pepperoni pizza has pepperoni.
+
+Customer: i love that ingredient, give me one Pepperoni pizza
+Assistant: Your order has one Pepperoni pizza. It costs $40.00.
+
+Customer: and a Guarana
+Assistant: Your order has one Pepperoni pizza and one Guarana. The total is $46.00.
+
+Customer: nothing else
+Assistant: Thank you for ordering at Slice Pizza. Enjoy!
+
+
+Customer: hiya
+Assistant: Hi! Welcome to Slice Pizza. What can I help you with?
+
+Customer: which pizza has chicken
+Assistant: Only the Chicken Catupiry pizza has chicken.
+
+Customer: i love that ingredient, give me one Chicken Catupiry pizza
+Assistant: Your order has one Chicken Catupiry pizza. It costs $37.00.
+
+Customer: and a Coke
+Assistant: Your order has one Chicken Catupiry pizza and one Coke. The total is $43.00.
+
+Customer: i am done
+Assistant: Thank you! Your order is ready. Enjoy your Slice Pizza meal.
+
+
+Customer: sup
+Assistant: Hello! Welcome to Slice Pizza. How can I help you today?
+
+Customer: which pizza has olives
+Assistant: The Portuguese pizza and the Vegetarian pizza have olives.
+
+Customer: i love that ingredient, give me one Portuguese pizza
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: and a Sprite
+Assistant: Your order has one Portuguese pizza and one Sprite. The total is $42.00.
+
+Customer: see you
+Assistant: See you! Come back to Slice Pizza anytime.
+
+
+Customer: what is up
+Assistant: Hello! I am the Slice Pizza assistant. What can I help with?
+
+Customer: which pizza has eggs
+Assistant: Only the Portuguese pizza has eggs.
+
+Customer: i love that ingredient, give me one Portuguese pizza
+Assistant: Your order has one Portuguese pizza. It costs $36.00.
+
+Customer: and a Guarana
+Assistant: Your order has one Portuguese pizza and one Guarana. The total is $42.00.
+
+Customer: goodbye
+Assistant: Goodbye! Thank you for visiting Slice Pizza.
+
+
+Customer: good day
+Assistant: Good day! Welcome to Slice Pizza. How can I help?
+
+Customer: which pizza has four types of cheese
+Assistant: The Four Cheese pizza has four types of cheese.
+
+Customer: i love that ingredient, give me one Four Cheese pizza
+Assistant: Your order has one Four Cheese pizza. It costs $38.00.
+
+Customer: and a Coke
+Assistant: Your order has one Four Cheese pizza and one Coke. The total is $44.00.
+
+Customer: take care
+Assistant: Take care! Enjoy your pizza.
+
+
+Customer: hi
+Assistant: Hello! I am the Slice Pizza assistant. What can I help you with?
+
+Customer: i need to order for two people
+Assistant: For two people, I suggest one Pepperoni and one Margherita, plus two sodas. Total would be $84.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $84.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $84.00. Enjoy your Slice Pizza gathering!
+
+Customer: thanks
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hello
+Assistant: Hello! Welcome to Slice Pizza. How can I help?
+
+Customer: i need to order for three people
+Assistant: For three people, I suggest one Pepperoni, one Vegetarian, and one Margherita, plus three sodas. Total would be $126.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $126.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $126.00. Enjoy your Slice Pizza gathering!
+
+Customer: thank you
+Assistant: You are welcome! Enjoy your Slice Pizza order.
+
+
+Customer: hey
+Assistant: Hey! Welcome to Slice Pizza. What would you like?
+
+Customer: i need to order for four people
+Assistant: For four people, I suggest two Pepperoni and two Margherita pizzas, plus four sodas. Total would be $168.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $168.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $168.00. Enjoy your Slice Pizza gathering!
+
+Customer: great, thanks
+Assistant: You are welcome! Your order is confirmed. Enjoy!
+
+
+Customer: good morning
+Assistant: Good morning! How can I help you at Slice Pizza?
+
+Customer: i need to order for five people
+Assistant: For five people, I suggest one of each: Pepperoni, Margherita, Vegetarian, Mushroom, and Chicken Catupiry, plus five sodas. Total would be $214.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $214.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $214.00. Enjoy your Slice Pizza gathering!
+
+Customer: perfect, thanks
+Assistant: You are welcome! Enjoy your pizza.
+
+
+Customer: good afternoon
+Assistant: Good afternoon! What can I help you with at Slice Pizza?
+
+Customer: i need to order for six people
+Assistant: For six people, I suggest two Pepperoni, two Margherita, and two Vegetarian pizzas, plus six sodas. Total would be $252.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $252.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $252.00. Enjoy your Slice Pizza gathering!
+
+Customer: awesome
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: good evening
+Assistant: Good evening! Welcome to Slice Pizza. How can I help?
+
+Customer: i need to order for two people
+Assistant: For two people, I suggest one Pepperoni and one Margherita, plus two sodas. Total would be $84.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $84.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $84.00. Enjoy your Slice Pizza gathering!
+
+Customer: all good, bye
+Assistant: Goodbye! Thank you for ordering at Slice Pizza.
+
+
+Customer: hi there
+Assistant: Hi there! What can I help you with today at Slice Pizza?
+
+Customer: i need to order for three people
+Assistant: For three people, I suggest one Pepperoni, one Vegetarian, and one Margherita, plus three sodas. Total would be $126.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $126.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $126.00. Enjoy your Slice Pizza gathering!
+
+Customer: confirmed, thank you
+Assistant: You are welcome! Enjoy your meal.
+
+
+Customer: hello there
+Assistant: Hello! I am the Slice Pizza assistant. Ask me about the menu.
+
+Customer: i need to order for four people
+Assistant: For four people, I suggest two Pepperoni and two Margherita pizzas, plus four sodas. Total would be $168.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $168.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $168.00. Enjoy your Slice Pizza gathering!
+
+Customer: thx
+Assistant: You are welcome! Ask me anytime about Slice Pizza.
+
+
+Customer: hey there
+Assistant: Hey! Welcome to Slice Pizza. How can I help you today?
+
+Customer: i need to order for five people
+Assistant: For five people, I suggest one of each: Pepperoni, Margherita, Vegetarian, Mushroom, and Chicken Catupiry, plus five sodas. Total would be $214.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $214.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $214.00. Enjoy your Slice Pizza gathering!
+
+Customer: ty
+Assistant: You are welcome! Enjoy your order.
+
+
+Customer: howdy
+Assistant: Hello! Welcome to Slice Pizza. What can I get for you?
+
+Customer: i need to order for six people
+Assistant: For six people, I suggest two Pepperoni, two Margherita, and two Vegetarian pizzas, plus six sodas. Total would be $252.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $252.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $252.00. Enjoy your Slice Pizza gathering!
+
+Customer: cheers
+Assistant: You are welcome! Enjoy your Slice Pizza meal.
+
+
+Customer: greetings
+Assistant: Greetings! Welcome to Slice Pizza. How can I help?
+
+Customer: i need to order for two people
+Assistant: For two people, I suggest one Pepperoni and one Margherita, plus two sodas. Total would be $84.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $84.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $84.00. Enjoy your Slice Pizza gathering!
+
+Customer: that is all
+Assistant: Thank you! Enjoy your Slice Pizza meal.
+
+
+Customer: yo
+Assistant: Hello! Welcome to Slice Pizza. What would you like to order?
+
+Customer: i need to order for three people
+Assistant: For three people, I suggest one Pepperoni, one Vegetarian, and one Margherita, plus three sodas. Total would be $126.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $126.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $126.00. Enjoy your Slice Pizza gathering!
+
+Customer: nothing else
+Assistant: Thank you for ordering at Slice Pizza. Enjoy!
+
+
+Customer: hiya
+Assistant: Hi! Welcome to Slice Pizza. What can I help you with?
+
+Customer: i need to order for four people
+Assistant: For four people, I suggest two Pepperoni and two Margherita pizzas, plus four sodas. Total would be $168.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $168.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $168.00. Enjoy your Slice Pizza gathering!
+
+Customer: i am done
+Assistant: Thank you! Your order is ready. Enjoy your Slice Pizza meal.
+
+
+Customer: sup
+Assistant: Hello! Welcome to Slice Pizza. How can I help you today?
+
+Customer: i need to order for five people
+Assistant: For five people, I suggest one of each: Pepperoni, Margherita, Vegetarian, Mushroom, and Chicken Catupiry, plus five sodas. Total would be $214.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $214.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $214.00. Enjoy your Slice Pizza gathering!
+
+Customer: see you
+Assistant: See you! Come back to Slice Pizza anytime.
+
+
+Customer: what is up
+Assistant: Hello! I am the Slice Pizza assistant. What can I help with?
+
+Customer: i need to order for six people
+Assistant: For six people, I suggest two Pepperoni, two Margherita, and two Vegetarian pizzas, plus six sodas. Total would be $252.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $252.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $252.00. Enjoy your Slice Pizza gathering!
+
+Customer: goodbye
+Assistant: Goodbye! Thank you for visiting Slice Pizza.
+
+
+Customer: good day
+Assistant: Good day! Welcome to Slice Pizza. How can I help?
+
+Customer: i need to order for two people
+Assistant: For two people, I suggest one Pepperoni and one Margherita, plus two sodas. Total would be $84.00.
+
+Customer: that sounds perfect
+Assistant: Your order is set. Total is $84.00.
+
+Customer: confirmed
+Assistant: Confirmed. Total is $84.00. Enjoy your Slice Pizza gathering!
+
+Customer: take care
+Assistant: Take care! Enjoy your pizza.
+
+
+
+
 # Realistic Dialogues
 
 Customer: hi

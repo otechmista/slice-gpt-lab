@@ -86,8 +86,10 @@ a[role="button"]:active {
   align-self: flex-start;
   font-size: .85rem;
   line-height: 1.5;
+  white-space: pre-wrap;
   animation: fade-up .25s ease both;
 }
+
 
 .chat-typing span {
   display: inline-block;

@@ -1271,6 +1271,217 @@ Assistant: Yes. Which pizza would you like to order from Slice Pizza?
 """
 
 
+# ── templated full conversations ─────────────────────────────────────────────
+
+GREET_OPEN = [
+    ("hi", "Hello! I am the Slice Pizza assistant. What can I help you with?"),
+    ("hello", "Hello! Welcome to Slice Pizza. How can I help?"),
+    ("hey", "Hey! Welcome to Slice Pizza. What would you like?"),
+    ("good morning", "Good morning! How can I help you at Slice Pizza?"),
+    ("good afternoon", "Good afternoon! What can I help you with at Slice Pizza?"),
+    ("good evening", "Good evening! Welcome to Slice Pizza. How can I help?"),
+    ("hi there", "Hi there! What can I help you with today at Slice Pizza?"),
+    ("hello there", "Hello! I am the Slice Pizza assistant. Ask me about the menu."),
+    ("hey there", "Hey! Welcome to Slice Pizza. How can I help you today?"),
+    ("howdy", "Hello! Welcome to Slice Pizza. What can I get for you?"),
+    ("greetings", "Greetings! Welcome to Slice Pizza. How can I help?"),
+    ("yo", "Hello! Welcome to Slice Pizza. What would you like to order?"),
+    ("hiya", "Hi! Welcome to Slice Pizza. What can I help you with?"),
+    ("sup", "Hello! Welcome to Slice Pizza. How can I help you today?"),
+    ("what is up", "Hello! I am the Slice Pizza assistant. What can I help with?"),
+    ("good day", "Good day! Welcome to Slice Pizza. How can I help?"),
+]
+
+CLOSE = [
+    ("thanks", "You are welcome! Enjoy your meal."),
+    ("thank you", "You are welcome! Enjoy your Slice Pizza order."),
+    ("great, thanks", "You are welcome! Your order is confirmed. Enjoy!"),
+    ("perfect, thanks", "You are welcome! Enjoy your pizza."),
+    ("awesome", "You are welcome! Enjoy your Slice Pizza meal."),
+    ("all good, bye", "Goodbye! Thank you for ordering at Slice Pizza."),
+    ("confirmed, thank you", "You are welcome! Enjoy your meal."),
+    ("thx", "You are welcome! Ask me anytime about Slice Pizza."),
+    ("ty", "You are welcome! Enjoy your order."),
+    ("cheers", "You are welcome! Enjoy your Slice Pizza meal."),
+    ("that is all", "Thank you! Enjoy your Slice Pizza meal."),
+    ("nothing else", "Thank you for ordering at Slice Pizza. Enjoy!"),
+    ("i am done", "Thank you! Your order is ready. Enjoy your Slice Pizza meal."),
+    ("see you", "See you! Come back to Slice Pizza anytime."),
+    ("goodbye", "Goodbye! Thank you for visiting Slice Pizza."),
+    ("take care", "Take care! Enjoy your pizza."),
+]
+
+def templated_conversations() -> str:
+    lines = ["# Templated Conversations\n"]
+
+    # Pattern 1: greet → ask about a pizza → order it → add drink → close
+    drink_alts = [
+        ("a coke", "one Coke", 6.00, "Coke"),
+        ("a sprite", "one Sprite", 6.00, "Sprite"),
+        ("a guarana", "one Guarana", 6.00, "Guarana"),
+        ("one sprite please", "one Sprite", 6.00, "Sprite"),
+        ("one coke please", "one Coke", 6.00, "Coke"),
+        ("one guarana please", "one Guarana", 6.00, "Guarana"),
+    ]
+    for gi, (g, ga) in enumerate(GREET_OPEN):
+        for ni, (name, p) in enumerate(PIZZAS.items()):
+            pr = fmt(p["price"])
+            di, (dask, dlabel, dp, dname) = (gi + ni) % len(drink_alts), drink_alts[(gi + ni) % len(drink_alts)]
+            total = fmt(p["price"] + dp)
+            ci = (gi + ni) % len(CLOSE)
+            cl, cla = CLOSE[ci]
+            lines += [
+                pair(g, ga),
+                pair(f"tell me about the {name} pizza", f"{name} pizza is {p['desc']}. It costs {pr}."),
+                pair(f"ok, one {name} pizza please", f"Your order has one {name} pizza. It costs {pr}."),
+                pair(f"add {dask}", f"Your order has one {name} pizza and {dlabel}. The total is {total}."),
+                pair(f"confirm", f"Confirmed. One {name} pizza and {dlabel}. Total is {total}."),
+                pair(cl, cla),
+                "",
+            ]
+
+    # Pattern 2: greet → ask what is cheap → order cheapest → close
+    budget_asks = [
+        "what is the cheapest pizza",
+        "i want the most affordable pizza",
+        "what is the best budget option",
+        "i do not have much money, what do you recommend",
+        "what is under 35 dollars",
+    ]
+    for gi, (g, ga) in enumerate(GREET_OPEN):
+        bask = budget_asks[gi % len(budget_asks)]
+        ci = gi % len(CLOSE)
+        cl, cla = CLOSE[ci]
+        lines += [
+            pair(g, ga),
+            pair(bask, "The cheapest whole pizza is Margherita at $32.00."),
+            pair("one margherita please", "Your order has one Margherita pizza. It costs $32.00."),
+            pair(cl, cla),
+            "",
+        ]
+
+    # Pattern 3: greet → ask for recommendation → accept → add dessert slice → close
+    reco_asks = [
+        ("what do you recommend", "I recommend the Margherita pizza. It is simple, fresh, and the best first choice at Slice Pizza."),
+        ("what should i get", "I recommend the Margherita pizza for first-timers. It is the most popular at Slice Pizza."),
+        ("surprise me", "I suggest the Mushroom pizza. It is the house special with mushrooms and extra cheese. It costs $39.00."),
+        ("what is popular here", "The Margherita pizza is the most popular. The Mushroom pizza is the house special."),
+        ("help me choose", "I recommend the Margherita pizza. It is simple, fresh, and a crowd favorite."),
+    ]
+    for gi, (g, ga) in enumerate(GREET_OPEN):
+        rask, rans = reco_asks[gi % len(reco_asks)]
+        suggested = "Margherita" if "Margherita" in rans else "Mushroom"
+        spr = fmt(PIZZAS[suggested]["price"])
+        total = fmt(PIZZAS[suggested]["price"] + PIZZAS["Chocolate"]["slice"])
+        ci = gi % len(CLOSE)
+        cl, cla = CLOSE[ci]
+        lines += [
+            pair(g, ga),
+            pair(rask, rans),
+            pair(f"one {suggested} pizza please", f"Your order has one {suggested} pizza. It costs {spr}."),
+            pair("can i add a chocolate slice for dessert", f"Your order has one {suggested} pizza and one Chocolate slice. The total is {total}."),
+            pair(cl, cla),
+            "",
+        ]
+
+    # Pattern 4: greet → ask about no-meat options → pick one → drink → close
+    no_meat_asks = [
+        "i do not eat meat, what can i get",
+        "i am vegetarian, what are my options",
+        "no meat please, what do you have",
+        "what pizzas have no meat",
+        "i want a meat-free pizza",
+        "do you have vegetarian options",
+        "i need a pizza without any meat",
+    ]
+    no_meat_choices = ["Margherita", "Vegetarian", "Mushroom", "Four Cheese"]
+    for gi, (g, ga) in enumerate(GREET_OPEN):
+        ask = no_meat_asks[gi % len(no_meat_asks)]
+        chosen = no_meat_choices[gi % len(no_meat_choices)]
+        cpr = fmt(PIZZAS[chosen]["price"])
+        drink = DRINK_LIST[gi % len(DRINK_LIST)]
+        total = fmt(PIZZAS[chosen]["price"] + 6.00)
+        ci = gi % len(CLOSE)
+        cl, cla = CLOSE[ci]
+        lines += [
+            pair(g, ga),
+            pair(ask, "Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat."),
+            pair(f"i will go with {chosen}", f"Your order has one {chosen} pizza. It costs {cpr}."),
+            pair(f"add a {drink}", f"Your order has one {chosen} pizza and one {drink}. The total is {total}."),
+            pair(cl, cla),
+            "",
+        ]
+
+    # Pattern 5: greet → ask price of specific pizza → ask about slice → order slice + drink → close
+    for gi, (g, ga) in enumerate(GREET_OPEN):
+        names = list(PIZZAS.keys())
+        name = names[gi % len(names)]
+        p = PIZZAS[name]
+        drink = DRINK_LIST[gi % len(DRINK_LIST)]
+        total = fmt(p["slice"] + 6.00)
+        ci = gi % len(CLOSE)
+        cl, cla = CLOSE[ci]
+        lines += [
+            pair(g, ga),
+            pair(f"how much is {name} pizza", f"A whole {name} pizza costs {fmt(p['price'])}."),
+            pair(f"how much is a slice of {name}", f"A {name} slice costs {fmt(p['slice'])}."),
+            pair(f"one {name} slice and one {drink} please", f"Your order has one {name} slice and one {drink}. The total is {total}."),
+            pair("confirmed", f"Confirmed. One {name} slice and one {drink}. Total is {total}."),
+            pair(cl, cla),
+            "",
+        ]
+
+    # Pattern 6: ask ingredient → ask which pizza → order → close
+    ingr_questions = [
+        ("which pizza has basil", "Only the Margherita pizza has basil.", "Margherita"),
+        ("which pizza has mushrooms", "The Mushroom pizza and the Vegetarian pizza have mushrooms.", "Mushroom"),
+        ("which pizza has ham", "Only the Portuguese pizza has ham.", "Portuguese"),
+        ("which pizza has pepperoni", "Only the Pepperoni pizza has pepperoni.", "Pepperoni"),
+        ("which pizza has chicken", "Only the Chicken Catupiry pizza has chicken.", "Chicken Catupiry"),
+        ("which pizza has olives", "The Portuguese pizza and the Vegetarian pizza have olives.", "Portuguese"),
+        ("which pizza has eggs", "Only the Portuguese pizza has eggs.", "Portuguese"),
+        ("which pizza has four types of cheese", "The Four Cheese pizza has four types of cheese.", "Four Cheese"),
+    ]
+    for gi, (g, ga) in enumerate(GREET_OPEN):
+        iq, ia, suggested = ingr_questions[gi % len(ingr_questions)]
+        spr = fmt(PIZZAS[suggested]["price"])
+        drink = DRINK_LIST[gi % len(DRINK_LIST)]
+        total = fmt(PIZZAS[suggested]["price"] + 6.00)
+        ci = gi % len(CLOSE)
+        cl, cla = CLOSE[ci]
+        lines += [
+            pair(g, ga),
+            pair(iq, ia),
+            pair(f"i love that ingredient, give me one {suggested} pizza", f"Your order has one {suggested} pizza. It costs {spr}."),
+            pair(f"and a {drink}", f"Your order has one {suggested} pizza and one {drink}. The total is {total}."),
+            pair(cl, cla),
+            "",
+        ]
+
+    # Pattern 7: ask for party order → get suggestion → confirm
+    party_sizes = [
+        (2, "two", "one Pepperoni and one Margherita, plus two sodas", 40+32+12, False),
+        (3, "three", "one Pepperoni, one Vegetarian, and one Margherita, plus three sodas", 40+36+32+18, False),
+        (4, "four", "two Pepperoni and two Margherita pizzas, plus four sodas", 80+64+24, False),
+        (5, "five", "one of each: Pepperoni, Margherita, Vegetarian, Mushroom, and Chicken Catupiry, plus five sodas", 40+32+36+39+37+30, False),
+        (6, "six", "two Pepperoni, two Margherita, and two Vegetarian pizzas, plus six sodas", 80+64+72+36, True),
+    ]
+    for gi, (g, ga) in enumerate(GREET_OPEN):
+        count, count_word, suggestion, total_val, _ = party_sizes[gi % len(party_sizes)]
+        ci = gi % len(CLOSE)
+        cl, cla = CLOSE[ci]
+        lines += [
+            pair(g, ga),
+            pair(f"i need to order for {count_word} people", f"For {count_word} people, I suggest {suggestion}. Total would be ${total_val:.2f}."),
+            pair("that sounds perfect", f"Your order is set. Total is ${total_val:.2f}."),
+            pair("confirmed", f"Confirmed. Total is ${total_val:.2f}. Enjoy your Slice Pizza gathering!"),
+            pair(cl, cla),
+            "",
+        ]
+
+    return "\n".join(lines)
+
+
 # ── extended Q&A variations ──────────────────────────────────────────────────
 
 def extended_qa() -> str:
@@ -1435,6 +1646,8 @@ def main():
         out_of_domain(),
         "\n",
         extended_qa(),
+        "\n",
+        templated_conversations(),
         "\n",
         realistic_dialogues(),
         "\n",

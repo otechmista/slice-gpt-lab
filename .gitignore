@@ -25,3 +25,5 @@ Thumbs.db
 
 # Runtime artifacts
 logs/
+
+.claude/

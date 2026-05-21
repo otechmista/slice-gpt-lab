@@ -960,11 +960,18 @@ function injectCompletionCard() {
 
 // ── Pizza Chat web component ──────────────────────────────
 
+const PIZZA_SUGGESTIONS = [
+  "What's on the menu?",
+  "What do you recommend?",
+  "Which pizzas have no meat?",
+  "Do you deliver?",
+];
+
 class PizzaChat extends HTMLElement {
   constructor() {
     super();
     this._open = false;
-    this._welcome = { role: "assistant", content: "Hi! I'm the Slice Pizza AI. Ask me anything about our menu or this course 🍕" };
+    this._welcome = { role: "assistant", content: "Hi! I'm the Slice Pizza AI 🍕 Ask me anything about the menu, prices, or ingredients.\n\n⚠️ English only.\n⚠️ This is a tiny experimental model — it may give wrong or unexpected answers." };
     this._history = this.loadHistory();
   }
 
@@ -990,7 +997,7 @@ class PizzaChat extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      <div id="pizza-chat-panel" class="fixed bottom-5 right-5 z-50 flex w-[min(380px,calc(100vw-2rem))] flex-col rounded-3xl border border-line bg-page shadow-paper overflow-hidden" style="height:480px">
+      <div id="pizza-chat-panel" class="fixed bottom-5 right-5 z-50 flex w-[min(380px,calc(100vw-2rem))] flex-col rounded-3xl border border-line bg-page shadow-paper overflow-hidden" style="height:560px">
         <div class="flex items-center justify-between gap-3 border-b border-line bg-white px-4 py-3">
           <div class="flex items-center gap-3">
             <span class="grid h-9 w-9 shrink-0 place-items-center rounded-2xl bg-coral text-white">
@@ -998,7 +1005,7 @@ class PizzaChat extends HTMLElement {
             </span>
             <div>
               <p class="text-sm font-black text-ink leading-none">Slice Pizza AI</p>
-              <p class="text-xs text-soft mt-0.5">Live demo · GPT-style model</p>
+              <p class="text-xs text-soft mt-0.5">Live demo · <span class="text-coral font-black">EN only</span></p>
             </div>
           </div>
           <div class="flex items-center gap-2">
@@ -1010,11 +1017,18 @@ class PizzaChat extends HTMLElement {
             </button>
           </div>
         </div>
+        <div class="flex items-center gap-2 border-b border-line bg-[#fff7df] px-4 py-2 text-xs font-bold text-soft">
+          <i data-lucide="triangle-alert" class="h-3.5 w-3.5 shrink-0 text-honey"></i>
+          Tiny experimental model · may give wrong answers · English only
+        </div>
         <div id="chat-messages" class="flex flex-1 flex-col gap-3 overflow-y-auto p-4">
           ${this._history.map((m) => `<div class="${m.role === "user" ? "chat-bubble-user" : "chat-bubble-bot"}">${m.content}</div>`).join("")}
         </div>
+        <div id="chat-suggestions" class="flex flex-wrap gap-2 border-t border-line bg-page px-3 py-2">
+          ${PIZZA_SUGGESTIONS.map((s) => `<button class="chat-suggestion rounded-xl border border-line bg-white px-3 py-1.5 text-xs font-black text-ink transition hover:border-coral hover:text-coral" type="button">${s}</button>`).join("")}
+        </div>
         <form id="chat-form" class="flex gap-2 border-t border-line bg-white p-3" autocomplete="off">
-          <input id="chat-input" class="h-10 flex-1 rounded-xl border border-line bg-shell px-3 text-sm font-bold text-ink outline-none transition focus:border-honey" type="text" placeholder="Ask about the menu or the model…" />
+          <input id="chat-input" class="h-10 flex-1 rounded-xl border border-line bg-shell px-3 text-sm font-bold text-ink outline-none transition focus:border-honey" type="text" placeholder="Ask in English…" />
           <button class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-ink text-page transition hover:opacity-80" type="submit">
             <i data-lucide="send" class="h-4 w-4"></i>
           </button>
@@ -1038,6 +1052,13 @@ class PizzaChat extends HTMLElement {
       input.value = "";
       this.addMessage("user", text);
       this.fetchReply(text);
+    });
+
+    this.querySelectorAll(".chat-suggestion").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        this.addMessage("user", btn.textContent);
+        this.fetchReply(btn.textContent);
+      });
     });
   }
 
