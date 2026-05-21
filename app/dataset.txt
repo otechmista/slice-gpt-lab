@@ -1521,6 +1521,1447 @@ Assistant: I only answer questions about Slice Pizza.
 
 
 
+# Extended Q&A
+
+Customer: which is cheaper, Margherita or Pepperoni
+Assistant: Margherita pizza at $32.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: is Margherita cheaper than Pepperoni
+Assistant: Margherita pizza at $32.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: compare the price of Margherita and Pepperoni
+Assistant: Margherita pizza costs $32.00 and Pepperoni pizza costs $40.00. Margherita pizza at $32.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: which is cheaper, Margherita or Four Cheese
+Assistant: Margherita pizza at $32.00 is cheaper than Four Cheese pizza at $38.00.
+
+Customer: is Margherita cheaper than Four Cheese
+Assistant: Margherita pizza at $32.00 is cheaper than Four Cheese pizza at $38.00.
+
+Customer: compare the price of Margherita and Four Cheese
+Assistant: Margherita pizza costs $32.00 and Four Cheese pizza costs $38.00. Margherita pizza at $32.00 is cheaper than Four Cheese pizza at $38.00.
+
+Customer: which is cheaper, Margherita or Chicken Catupiry
+Assistant: Margherita pizza at $32.00 is cheaper than Chicken Catupiry pizza at $37.00.
+
+Customer: is Margherita cheaper than Chicken Catupiry
+Assistant: Margherita pizza at $32.00 is cheaper than Chicken Catupiry pizza at $37.00.
+
+Customer: compare the price of Margherita and Chicken Catupiry
+Assistant: Margherita pizza costs $32.00 and Chicken Catupiry pizza costs $37.00. Margherita pizza at $32.00 is cheaper than Chicken Catupiry pizza at $37.00.
+
+Customer: which is cheaper, Margherita or Portuguese
+Assistant: Margherita pizza at $32.00 is cheaper than Portuguese pizza at $36.00.
+
+Customer: is Margherita cheaper than Portuguese
+Assistant: Margherita pizza at $32.00 is cheaper than Portuguese pizza at $36.00.
+
+Customer: compare the price of Margherita and Portuguese
+Assistant: Margherita pizza costs $32.00 and Portuguese pizza costs $36.00. Margherita pizza at $32.00 is cheaper than Portuguese pizza at $36.00.
+
+Customer: which is cheaper, Margherita or Vegetarian
+Assistant: Margherita pizza at $32.00 is cheaper than Vegetarian pizza at $36.00.
+
+Customer: is Margherita cheaper than Vegetarian
+Assistant: Margherita pizza at $32.00 is cheaper than Vegetarian pizza at $36.00.
+
+Customer: compare the price of Margherita and Vegetarian
+Assistant: Margherita pizza costs $32.00 and Vegetarian pizza costs $36.00. Margherita pizza at $32.00 is cheaper than Vegetarian pizza at $36.00.
+
+Customer: which is cheaper, Margherita or Mushroom
+Assistant: Margherita pizza at $32.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: is Margherita cheaper than Mushroom
+Assistant: Margherita pizza at $32.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: compare the price of Margherita and Mushroom
+Assistant: Margherita pizza costs $32.00 and Mushroom pizza costs $39.00. Margherita pizza at $32.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: which is cheaper, Margherita or Chocolate
+Assistant: Margherita pizza at $32.00 is cheaper than Chocolate pizza at $35.00.
+
+Customer: is Margherita cheaper than Chocolate
+Assistant: Margherita pizza at $32.00 is cheaper than Chocolate pizza at $35.00.
+
+Customer: compare the price of Margherita and Chocolate
+Assistant: Margherita pizza costs $32.00 and Chocolate pizza costs $35.00. Margherita pizza at $32.00 is cheaper than Chocolate pizza at $35.00.
+
+Customer: which is cheaper, Pepperoni or Four Cheese
+Assistant: Four Cheese pizza at $38.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: is Pepperoni cheaper than Four Cheese
+Assistant: Four Cheese pizza at $38.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: compare the price of Pepperoni and Four Cheese
+Assistant: Pepperoni pizza costs $40.00 and Four Cheese pizza costs $38.00. Four Cheese pizza at $38.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: which is cheaper, Pepperoni or Chicken Catupiry
+Assistant: Chicken Catupiry pizza at $37.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: is Pepperoni cheaper than Chicken Catupiry
+Assistant: Chicken Catupiry pizza at $37.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: compare the price of Pepperoni and Chicken Catupiry
+Assistant: Pepperoni pizza costs $40.00 and Chicken Catupiry pizza costs $37.00. Chicken Catupiry pizza at $37.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: which is cheaper, Pepperoni or Portuguese
+Assistant: Portuguese pizza at $36.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: is Pepperoni cheaper than Portuguese
+Assistant: Portuguese pizza at $36.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: compare the price of Pepperoni and Portuguese
+Assistant: Pepperoni pizza costs $40.00 and Portuguese pizza costs $36.00. Portuguese pizza at $36.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: which is cheaper, Pepperoni or Vegetarian
+Assistant: Vegetarian pizza at $36.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: is Pepperoni cheaper than Vegetarian
+Assistant: Vegetarian pizza at $36.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: compare the price of Pepperoni and Vegetarian
+Assistant: Pepperoni pizza costs $40.00 and Vegetarian pizza costs $36.00. Vegetarian pizza at $36.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: which is cheaper, Pepperoni or Mushroom
+Assistant: Mushroom pizza at $39.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: is Pepperoni cheaper than Mushroom
+Assistant: Mushroom pizza at $39.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: compare the price of Pepperoni and Mushroom
+Assistant: Pepperoni pizza costs $40.00 and Mushroom pizza costs $39.00. Mushroom pizza at $39.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: which is cheaper, Pepperoni or Chocolate
+Assistant: Chocolate pizza at $35.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: is Pepperoni cheaper than Chocolate
+Assistant: Chocolate pizza at $35.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: compare the price of Pepperoni and Chocolate
+Assistant: Pepperoni pizza costs $40.00 and Chocolate pizza costs $35.00. Chocolate pizza at $35.00 is cheaper than Pepperoni pizza at $40.00.
+
+Customer: which is cheaper, Four Cheese or Chicken Catupiry
+Assistant: Chicken Catupiry pizza at $37.00 is cheaper than Four Cheese pizza at $38.00.
+
+Customer: is Four Cheese cheaper than Chicken Catupiry
+Assistant: Chicken Catupiry pizza at $37.00 is cheaper than Four Cheese pizza at $38.00.
+
+Customer: compare the price of Four Cheese and Chicken Catupiry
+Assistant: Four Cheese pizza costs $38.00 and Chicken Catupiry pizza costs $37.00. Chicken Catupiry pizza at $37.00 is cheaper than Four Cheese pizza at $38.00.
+
+Customer: which is cheaper, Four Cheese or Portuguese
+Assistant: Portuguese pizza at $36.00 is cheaper than Four Cheese pizza at $38.00.
+
+Customer: is Four Cheese cheaper than Portuguese
+Assistant: Portuguese pizza at $36.00 is cheaper than Four Cheese pizza at $38.00.
+
+Customer: compare the price of Four Cheese and Portuguese
+Assistant: Four Cheese pizza costs $38.00 and Portuguese pizza costs $36.00. Portuguese pizza at $36.00 is cheaper than Four Cheese pizza at $38.00.
+
+Customer: which is cheaper, Four Cheese or Vegetarian
+Assistant: Vegetarian pizza at $36.00 is cheaper than Four Cheese pizza at $38.00.
+
+Customer: is Four Cheese cheaper than Vegetarian
+Assistant: Vegetarian pizza at $36.00 is cheaper than Four Cheese pizza at $38.00.
+
+Customer: compare the price of Four Cheese and Vegetarian
+Assistant: Four Cheese pizza costs $38.00 and Vegetarian pizza costs $36.00. Vegetarian pizza at $36.00 is cheaper than Four Cheese pizza at $38.00.
+
+Customer: which is cheaper, Four Cheese or Mushroom
+Assistant: Four Cheese pizza at $38.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: is Four Cheese cheaper than Mushroom
+Assistant: Four Cheese pizza at $38.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: compare the price of Four Cheese and Mushroom
+Assistant: Four Cheese pizza costs $38.00 and Mushroom pizza costs $39.00. Four Cheese pizza at $38.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: which is cheaper, Four Cheese or Chocolate
+Assistant: Chocolate pizza at $35.00 is cheaper than Four Cheese pizza at $38.00.
+
+Customer: is Four Cheese cheaper than Chocolate
+Assistant: Chocolate pizza at $35.00 is cheaper than Four Cheese pizza at $38.00.
+
+Customer: compare the price of Four Cheese and Chocolate
+Assistant: Four Cheese pizza costs $38.00 and Chocolate pizza costs $35.00. Chocolate pizza at $35.00 is cheaper than Four Cheese pizza at $38.00.
+
+Customer: which is cheaper, Chicken Catupiry or Portuguese
+Assistant: Portuguese pizza at $36.00 is cheaper than Chicken Catupiry pizza at $37.00.
+
+Customer: is Chicken Catupiry cheaper than Portuguese
+Assistant: Portuguese pizza at $36.00 is cheaper than Chicken Catupiry pizza at $37.00.
+
+Customer: compare the price of Chicken Catupiry and Portuguese
+Assistant: Chicken Catupiry pizza costs $37.00 and Portuguese pizza costs $36.00. Portuguese pizza at $36.00 is cheaper than Chicken Catupiry pizza at $37.00.
+
+Customer: which is cheaper, Chicken Catupiry or Vegetarian
+Assistant: Vegetarian pizza at $36.00 is cheaper than Chicken Catupiry pizza at $37.00.
+
+Customer: is Chicken Catupiry cheaper than Vegetarian
+Assistant: Vegetarian pizza at $36.00 is cheaper than Chicken Catupiry pizza at $37.00.
+
+Customer: compare the price of Chicken Catupiry and Vegetarian
+Assistant: Chicken Catupiry pizza costs $37.00 and Vegetarian pizza costs $36.00. Vegetarian pizza at $36.00 is cheaper than Chicken Catupiry pizza at $37.00.
+
+Customer: which is cheaper, Chicken Catupiry or Mushroom
+Assistant: Chicken Catupiry pizza at $37.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: is Chicken Catupiry cheaper than Mushroom
+Assistant: Chicken Catupiry pizza at $37.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: compare the price of Chicken Catupiry and Mushroom
+Assistant: Chicken Catupiry pizza costs $37.00 and Mushroom pizza costs $39.00. Chicken Catupiry pizza at $37.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: which is cheaper, Chicken Catupiry or Chocolate
+Assistant: Chocolate pizza at $35.00 is cheaper than Chicken Catupiry pizza at $37.00.
+
+Customer: is Chicken Catupiry cheaper than Chocolate
+Assistant: Chocolate pizza at $35.00 is cheaper than Chicken Catupiry pizza at $37.00.
+
+Customer: compare the price of Chicken Catupiry and Chocolate
+Assistant: Chicken Catupiry pizza costs $37.00 and Chocolate pizza costs $35.00. Chocolate pizza at $35.00 is cheaper than Chicken Catupiry pizza at $37.00.
+
+Customer: which is cheaper, Portuguese or Vegetarian
+Assistant: Portuguese and Vegetarian pizzas cost the same at $36.00.
+
+Customer: is Portuguese cheaper than Vegetarian
+Assistant: Portuguese and Vegetarian pizzas cost the same at $36.00.
+
+Customer: compare the price of Portuguese and Vegetarian
+Assistant: Portuguese pizza costs $36.00 and Vegetarian pizza costs $36.00. Portuguese and Vegetarian pizzas cost the same at $36.00.
+
+Customer: which is cheaper, Portuguese or Mushroom
+Assistant: Portuguese pizza at $36.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: is Portuguese cheaper than Mushroom
+Assistant: Portuguese pizza at $36.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: compare the price of Portuguese and Mushroom
+Assistant: Portuguese pizza costs $36.00 and Mushroom pizza costs $39.00. Portuguese pizza at $36.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: which is cheaper, Portuguese or Chocolate
+Assistant: Chocolate pizza at $35.00 is cheaper than Portuguese pizza at $36.00.
+
+Customer: is Portuguese cheaper than Chocolate
+Assistant: Chocolate pizza at $35.00 is cheaper than Portuguese pizza at $36.00.
+
+Customer: compare the price of Portuguese and Chocolate
+Assistant: Portuguese pizza costs $36.00 and Chocolate pizza costs $35.00. Chocolate pizza at $35.00 is cheaper than Portuguese pizza at $36.00.
+
+Customer: which is cheaper, Vegetarian or Mushroom
+Assistant: Vegetarian pizza at $36.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: is Vegetarian cheaper than Mushroom
+Assistant: Vegetarian pizza at $36.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: compare the price of Vegetarian and Mushroom
+Assistant: Vegetarian pizza costs $36.00 and Mushroom pizza costs $39.00. Vegetarian pizza at $36.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: which is cheaper, Vegetarian or Chocolate
+Assistant: Chocolate pizza at $35.00 is cheaper than Vegetarian pizza at $36.00.
+
+Customer: is Vegetarian cheaper than Chocolate
+Assistant: Chocolate pizza at $35.00 is cheaper than Vegetarian pizza at $36.00.
+
+Customer: compare the price of Vegetarian and Chocolate
+Assistant: Vegetarian pizza costs $36.00 and Chocolate pizza costs $35.00. Chocolate pizza at $35.00 is cheaper than Vegetarian pizza at $36.00.
+
+Customer: which is cheaper, Mushroom or Chocolate
+Assistant: Chocolate pizza at $35.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: is Mushroom cheaper than Chocolate
+Assistant: Chocolate pizza at $35.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: compare the price of Mushroom and Chocolate
+Assistant: Mushroom pizza costs $39.00 and Chocolate pizza costs $35.00. Chocolate pizza at $35.00 is cheaper than Mushroom pizza at $39.00.
+
+Customer: total for one Margherita pizza and one Coke
+Assistant: One Margherita pizza and one Coke totals $38.00.
+
+Customer: how much for Margherita and Coke
+Assistant: Margherita pizza is $32.00 and Coke is $6.00. Total is $38.00.
+
+Customer: total for one Margherita pizza and one Coca-Cola
+Assistant: One Margherita pizza and one Coca-Cola totals $38.00.
+
+Customer: how much for Margherita and Coca-Cola
+Assistant: Margherita pizza is $32.00 and Coca-Cola is $6.00. Total is $38.00.
+
+Customer: total for one Margherita pizza and one Sprite
+Assistant: One Margherita pizza and one Sprite totals $38.00.
+
+Customer: how much for Margherita and Sprite
+Assistant: Margherita pizza is $32.00 and Sprite is $6.00. Total is $38.00.
+
+Customer: total for one Margherita pizza and one Guarana
+Assistant: One Margherita pizza and one Guarana totals $38.00.
+
+Customer: how much for Margherita and Guarana
+Assistant: Margherita pizza is $32.00 and Guarana is $6.00. Total is $38.00.
+
+Customer: total for one Pepperoni pizza and one Coke
+Assistant: One Pepperoni pizza and one Coke totals $46.00.
+
+Customer: how much for Pepperoni and Coke
+Assistant: Pepperoni pizza is $40.00 and Coke is $6.00. Total is $46.00.
+
+Customer: total for one Pepperoni pizza and one Coca-Cola
+Assistant: One Pepperoni pizza and one Coca-Cola totals $46.00.
+
+Customer: how much for Pepperoni and Coca-Cola
+Assistant: Pepperoni pizza is $40.00 and Coca-Cola is $6.00. Total is $46.00.
+
+Customer: total for one Pepperoni pizza and one Sprite
+Assistant: One Pepperoni pizza and one Sprite totals $46.00.
+
+Customer: how much for Pepperoni and Sprite
+Assistant: Pepperoni pizza is $40.00 and Sprite is $6.00. Total is $46.00.
+
+Customer: total for one Pepperoni pizza and one Guarana
+Assistant: One Pepperoni pizza and one Guarana totals $46.00.
+
+Customer: how much for Pepperoni and Guarana
+Assistant: Pepperoni pizza is $40.00 and Guarana is $6.00. Total is $46.00.
+
+Customer: total for one Four Cheese pizza and one Coke
+Assistant: One Four Cheese pizza and one Coke totals $44.00.
+
+Customer: how much for Four Cheese and Coke
+Assistant: Four Cheese pizza is $38.00 and Coke is $6.00. Total is $44.00.
+
+Customer: total for one Four Cheese pizza and one Coca-Cola
+Assistant: One Four Cheese pizza and one Coca-Cola totals $44.00.
+
+Customer: how much for Four Cheese and Coca-Cola
+Assistant: Four Cheese pizza is $38.00 and Coca-Cola is $6.00. Total is $44.00.
+
+Customer: total for one Four Cheese pizza and one Sprite
+Assistant: One Four Cheese pizza and one Sprite totals $44.00.
+
+Customer: how much for Four Cheese and Sprite
+Assistant: Four Cheese pizza is $38.00 and Sprite is $6.00. Total is $44.00.
+
+Customer: total for one Four Cheese pizza and one Guarana
+Assistant: One Four Cheese pizza and one Guarana totals $44.00.
+
+Customer: how much for Four Cheese and Guarana
+Assistant: Four Cheese pizza is $38.00 and Guarana is $6.00. Total is $44.00.
+
+Customer: total for one Chicken Catupiry pizza and one Coke
+Assistant: One Chicken Catupiry pizza and one Coke totals $43.00.
+
+Customer: how much for Chicken Catupiry and Coke
+Assistant: Chicken Catupiry pizza is $37.00 and Coke is $6.00. Total is $43.00.
+
+Customer: total for one Chicken Catupiry pizza and one Coca-Cola
+Assistant: One Chicken Catupiry pizza and one Coca-Cola totals $43.00.
+
+Customer: how much for Chicken Catupiry and Coca-Cola
+Assistant: Chicken Catupiry pizza is $37.00 and Coca-Cola is $6.00. Total is $43.00.
+
+Customer: total for one Chicken Catupiry pizza and one Sprite
+Assistant: One Chicken Catupiry pizza and one Sprite totals $43.00.
+
+Customer: how much for Chicken Catupiry and Sprite
+Assistant: Chicken Catupiry pizza is $37.00 and Sprite is $6.00. Total is $43.00.
+
+Customer: total for one Chicken Catupiry pizza and one Guarana
+Assistant: One Chicken Catupiry pizza and one Guarana totals $43.00.
+
+Customer: how much for Chicken Catupiry and Guarana
+Assistant: Chicken Catupiry pizza is $37.00 and Guarana is $6.00. Total is $43.00.
+
+Customer: total for one Portuguese pizza and one Coke
+Assistant: One Portuguese pizza and one Coke totals $42.00.
+
+Customer: how much for Portuguese and Coke
+Assistant: Portuguese pizza is $36.00 and Coke is $6.00. Total is $42.00.
+
+Customer: total for one Portuguese pizza and one Coca-Cola
+Assistant: One Portuguese pizza and one Coca-Cola totals $42.00.
+
+Customer: how much for Portuguese and Coca-Cola
+Assistant: Portuguese pizza is $36.00 and Coca-Cola is $6.00. Total is $42.00.
+
+Customer: total for one Portuguese pizza and one Sprite
+Assistant: One Portuguese pizza and one Sprite totals $42.00.
+
+Customer: how much for Portuguese and Sprite
+Assistant: Portuguese pizza is $36.00 and Sprite is $6.00. Total is $42.00.
+
+Customer: total for one Portuguese pizza and one Guarana
+Assistant: One Portuguese pizza and one Guarana totals $42.00.
+
+Customer: how much for Portuguese and Guarana
+Assistant: Portuguese pizza is $36.00 and Guarana is $6.00. Total is $42.00.
+
+Customer: total for one Vegetarian pizza and one Coke
+Assistant: One Vegetarian pizza and one Coke totals $42.00.
+
+Customer: how much for Vegetarian and Coke
+Assistant: Vegetarian pizza is $36.00 and Coke is $6.00. Total is $42.00.
+
+Customer: total for one Vegetarian pizza and one Coca-Cola
+Assistant: One Vegetarian pizza and one Coca-Cola totals $42.00.
+
+Customer: how much for Vegetarian and Coca-Cola
+Assistant: Vegetarian pizza is $36.00 and Coca-Cola is $6.00. Total is $42.00.
+
+Customer: total for one Vegetarian pizza and one Sprite
+Assistant: One Vegetarian pizza and one Sprite totals $42.00.
+
+Customer: how much for Vegetarian and Sprite
+Assistant: Vegetarian pizza is $36.00 and Sprite is $6.00. Total is $42.00.
+
+Customer: total for one Vegetarian pizza and one Guarana
+Assistant: One Vegetarian pizza and one Guarana totals $42.00.
+
+Customer: how much for Vegetarian and Guarana
+Assistant: Vegetarian pizza is $36.00 and Guarana is $6.00. Total is $42.00.
+
+Customer: total for one Mushroom pizza and one Coke
+Assistant: One Mushroom pizza and one Coke totals $45.00.
+
+Customer: how much for Mushroom and Coke
+Assistant: Mushroom pizza is $39.00 and Coke is $6.00. Total is $45.00.
+
+Customer: total for one Mushroom pizza and one Coca-Cola
+Assistant: One Mushroom pizza and one Coca-Cola totals $45.00.
+
+Customer: how much for Mushroom and Coca-Cola
+Assistant: Mushroom pizza is $39.00 and Coca-Cola is $6.00. Total is $45.00.
+
+Customer: total for one Mushroom pizza and one Sprite
+Assistant: One Mushroom pizza and one Sprite totals $45.00.
+
+Customer: how much for Mushroom and Sprite
+Assistant: Mushroom pizza is $39.00 and Sprite is $6.00. Total is $45.00.
+
+Customer: total for one Mushroom pizza and one Guarana
+Assistant: One Mushroom pizza and one Guarana totals $45.00.
+
+Customer: how much for Mushroom and Guarana
+Assistant: Mushroom pizza is $39.00 and Guarana is $6.00. Total is $45.00.
+
+Customer: total for one Chocolate pizza and one Coke
+Assistant: One Chocolate pizza and one Coke totals $41.00.
+
+Customer: how much for Chocolate and Coke
+Assistant: Chocolate pizza is $35.00 and Coke is $6.00. Total is $41.00.
+
+Customer: total for one Chocolate pizza and one Coca-Cola
+Assistant: One Chocolate pizza and one Coca-Cola totals $41.00.
+
+Customer: how much for Chocolate and Coca-Cola
+Assistant: Chocolate pizza is $35.00 and Coca-Cola is $6.00. Total is $41.00.
+
+Customer: total for one Chocolate pizza and one Sprite
+Assistant: One Chocolate pizza and one Sprite totals $41.00.
+
+Customer: how much for Chocolate and Sprite
+Assistant: Chocolate pizza is $35.00 and Sprite is $6.00. Total is $41.00.
+
+Customer: total for one Chocolate pizza and one Guarana
+Assistant: One Chocolate pizza and one Guarana totals $41.00.
+
+Customer: how much for Chocolate and Guarana
+Assistant: Chocolate pizza is $35.00 and Guarana is $6.00. Total is $41.00.
+
+Customer: does Margherita pizza have tomato sauce
+Assistant: Yes. Margherita pizza does have tomato sauce.
+
+Customer: is there tomato sauce in Margherita pizza
+Assistant: Yes. Margherita pizza does have tomato sauce.
+
+Customer: does Pepperoni pizza have tomato sauce
+Assistant: Yes. Pepperoni pizza does have tomato sauce.
+
+Customer: is there tomato sauce in Pepperoni pizza
+Assistant: Yes. Pepperoni pizza does have tomato sauce.
+
+Customer: does Four Cheese pizza have tomato sauce
+Assistant: No. Four Cheese pizza does not have tomato sauce.
+
+Customer: is there tomato sauce in Four Cheese pizza
+Assistant: No. Four Cheese pizza does not have tomato sauce.
+
+Customer: does Chicken Catupiry pizza have tomato sauce
+Assistant: Yes. Chicken Catupiry pizza does have tomato sauce.
+
+Customer: is there tomato sauce in Chicken Catupiry pizza
+Assistant: Yes. Chicken Catupiry pizza does have tomato sauce.
+
+Customer: does Portuguese pizza have tomato sauce
+Assistant: Yes. Portuguese pizza does have tomato sauce.
+
+Customer: is there tomato sauce in Portuguese pizza
+Assistant: Yes. Portuguese pizza does have tomato sauce.
+
+Customer: does Vegetarian pizza have tomato sauce
+Assistant: Yes. Vegetarian pizza does have tomato sauce.
+
+Customer: is there tomato sauce in Vegetarian pizza
+Assistant: Yes. Vegetarian pizza does have tomato sauce.
+
+Customer: does Mushroom pizza have tomato sauce
+Assistant: Yes. Mushroom pizza does have tomato sauce.
+
+Customer: is there tomato sauce in Mushroom pizza
+Assistant: Yes. Mushroom pizza does have tomato sauce.
+
+Customer: does Chocolate pizza have tomato sauce
+Assistant: No. Chocolate pizza does not have tomato sauce.
+
+Customer: is there tomato sauce in Chocolate pizza
+Assistant: No. Chocolate pizza does not have tomato sauce.
+
+Customer: does Margherita pizza have mozzarella
+Assistant: Yes. Margherita pizza does have mozzarella.
+
+Customer: is there mozzarella in Margherita pizza
+Assistant: Yes. Margherita pizza does have mozzarella.
+
+Customer: does Pepperoni pizza have mozzarella
+Assistant: Yes. Pepperoni pizza does have mozzarella.
+
+Customer: is there mozzarella in Pepperoni pizza
+Assistant: Yes. Pepperoni pizza does have mozzarella.
+
+Customer: does Four Cheese pizza have mozzarella
+Assistant: Yes. Four Cheese pizza does have mozzarella.
+
+Customer: is there mozzarella in Four Cheese pizza
+Assistant: Yes. Four Cheese pizza does have mozzarella.
+
+Customer: does Chicken Catupiry pizza have mozzarella
+Assistant: Yes. Chicken Catupiry pizza does have mozzarella.
+
+Customer: is there mozzarella in Chicken Catupiry pizza
+Assistant: Yes. Chicken Catupiry pizza does have mozzarella.
+
+Customer: does Portuguese pizza have mozzarella
+Assistant: Yes. Portuguese pizza does have mozzarella.
+
+Customer: is there mozzarella in Portuguese pizza
+Assistant: Yes. Portuguese pizza does have mozzarella.
+
+Customer: does Vegetarian pizza have mozzarella
+Assistant: Yes. Vegetarian pizza does have mozzarella.
+
+Customer: is there mozzarella in Vegetarian pizza
+Assistant: Yes. Vegetarian pizza does have mozzarella.
+
+Customer: does Mushroom pizza have mozzarella
+Assistant: Yes. Mushroom pizza does have mozzarella.
+
+Customer: is there mozzarella in Mushroom pizza
+Assistant: Yes. Mushroom pizza does have mozzarella.
+
+Customer: does Chocolate pizza have mozzarella
+Assistant: No. Chocolate pizza does not have mozzarella.
+
+Customer: is there mozzarella in Chocolate pizza
+Assistant: No. Chocolate pizza does not have mozzarella.
+
+Customer: does Margherita pizza have mushrooms
+Assistant: No. Margherita pizza does not have mushrooms.
+
+Customer: is there mushrooms in Margherita pizza
+Assistant: No. Margherita pizza does not have mushrooms.
+
+Customer: does Pepperoni pizza have mushrooms
+Assistant: No. Pepperoni pizza does not have mushrooms.
+
+Customer: is there mushrooms in Pepperoni pizza
+Assistant: No. Pepperoni pizza does not have mushrooms.
+
+Customer: does Four Cheese pizza have mushrooms
+Assistant: No. Four Cheese pizza does not have mushrooms.
+
+Customer: is there mushrooms in Four Cheese pizza
+Assistant: No. Four Cheese pizza does not have mushrooms.
+
+Customer: does Chicken Catupiry pizza have mushrooms
+Assistant: No. Chicken Catupiry pizza does not have mushrooms.
+
+Customer: is there mushrooms in Chicken Catupiry pizza
+Assistant: No. Chicken Catupiry pizza does not have mushrooms.
+
+Customer: does Portuguese pizza have mushrooms
+Assistant: No. Portuguese pizza does not have mushrooms.
+
+Customer: is there mushrooms in Portuguese pizza
+Assistant: No. Portuguese pizza does not have mushrooms.
+
+Customer: does Vegetarian pizza have mushrooms
+Assistant: Yes. Vegetarian pizza does have mushrooms.
+
+Customer: is there mushrooms in Vegetarian pizza
+Assistant: Yes. Vegetarian pizza does have mushrooms.
+
+Customer: does Mushroom pizza have mushrooms
+Assistant: Yes. Mushroom pizza does have mushrooms.
+
+Customer: is there mushrooms in Mushroom pizza
+Assistant: Yes. Mushroom pizza does have mushrooms.
+
+Customer: does Chocolate pizza have mushrooms
+Assistant: No. Chocolate pizza does not have mushrooms.
+
+Customer: is there mushrooms in Chocolate pizza
+Assistant: No. Chocolate pizza does not have mushrooms.
+
+Customer: does Margherita pizza have ham
+Assistant: No. Margherita pizza does not have ham.
+
+Customer: is there ham in Margherita pizza
+Assistant: No. Margherita pizza does not have ham.
+
+Customer: does Pepperoni pizza have ham
+Assistant: No. Pepperoni pizza does not have ham.
+
+Customer: is there ham in Pepperoni pizza
+Assistant: No. Pepperoni pizza does not have ham.
+
+Customer: does Four Cheese pizza have ham
+Assistant: No. Four Cheese pizza does not have ham.
+
+Customer: is there ham in Four Cheese pizza
+Assistant: No. Four Cheese pizza does not have ham.
+
+Customer: does Chicken Catupiry pizza have ham
+Assistant: No. Chicken Catupiry pizza does not have ham.
+
+Customer: is there ham in Chicken Catupiry pizza
+Assistant: No. Chicken Catupiry pizza does not have ham.
+
+Customer: does Portuguese pizza have ham
+Assistant: Yes. Portuguese pizza does have ham.
+
+Customer: is there ham in Portuguese pizza
+Assistant: Yes. Portuguese pizza does have ham.
+
+Customer: does Vegetarian pizza have ham
+Assistant: No. Vegetarian pizza does not have ham.
+
+Customer: is there ham in Vegetarian pizza
+Assistant: No. Vegetarian pizza does not have ham.
+
+Customer: does Mushroom pizza have ham
+Assistant: No. Mushroom pizza does not have ham.
+
+Customer: is there ham in Mushroom pizza
+Assistant: No. Mushroom pizza does not have ham.
+
+Customer: does Chocolate pizza have ham
+Assistant: No. Chocolate pizza does not have ham.
+
+Customer: is there ham in Chocolate pizza
+Assistant: No. Chocolate pizza does not have ham.
+
+Customer: does Margherita pizza have pepperoni
+Assistant: No. Margherita pizza does not have pepperoni.
+
+Customer: is there pepperoni in Margherita pizza
+Assistant: No. Margherita pizza does not have pepperoni.
+
+Customer: does Pepperoni pizza have pepperoni
+Assistant: Yes. Pepperoni pizza does have pepperoni.
+
+Customer: is there pepperoni in Pepperoni pizza
+Assistant: Yes. Pepperoni pizza does have pepperoni.
+
+Customer: does Four Cheese pizza have pepperoni
+Assistant: No. Four Cheese pizza does not have pepperoni.
+
+Customer: is there pepperoni in Four Cheese pizza
+Assistant: No. Four Cheese pizza does not have pepperoni.
+
+Customer: does Chicken Catupiry pizza have pepperoni
+Assistant: No. Chicken Catupiry pizza does not have pepperoni.
+
+Customer: is there pepperoni in Chicken Catupiry pizza
+Assistant: No. Chicken Catupiry pizza does not have pepperoni.
+
+Customer: does Portuguese pizza have pepperoni
+Assistant: No. Portuguese pizza does not have pepperoni.
+
+Customer: is there pepperoni in Portuguese pizza
+Assistant: No. Portuguese pizza does not have pepperoni.
+
+Customer: does Vegetarian pizza have pepperoni
+Assistant: No. Vegetarian pizza does not have pepperoni.
+
+Customer: is there pepperoni in Vegetarian pizza
+Assistant: No. Vegetarian pizza does not have pepperoni.
+
+Customer: does Mushroom pizza have pepperoni
+Assistant: No. Mushroom pizza does not have pepperoni.
+
+Customer: is there pepperoni in Mushroom pizza
+Assistant: No. Mushroom pizza does not have pepperoni.
+
+Customer: does Chocolate pizza have pepperoni
+Assistant: No. Chocolate pizza does not have pepperoni.
+
+Customer: is there pepperoni in Chocolate pizza
+Assistant: No. Chocolate pizza does not have pepperoni.
+
+Customer: does Margherita pizza have basil
+Assistant: Yes. Margherita pizza does have basil.
+
+Customer: is there basil in Margherita pizza
+Assistant: Yes. Margherita pizza does have basil.
+
+Customer: does Pepperoni pizza have basil
+Assistant: No. Pepperoni pizza does not have basil.
+
+Customer: is there basil in Pepperoni pizza
+Assistant: No. Pepperoni pizza does not have basil.
+
+Customer: does Four Cheese pizza have basil
+Assistant: No. Four Cheese pizza does not have basil.
+
+Customer: is there basil in Four Cheese pizza
+Assistant: No. Four Cheese pizza does not have basil.
+
+Customer: does Chicken Catupiry pizza have basil
+Assistant: No. Chicken Catupiry pizza does not have basil.
+
+Customer: is there basil in Chicken Catupiry pizza
+Assistant: No. Chicken Catupiry pizza does not have basil.
+
+Customer: does Portuguese pizza have basil
+Assistant: No. Portuguese pizza does not have basil.
+
+Customer: is there basil in Portuguese pizza
+Assistant: No. Portuguese pizza does not have basil.
+
+Customer: does Vegetarian pizza have basil
+Assistant: No. Vegetarian pizza does not have basil.
+
+Customer: is there basil in Vegetarian pizza
+Assistant: No. Vegetarian pizza does not have basil.
+
+Customer: does Mushroom pizza have basil
+Assistant: No. Mushroom pizza does not have basil.
+
+Customer: is there basil in Mushroom pizza
+Assistant: No. Mushroom pizza does not have basil.
+
+Customer: does Chocolate pizza have basil
+Assistant: No. Chocolate pizza does not have basil.
+
+Customer: is there basil in Chocolate pizza
+Assistant: No. Chocolate pizza does not have basil.
+
+Customer: does Margherita pizza have chicken
+Assistant: No. Margherita pizza does not have chicken.
+
+Customer: is there chicken in Margherita pizza
+Assistant: No. Margherita pizza does not have chicken.
+
+Customer: does Pepperoni pizza have chicken
+Assistant: No. Pepperoni pizza does not have chicken.
+
+Customer: is there chicken in Pepperoni pizza
+Assistant: No. Pepperoni pizza does not have chicken.
+
+Customer: does Four Cheese pizza have chicken
+Assistant: No. Four Cheese pizza does not have chicken.
+
+Customer: is there chicken in Four Cheese pizza
+Assistant: No. Four Cheese pizza does not have chicken.
+
+Customer: does Chicken Catupiry pizza have chicken
+Assistant: Yes. Chicken Catupiry pizza does have chicken.
+
+Customer: is there chicken in Chicken Catupiry pizza
+Assistant: Yes. Chicken Catupiry pizza does have chicken.
+
+Customer: does Portuguese pizza have chicken
+Assistant: No. Portuguese pizza does not have chicken.
+
+Customer: is there chicken in Portuguese pizza
+Assistant: No. Portuguese pizza does not have chicken.
+
+Customer: does Vegetarian pizza have chicken
+Assistant: No. Vegetarian pizza does not have chicken.
+
+Customer: is there chicken in Vegetarian pizza
+Assistant: No. Vegetarian pizza does not have chicken.
+
+Customer: does Mushroom pizza have chicken
+Assistant: No. Mushroom pizza does not have chicken.
+
+Customer: is there chicken in Mushroom pizza
+Assistant: No. Mushroom pizza does not have chicken.
+
+Customer: does Chocolate pizza have chicken
+Assistant: No. Chocolate pizza does not have chicken.
+
+Customer: is there chicken in Chocolate pizza
+Assistant: No. Chocolate pizza does not have chicken.
+
+Customer: does Margherita pizza have eggs
+Assistant: No. Margherita pizza does not have eggs.
+
+Customer: is there eggs in Margherita pizza
+Assistant: No. Margherita pizza does not have eggs.
+
+Customer: does Pepperoni pizza have eggs
+Assistant: No. Pepperoni pizza does not have eggs.
+
+Customer: is there eggs in Pepperoni pizza
+Assistant: No. Pepperoni pizza does not have eggs.
+
+Customer: does Four Cheese pizza have eggs
+Assistant: No. Four Cheese pizza does not have eggs.
+
+Customer: is there eggs in Four Cheese pizza
+Assistant: No. Four Cheese pizza does not have eggs.
+
+Customer: does Chicken Catupiry pizza have eggs
+Assistant: No. Chicken Catupiry pizza does not have eggs.
+
+Customer: is there eggs in Chicken Catupiry pizza
+Assistant: No. Chicken Catupiry pizza does not have eggs.
+
+Customer: does Portuguese pizza have eggs
+Assistant: Yes. Portuguese pizza does have eggs.
+
+Customer: is there eggs in Portuguese pizza
+Assistant: Yes. Portuguese pizza does have eggs.
+
+Customer: does Vegetarian pizza have eggs
+Assistant: No. Vegetarian pizza does not have eggs.
+
+Customer: is there eggs in Vegetarian pizza
+Assistant: No. Vegetarian pizza does not have eggs.
+
+Customer: does Mushroom pizza have eggs
+Assistant: No. Mushroom pizza does not have eggs.
+
+Customer: is there eggs in Mushroom pizza
+Assistant: No. Mushroom pizza does not have eggs.
+
+Customer: does Chocolate pizza have eggs
+Assistant: No. Chocolate pizza does not have eggs.
+
+Customer: is there eggs in Chocolate pizza
+Assistant: No. Chocolate pizza does not have eggs.
+
+Customer: does Margherita pizza have olives
+Assistant: No. Margherita pizza does not have olives.
+
+Customer: is there olives in Margherita pizza
+Assistant: No. Margherita pizza does not have olives.
+
+Customer: does Pepperoni pizza have olives
+Assistant: No. Pepperoni pizza does not have olives.
+
+Customer: is there olives in Pepperoni pizza
+Assistant: No. Pepperoni pizza does not have olives.
+
+Customer: does Four Cheese pizza have olives
+Assistant: No. Four Cheese pizza does not have olives.
+
+Customer: is there olives in Four Cheese pizza
+Assistant: No. Four Cheese pizza does not have olives.
+
+Customer: does Chicken Catupiry pizza have olives
+Assistant: No. Chicken Catupiry pizza does not have olives.
+
+Customer: is there olives in Chicken Catupiry pizza
+Assistant: No. Chicken Catupiry pizza does not have olives.
+
+Customer: does Portuguese pizza have olives
+Assistant: Yes. Portuguese pizza does have olives.
+
+Customer: is there olives in Portuguese pizza
+Assistant: Yes. Portuguese pizza does have olives.
+
+Customer: does Vegetarian pizza have olives
+Assistant: Yes. Vegetarian pizza does have olives.
+
+Customer: is there olives in Vegetarian pizza
+Assistant: Yes. Vegetarian pizza does have olives.
+
+Customer: does Mushroom pizza have olives
+Assistant: No. Mushroom pizza does not have olives.
+
+Customer: is there olives in Mushroom pizza
+Assistant: No. Mushroom pizza does not have olives.
+
+Customer: does Chocolate pizza have olives
+Assistant: No. Chocolate pizza does not have olives.
+
+Customer: is there olives in Chocolate pizza
+Assistant: No. Chocolate pizza does not have olives.
+
+Customer: does Margherita pizza have onion
+Assistant: No. Margherita pizza does not have onion.
+
+Customer: is there onion in Margherita pizza
+Assistant: No. Margherita pizza does not have onion.
+
+Customer: does Pepperoni pizza have onion
+Assistant: No. Pepperoni pizza does not have onion.
+
+Customer: is there onion in Pepperoni pizza
+Assistant: No. Pepperoni pizza does not have onion.
+
+Customer: does Four Cheese pizza have onion
+Assistant: No. Four Cheese pizza does not have onion.
+
+Customer: is there onion in Four Cheese pizza
+Assistant: No. Four Cheese pizza does not have onion.
+
+Customer: does Chicken Catupiry pizza have onion
+Assistant: No. Chicken Catupiry pizza does not have onion.
+
+Customer: is there onion in Chicken Catupiry pizza
+Assistant: No. Chicken Catupiry pizza does not have onion.
+
+Customer: does Portuguese pizza have onion
+Assistant: Yes. Portuguese pizza does have onion.
+
+Customer: is there onion in Portuguese pizza
+Assistant: Yes. Portuguese pizza does have onion.
+
+Customer: does Vegetarian pizza have onion
+Assistant: Yes. Vegetarian pizza does have onion.
+
+Customer: is there onion in Vegetarian pizza
+Assistant: Yes. Vegetarian pizza does have onion.
+
+Customer: does Mushroom pizza have onion
+Assistant: No. Mushroom pizza does not have onion.
+
+Customer: is there onion in Mushroom pizza
+Assistant: No. Mushroom pizza does not have onion.
+
+Customer: does Chocolate pizza have onion
+Assistant: No. Chocolate pizza does not have onion.
+
+Customer: is there onion in Chocolate pizza
+Assistant: No. Chocolate pizza does not have onion.
+
+Customer: does Margherita pizza have bell pepper
+Assistant: No. Margherita pizza does not have bell pepper.
+
+Customer: is there bell pepper in Margherita pizza
+Assistant: No. Margherita pizza does not have bell pepper.
+
+Customer: does Pepperoni pizza have bell pepper
+Assistant: No. Pepperoni pizza does not have bell pepper.
+
+Customer: is there bell pepper in Pepperoni pizza
+Assistant: No. Pepperoni pizza does not have bell pepper.
+
+Customer: does Four Cheese pizza have bell pepper
+Assistant: No. Four Cheese pizza does not have bell pepper.
+
+Customer: is there bell pepper in Four Cheese pizza
+Assistant: No. Four Cheese pizza does not have bell pepper.
+
+Customer: does Chicken Catupiry pizza have bell pepper
+Assistant: No. Chicken Catupiry pizza does not have bell pepper.
+
+Customer: is there bell pepper in Chicken Catupiry pizza
+Assistant: No. Chicken Catupiry pizza does not have bell pepper.
+
+Customer: does Portuguese pizza have bell pepper
+Assistant: No. Portuguese pizza does not have bell pepper.
+
+Customer: is there bell pepper in Portuguese pizza
+Assistant: No. Portuguese pizza does not have bell pepper.
+
+Customer: does Vegetarian pizza have bell pepper
+Assistant: Yes. Vegetarian pizza does have bell pepper.
+
+Customer: is there bell pepper in Vegetarian pizza
+Assistant: Yes. Vegetarian pizza does have bell pepper.
+
+Customer: does Mushroom pizza have bell pepper
+Assistant: No. Mushroom pizza does not have bell pepper.
+
+Customer: is there bell pepper in Mushroom pizza
+Assistant: No. Mushroom pizza does not have bell pepper.
+
+Customer: does Chocolate pizza have bell pepper
+Assistant: No. Chocolate pizza does not have bell pepper.
+
+Customer: is there bell pepper in Chocolate pizza
+Assistant: No. Chocolate pizza does not have bell pepper.
+
+Customer: does Margherita pizza have chocolate cream
+Assistant: No. Margherita pizza does not have chocolate cream.
+
+Customer: is there chocolate cream in Margherita pizza
+Assistant: No. Margherita pizza does not have chocolate cream.
+
+Customer: does Pepperoni pizza have chocolate cream
+Assistant: No. Pepperoni pizza does not have chocolate cream.
+
+Customer: is there chocolate cream in Pepperoni pizza
+Assistant: No. Pepperoni pizza does not have chocolate cream.
+
+Customer: does Four Cheese pizza have chocolate cream
+Assistant: No. Four Cheese pizza does not have chocolate cream.
+
+Customer: is there chocolate cream in Four Cheese pizza
+Assistant: No. Four Cheese pizza does not have chocolate cream.
+
+Customer: does Chicken Catupiry pizza have chocolate cream
+Assistant: No. Chicken Catupiry pizza does not have chocolate cream.
+
+Customer: is there chocolate cream in Chicken Catupiry pizza
+Assistant: No. Chicken Catupiry pizza does not have chocolate cream.
+
+Customer: does Portuguese pizza have chocolate cream
+Assistant: No. Portuguese pizza does not have chocolate cream.
+
+Customer: is there chocolate cream in Portuguese pizza
+Assistant: No. Portuguese pizza does not have chocolate cream.
+
+Customer: does Vegetarian pizza have chocolate cream
+Assistant: No. Vegetarian pizza does not have chocolate cream.
+
+Customer: is there chocolate cream in Vegetarian pizza
+Assistant: No. Vegetarian pizza does not have chocolate cream.
+
+Customer: does Mushroom pizza have chocolate cream
+Assistant: No. Mushroom pizza does not have chocolate cream.
+
+Customer: is there chocolate cream in Mushroom pizza
+Assistant: No. Mushroom pizza does not have chocolate cream.
+
+Customer: does Chocolate pizza have chocolate cream
+Assistant: Yes. Chocolate pizza does have chocolate cream.
+
+Customer: is there chocolate cream in Chocolate pizza
+Assistant: Yes. Chocolate pizza does have chocolate cream.
+
+Customer: does Margherita pizza have extra cheese
+Assistant: No. Margherita pizza does not have extra cheese.
+
+Customer: is there extra cheese in Margherita pizza
+Assistant: No. Margherita pizza does not have extra cheese.
+
+Customer: does Pepperoni pizza have extra cheese
+Assistant: No. Pepperoni pizza does not have extra cheese.
+
+Customer: is there extra cheese in Pepperoni pizza
+Assistant: No. Pepperoni pizza does not have extra cheese.
+
+Customer: does Four Cheese pizza have extra cheese
+Assistant: No. Four Cheese pizza does not have extra cheese.
+
+Customer: is there extra cheese in Four Cheese pizza
+Assistant: No. Four Cheese pizza does not have extra cheese.
+
+Customer: does Chicken Catupiry pizza have extra cheese
+Assistant: No. Chicken Catupiry pizza does not have extra cheese.
+
+Customer: is there extra cheese in Chicken Catupiry pizza
+Assistant: No. Chicken Catupiry pizza does not have extra cheese.
+
+Customer: does Portuguese pizza have extra cheese
+Assistant: No. Portuguese pizza does not have extra cheese.
+
+Customer: is there extra cheese in Portuguese pizza
+Assistant: No. Portuguese pizza does not have extra cheese.
+
+Customer: does Vegetarian pizza have extra cheese
+Assistant: No. Vegetarian pizza does not have extra cheese.
+
+Customer: is there extra cheese in Vegetarian pizza
+Assistant: No. Vegetarian pizza does not have extra cheese.
+
+Customer: does Mushroom pizza have extra cheese
+Assistant: Yes. Mushroom pizza does have extra cheese.
+
+Customer: is there extra cheese in Mushroom pizza
+Assistant: Yes. Mushroom pizza does have extra cheese.
+
+Customer: does Chocolate pizza have extra cheese
+Assistant: No. Chocolate pizza does not have extra cheese.
+
+Customer: is there extra cheese in Chocolate pizza
+Assistant: No. Chocolate pizza does not have extra cheese.
+
+Customer: slice price for Margherita
+Assistant: A Margherita slice costs $8.00.
+
+Customer: cost of one Margherita slice
+Assistant: One Margherita slice costs $8.00.
+
+Customer: how much for a slice of Margherita pizza
+Assistant: A Margherita slice costs $8.00.
+
+Customer: i want to know the slice price of Margherita
+Assistant: A Margherita slice costs $8.00.
+
+Customer: slice price for Pepperoni
+Assistant: A Pepperoni slice costs $10.00.
+
+Customer: cost of one Pepperoni slice
+Assistant: One Pepperoni slice costs $10.00.
+
+Customer: how much for a slice of Pepperoni pizza
+Assistant: A Pepperoni slice costs $10.00.
+
+Customer: i want to know the slice price of Pepperoni
+Assistant: A Pepperoni slice costs $10.00.
+
+Customer: slice price for Four Cheese
+Assistant: A Four Cheese slice costs $9.50.
+
+Customer: cost of one Four Cheese slice
+Assistant: One Four Cheese slice costs $9.50.
+
+Customer: how much for a slice of Four Cheese pizza
+Assistant: A Four Cheese slice costs $9.50.
+
+Customer: i want to know the slice price of Four Cheese
+Assistant: A Four Cheese slice costs $9.50.
+
+Customer: slice price for Chicken Catupiry
+Assistant: A Chicken Catupiry slice costs $9.25.
+
+Customer: cost of one Chicken Catupiry slice
+Assistant: One Chicken Catupiry slice costs $9.25.
+
+Customer: how much for a slice of Chicken Catupiry pizza
+Assistant: A Chicken Catupiry slice costs $9.25.
+
+Customer: i want to know the slice price of Chicken Catupiry
+Assistant: A Chicken Catupiry slice costs $9.25.
+
+Customer: slice price for Portuguese
+Assistant: A Portuguese slice costs $9.00.
+
+Customer: cost of one Portuguese slice
+Assistant: One Portuguese slice costs $9.00.
+
+Customer: how much for a slice of Portuguese pizza
+Assistant: A Portuguese slice costs $9.00.
+
+Customer: i want to know the slice price of Portuguese
+Assistant: A Portuguese slice costs $9.00.
+
+Customer: slice price for Vegetarian
+Assistant: A Vegetarian slice costs $9.00.
+
+Customer: cost of one Vegetarian slice
+Assistant: One Vegetarian slice costs $9.00.
+
+Customer: how much for a slice of Vegetarian pizza
+Assistant: A Vegetarian slice costs $9.00.
+
+Customer: i want to know the slice price of Vegetarian
+Assistant: A Vegetarian slice costs $9.00.
+
+Customer: slice price for Mushroom
+Assistant: A Mushroom slice costs $9.75.
+
+Customer: cost of one Mushroom slice
+Assistant: One Mushroom slice costs $9.75.
+
+Customer: how much for a slice of Mushroom pizza
+Assistant: A Mushroom slice costs $9.75.
+
+Customer: i want to know the slice price of Mushroom
+Assistant: A Mushroom slice costs $9.75.
+
+Customer: slice price for Chocolate
+Assistant: A Chocolate slice costs $8.75.
+
+Customer: cost of one Chocolate slice
+Assistant: One Chocolate slice costs $8.75.
+
+Customer: how much for a slice of Chocolate pizza
+Assistant: A Chocolate slice costs $8.75.
+
+Customer: i want to know the slice price of Chocolate
+Assistant: A Chocolate slice costs $8.75.
+
+Customer: two slices of Margherita and one Coke
+Assistant: Your order has two Margherita slices and one Coke. The total is $22.00.
+
+Customer: two slices of Margherita and one Sprite
+Assistant: Your order has two Margherita slices and one Sprite. The total is $22.00.
+
+Customer: two slices of Margherita and one Guarana
+Assistant: Your order has two Margherita slices and one Guarana. The total is $22.00.
+
+Customer: two slices of Pepperoni and one Coke
+Assistant: Your order has two Pepperoni slices and one Coke. The total is $26.00.
+
+Customer: two slices of Pepperoni and one Sprite
+Assistant: Your order has two Pepperoni slices and one Sprite. The total is $26.00.
+
+Customer: two slices of Pepperoni and one Guarana
+Assistant: Your order has two Pepperoni slices and one Guarana. The total is $26.00.
+
+Customer: two slices of Four Cheese and one Coke
+Assistant: Your order has two Four Cheese slices and one Coke. The total is $25.00.
+
+Customer: two slices of Four Cheese and one Sprite
+Assistant: Your order has two Four Cheese slices and one Sprite. The total is $25.00.
+
+Customer: two slices of Four Cheese and one Guarana
+Assistant: Your order has two Four Cheese slices and one Guarana. The total is $25.00.
+
+Customer: two slices of Chicken Catupiry and one Coke
+Assistant: Your order has two Chicken Catupiry slices and one Coke. The total is $24.50.
+
+Customer: two slices of Chicken Catupiry and one Sprite
+Assistant: Your order has two Chicken Catupiry slices and one Sprite. The total is $24.50.
+
+Customer: two slices of Chicken Catupiry and one Guarana
+Assistant: Your order has two Chicken Catupiry slices and one Guarana. The total is $24.50.
+
+Customer: two slices of Portuguese and one Coke
+Assistant: Your order has two Portuguese slices and one Coke. The total is $24.00.
+
+Customer: two slices of Portuguese and one Sprite
+Assistant: Your order has two Portuguese slices and one Sprite. The total is $24.00.
+
+Customer: two slices of Portuguese and one Guarana
+Assistant: Your order has two Portuguese slices and one Guarana. The total is $24.00.
+
+Customer: two slices of Vegetarian and one Coke
+Assistant: Your order has two Vegetarian slices and one Coke. The total is $24.00.
+
+Customer: two slices of Vegetarian and one Sprite
+Assistant: Your order has two Vegetarian slices and one Sprite. The total is $24.00.
+
+Customer: two slices of Vegetarian and one Guarana
+Assistant: Your order has two Vegetarian slices and one Guarana. The total is $24.00.
+
+Customer: two slices of Mushroom and one Coke
+Assistant: Your order has two Mushroom slices and one Coke. The total is $25.50.
+
+Customer: two slices of Mushroom and one Sprite
+Assistant: Your order has two Mushroom slices and one Sprite. The total is $25.50.
+
+Customer: two slices of Mushroom and one Guarana
+Assistant: Your order has two Mushroom slices and one Guarana. The total is $25.50.
+
+Customer: two slices of Chocolate and one Coke
+Assistant: Your order has two Chocolate slices and one Coke. The total is $23.50.
+
+Customer: two slices of Chocolate and one Sprite
+Assistant: Your order has two Chocolate slices and one Sprite. The total is $23.50.
+
+Customer: two slices of Chocolate and one Guarana
+Assistant: Your order has two Chocolate slices and one Guarana. The total is $23.50.
+
+Customer: one Margherita, one Pepperoni, and one Coke
+Assistant: Your order has one Margherita pizza, one Pepperoni pizza, and one Coke. The total is $78.00.
+
+Customer: one Margherita, one Pepperoni, and one Sprite
+Assistant: Your order has one Margherita pizza, one Pepperoni pizza, and one Sprite. The total is $78.00.
+
+Customer: one Margherita, one Four Cheese, and one Coke
+Assistant: Your order has one Margherita pizza, one Four Cheese pizza, and one Coke. The total is $76.00.
+
+Customer: one Margherita, one Four Cheese, and one Sprite
+Assistant: Your order has one Margherita pizza, one Four Cheese pizza, and one Sprite. The total is $76.00.
+
+Customer: one Pepperoni, one Four Cheese, and one Coke
+Assistant: Your order has one Pepperoni pizza, one Four Cheese pizza, and one Coke. The total is $84.00.
+
+Customer: one Pepperoni, one Four Cheese, and one Sprite
+Assistant: Your order has one Pepperoni pizza, one Four Cheese pizza, and one Sprite. The total is $84.00.
+
+Customer: one Pepperoni, one Chicken Catupiry, and one Coke
+Assistant: Your order has one Pepperoni pizza, one Chicken Catupiry pizza, and one Coke. The total is $83.00.
+
+Customer: one Pepperoni, one Chicken Catupiry, and one Sprite
+Assistant: Your order has one Pepperoni pizza, one Chicken Catupiry pizza, and one Sprite. The total is $83.00.
+
+Customer: one Four Cheese, one Chicken Catupiry, and one Coke
+Assistant: Your order has one Four Cheese pizza, one Chicken Catupiry pizza, and one Coke. The total is $81.00.
+
+Customer: one Four Cheese, one Chicken Catupiry, and one Sprite
+Assistant: Your order has one Four Cheese pizza, one Chicken Catupiry pizza, and one Sprite. The total is $81.00.
+
+Customer: one Four Cheese, one Portuguese, and one Coke
+Assistant: Your order has one Four Cheese pizza, one Portuguese pizza, and one Coke. The total is $80.00.
+
+Customer: one Four Cheese, one Portuguese, and one Sprite
+Assistant: Your order has one Four Cheese pizza, one Portuguese pizza, and one Sprite. The total is $80.00.
+
+Customer: one Chicken Catupiry, one Portuguese, and one Coke
+Assistant: Your order has one Chicken Catupiry pizza, one Portuguese pizza, and one Coke. The total is $79.00.
+
+Customer: one Chicken Catupiry, one Portuguese, and one Sprite
+Assistant: Your order has one Chicken Catupiry pizza, one Portuguese pizza, and one Sprite. The total is $79.00.
+
+Customer: one Chicken Catupiry, one Vegetarian, and one Coke
+Assistant: Your order has one Chicken Catupiry pizza, one Vegetarian pizza, and one Coke. The total is $79.00.
+
+Customer: one Chicken Catupiry, one Vegetarian, and one Sprite
+Assistant: Your order has one Chicken Catupiry pizza, one Vegetarian pizza, and one Sprite. The total is $79.00.
+
+Customer: which pizzas are vegetarian friendly
+Assistant: Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas have no meat.
+
+Customer: which pizzas can vegetarians eat
+Assistant: Vegetarians can eat Margherita, Four Cheese, Vegetarian, Mushroom, and Chocolate pizzas.
+
+Customer: which pizzas have no egg
+Assistant: All pizzas except the Portuguese pizza have no eggs.
+
+Customer: which pizzas have no ham
+Assistant: All pizzas except the Portuguese pizza have no ham.
+
+Customer: which pizzas have no onion
+Assistant: Margherita, Pepperoni, Four Cheese, Chicken Catupiry, Mushroom, and Chocolate pizzas have no onion.
+
+Customer: which pizzas have no mushrooms
+Assistant: Margherita, Pepperoni, Four Cheese, Chicken Catupiry, Portuguese, and Chocolate pizzas have no mushrooms.
+
+Customer: which pizzas are sweet
+Assistant: Only the Chocolate pizza is sweet.
+
+Customer: which pizzas are savory
+Assistant: All pizzas except the Chocolate pizza are savory.
+
+Customer: which pizza has the most cheese
+Assistant: The Four Cheese pizza has the most cheese types: mozzarella, parmesan, provolone, and gorgonzola.
+
+Customer: which pizza is best for meat lovers
+Assistant: The Pepperoni pizza is the most popular for meat lovers. Portuguese pizza with ham is also a great choice.
+
+Customer: can i get a pizza without cheese
+Assistant: The Chocolate pizza has no cheese. All other pizzas have mozzarella.
+
+Customer: can i get a pizza without sauce
+Assistant: Yes. Four Cheese pizza and Chocolate pizza have no tomato sauce.
+
+Customer: is there a dessert option
+Assistant: Yes. The Chocolate pizza is the dessert option at Slice Pizza.
+
+Customer: what is good for dessert
+Assistant: The Chocolate pizza is the dessert option. It has chocolate cream and a soft crust. It costs $35.00.
+
+Customer: i want something after my pizza
+Assistant: You can add a Chocolate pizza as dessert. It costs $35.00 whole or $8.75 per slice.
+
+Customer: what drinks go with pizza
+Assistant: All our sodas go great with pizza. Coke, Sprite, and Guarana each cost $6.00.
+
+Customer: what is the best drink with pepperoni
+Assistant: Any soda works great. A cold Sprite or Guarana pairs nicely with the spicy Pepperoni pizza.
+
+Customer: what is the best drink with four cheese
+Assistant: A cold Guarana or Sprite pairs well with the rich Four Cheese pizza.
+
+Customer: tell me about the margherita pizza
+Assistant: Margherita pizza has tomato sauce, mozzarella, and basil. It is the simplest and most popular pizza at Slice Pizza. It costs $32.00.
+
+Customer: describe the pepperoni pizza
+Assistant: Pepperoni pizza has tomato sauce, mozzarella, and pepperoni. It is the spiciest and most expensive pizza at $40.00.
+
+Customer: describe the four cheese pizza
+Assistant: Four Cheese pizza has mozzarella, parmesan, provolone, and gorgonzola with no tomato sauce. It is the cheesiest pizza at $38.00.
+
+Customer: describe the chicken catupiry pizza
+Assistant: Chicken Catupiry pizza has shredded chicken, creamy catupiry cheese, tomato sauce, and mozzarella. It costs $37.00.
+
+Customer: describe the portuguese pizza
+Assistant: Portuguese pizza has ham, eggs, onion, olives, tomato sauce, and mozzarella. It is hearty and savory. It costs $36.00.
+
+Customer: describe the vegetarian pizza
+Assistant: Vegetarian pizza has tomato sauce, mozzarella, mushrooms, onion, bell pepper, tomato, and olives. It has no meat. It costs $36.00.
+
+Customer: describe the mushroom pizza
+Assistant: Mushroom pizza has tomato sauce, mozzarella, mushrooms, and extra cheese. It is the house special. It costs $39.00.
+
+Customer: describe the chocolate pizza
+Assistant: Chocolate pizza is a sweet dessert pizza with chocolate cream and soft crust. No tomato sauce, no cheese. It costs $35.00.
+
+Customer: what is your best seller
+Assistant: The Margherita pizza is the most popular. The Mushroom pizza is the house special.
+
+Customer: what is your signature pizza
+Assistant: Our signature pizza is the Mushroom pizza with extra cheese. It is the house special at $39.00.
+
+Customer: what pizza is unique to slice pizza
+Assistant: The Chicken Catupiry pizza with Brazilian catupiry cheese is a unique specialty at Slice Pizza.
+
+Customer: what is a good first pizza to try
+Assistant: The Margherita pizza is the best first choice. It is simple, fresh, and universally loved.
+
+Customer: what pizza should a first timer get
+Assistant: I recommend the Margherita pizza for first-timers. It is the simplest and most popular pizza at Slice Pizza.
+
+Customer: what is the most filling pizza
+Assistant: The Portuguese pizza with ham, eggs, onion, and olives is one of the most filling options.
+
+Customer: what is the lightest pizza
+Assistant: The Margherita pizza is the lightest. It has just tomato sauce, mozzarella, and basil.
+
+Customer: what has the most flavor
+Assistant: The Portuguese pizza and the Vegetarian pizza have the most varied flavors due to their many toppings.
+
+Customer: do you have any pizza without mozzarella
+Assistant: Yes. The Chocolate pizza has no mozzarella.
+
+Customer: how many pizzas are on the menu
+Assistant: There are eight pizzas on the Slice Pizza menu.
+
+Customer: can i see all prices
+Assistant: Whole pizzas: Margherita $32, Pepperoni $40, Four Cheese $38, Chicken Catupiry $37, Portuguese $36, Vegetarian $36, Mushroom $39, Chocolate $35. Drinks: $6 each.
+
+Customer: what is the total price range
+Assistant: Whole pizzas range from $32.00 for Margherita to $40.00 for Pepperoni.
+
+Customer: are there any deals
+Assistant: Deals are not defined for this fictional pizzeria. All prices are as listed.
+
+Customer: do you have any discounts
+Assistant: Discounts are not defined for this fictional pizzeria.
+
+Customer: do you have a loyalty program
+Assistant: A loyalty program is not defined for this fictional study project.
+
+Customer: can i customize my pizza
+Assistant: Pizza customization is not defined for this fictional study project. You can choose from the eight pizzas as described.
+
+Customer: can i remove toppings
+Assistant: Topping changes are not defined for this fictional pizzeria.
+
+Customer: can i add extra toppings
+Assistant: Extra topping requests are not defined for this fictional pizzeria.
+
+Customer: do you have a kids menu
+Assistant: There is no separate kids menu, but Margherita pizza and Chocolate pizza are great choices for kids.
+
+Customer: do you have takeaway
+Assistant: Takeaway details are not defined for this fictional pizzeria.
+
+Customer: can i eat here
+Assistant: Dine-in details are not defined for this fictional study project.
+
+Customer: do you have tables
+Assistant: Seating details are not defined for this fictional pizzeria.
+
+Customer: how many staff do you have
+Assistant: Staff details are not defined for this fictional study project.
+
+Customer: what are your opening hours
+Assistant: Opening hours are not defined for this fictional pizzeria.
+
+Customer: where are you located
+Assistant: Slice Pizza is a fictional pizzeria created for a study project. It has no real location.
+
+
+
 # Realistic Dialogues
 
 Customer: hi
