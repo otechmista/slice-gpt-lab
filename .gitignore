@@ -1,6 +1,20 @@
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Test & coverage artifacts
 .pytest_cache/
 .ruff_cache/
 .coverage
@@ -8,22 +22,21 @@ htmlcov/
 .test-output/
 .test-tmp/
 pytest-cache-files-*/
-.venv/
-venv/
-env/
-.env
-.env.*
-!.env.example
 
-# Editors and OS files
+# Editors & IDEs
 .idea/
 .vscode/
-.claude/
-.codex/
+*.swp
+*.swo
+
+# OS
 .DS_Store
 Thumbs.db
 
-# Runtime artifacts
-logs/
-
+# Claude Code
 .claude/
+
+# Logs
+logs/
+*.log
+generate_dataset.py

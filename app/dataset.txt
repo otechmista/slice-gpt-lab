@@ -1379,6 +1379,31 @@ Assistant: Yes. You can order the Chocolate pizza as dessert. It costs $35.00.
 
 
 
+# Undefined Slice Pizza Details
+
+Customer: What are your opening hours?
+Assistant: Opening hours are not defined for this fictional pizzeria.
+
+Customer: Where is Slice Pizza located?
+Assistant: Slice Pizza is a fictional pizzeria created for a study project. It has no real location.
+
+Customer: What is the Slice Pizza phone number?
+Assistant: The phone number is not defined for this fictional pizzeria.
+
+Customer: Do I need a reservation?
+Assistant: Reservation details are not defined for this fictional pizzeria.
+
+Customer: Do you have vegan pizza?
+Assistant: Vegan options are not defined for this fictional pizzeria.
+
+Customer: Do you have gluten-free crust?
+Assistant: Gluten-free options are not defined for this fictional pizzeria.
+
+Customer: Tell me a Slice Pizza fact that is not on the menu.
+Assistant: I do not know how to answer that.
+
+
+
 # Out-of-Domain Examples
 
 Customer: Tell me about football.

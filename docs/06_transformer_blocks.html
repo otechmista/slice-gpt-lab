@@ -45,12 +45,45 @@ feed-forward network
   + (add again)
   ↓
 output (goes to next block)</code></pre>
+<h2 id="counting-parameters">Counting Parameters</h2>
+<p>A <strong>parameter</strong> is a single learned number stored in the model — a weight or bias that training adjusts to minimize loss. Every matrix multiplication in the model has parameters. More parameters = more capacity to memorize patterns, but also more memory and longer training.</p>
+<p>Here&#39;s how to count them for our model (<code>embedding_dim=128</code>, <code>num_heads=4</code>, <code>num_layers=4</code>, <code>vocab_size≈74</code>, <code>block_size=128</code>):</p>
+<h3 id="1-token-embedding-table">1. Token Embedding Table</h3>
+<pre><code class="language-txt">vocab_size × embedding_dim = 74 × 128 = 9,472</code></pre>
+<h3 id="2-positional-embedding-table">2. Positional Embedding Table</h3>
+<pre><code class="language-txt">block_size × embedding_dim = 128 × 128 = 16,384</code></pre>
+<h3 id="3-per-block-attention-weights">3. Per Block — Attention Weights</h3>
+<p>Each block has four linear projections for Q, K, V, and the output:</p>
+<pre><code class="language-txt">Q, K, V: 3 × (embedding_dim × embedding_dim) = 3 × 128 × 128 = 49,152
+Output:       embedding_dim × embedding_dim  =     128 × 128 = 16,384
+Subtotal: 65,536 per block</code></pre>
+<h3 id="4-per-block-feed-forward-weights">4. Per Block — Feed-Forward Weights</h3>
+<p>Two linear layers: expand 4× then compress back:</p>
+<pre><code class="language-txt">W1: embedding_dim × (4 × embedding_dim) = 128 × 512 = 65,536
+W2: (4 × embedding_dim) × embedding_dim = 512 × 128 = 65,536
+Subtotal: 131,072 per block</code></pre>
+<h3 id="5-per-block-layer-norms">5. Per Block — Layer Norms</h3>
+<pre><code class="language-txt">2 layer norms × 2 × embedding_dim (scale + bias) = 2 × 2 × 128 = 512 per block</code></pre>
+<h3 id="6-output-head">6. Output Head</h3>
+<pre><code class="language-txt">embedding_dim × vocab_size = 128 × 74 = 9,472</code></pre>
+<h3 id="total">Total</h3>
+<pre><code class="language-txt">Embeddings:    9,472 + 16,384           =   25,856
+Per block:    (65,536 + 131,072 + 512) × 4 = 788,160
+Output head:   9,472
+─────────────────────────────────────────────────
+Grand total: ≈ 823,000 parameters</code></pre>
+<p>That&#39;s about <strong>800K parameters</strong>. GPT-2 small has 117M. GPT-4 is estimated at over 1 trillion. Our model is tiny on purpose — small enough to train on a laptop CPU in under 30 minutes, yet large enough to learn simple conversational patterns.</p>
+<blockquote>
+<p><strong>Rule of thumb:</strong> each parameter is stored as a 32-bit float (4 bytes). 800K parameters ≈ 3.2 MB on disk. That&#39;s why the checkpoint file is small.</p>
+</blockquote>
 <h2 id="what-you-should-be-able-to-explain">What You Should Be Able to Explain</h2>
 <ul>
 <li>What the two sub-layers in a block are</li>
 <li>Why residual connections exist</li>
 <li>What layer normalization does</li>
 <li>Why the feed-forward network processes each token independently (while attention processes them together)</li>
+<li>What a model parameter is and how to count them per component</li>
+<li>Why 800K parameters is considered small compared to production models</li>
 </ul>
 </article><nav class="no-print mt-10 grid gap-3 border-t border-line pt-6 sm:grid-cols-2" aria-label="Previous and next lesson"><a class="rounded-2xl border border-line bg-white p-4 text-sm font-black text-soft no-underline transition hover:-translate-y-0.5 hover:border-honey hover:text-ink" href="05_self_attention.html"><span class="block text-xs uppercase tracking-[0.16em]">Previous</span><span class="mt-1 block">Self Attention</span></a><a class="rounded-2xl border border-line bg-white p-4 text-right text-sm font-black text-soft no-underline transition hover:-translate-y-0.5 hover:border-honey hover:text-ink" href="07_forward_pass.html"><span class="block text-xs uppercase tracking-[0.16em]">Next</span><span class="mt-1 block">Forward Pass</span></a></nav></main></div><script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script><script src="script.js"></script></body></html>
 

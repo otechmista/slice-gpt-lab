@@ -1,17 +1,6 @@
 name: Deploy API to Kubernetes
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "app/**"
-      - "checkpoints/**"
-      - "requirements.txt"
-      - "Dockerfile"
-      - ".dockerignore"
-      - "k8s/**"
-      - ".github/workflows/deploy-k8s.yml"
   workflow_dispatch:
 
 permissions:

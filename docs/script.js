@@ -307,7 +307,7 @@ class LessonSidebar extends HTMLElement {
 
     this.innerHTML = `
       <aside id="sidebar" aria-label="${labels.map}">
-        <div class="fixed bottom-2 top-[68px] flex w-72 flex-col overflow-hidden rounded-3xl border border-line bg-page p-4 shadow-lift">
+        <div class="fixed bottom-2 top-[88px] flex w-72 flex-col overflow-hidden rounded-3xl border border-line bg-page p-4 shadow-lift">
           <div class="mb-4 border-b border-line pb-4">
             <div class="flex items-center justify-between gap-2">
               <div class="flex min-w-0 items-center gap-2">
@@ -1121,8 +1121,8 @@ class PizzaChat extends HTMLElement {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           messages: this.chatMessagesForApi(),
-          temperature: 0.7,
-          max_tokens: 2000,
+          temperature: 0.05,
+          max_tokens: 120,
         }),
       });
       const data = await res.json();

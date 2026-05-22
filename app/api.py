@@ -7,7 +7,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 try:
-    from .context import ContextMessage, SYSTEM_INSTRUCTION, build_chat_context
+    from .context import ContextMessage, SYSTEM_INSTRUCTION, INFERENCE_PRIMER, build_chat_context
     from .infer import generate_text
     from .schemas import (
         ChatCompletionChoice,
@@ -21,7 +21,7 @@ try:
         SimpleChatResponse,
     )
 except ImportError:  # pragma: no cover - supports direct execution contexts
-    from context import ContextMessage, SYSTEM_INSTRUCTION, build_chat_context
+    from context import ContextMessage, SYSTEM_INSTRUCTION, INFERENCE_PRIMER, build_chat_context
     from infer import generate_text
     from schemas import (
         ChatCompletionChoice,
@@ -43,8 +43,10 @@ _PIZZA_RE = re.compile(
     r"olive|onion|pepper|chocolate|catupiry|parmesan|provolone|gorgonzola|"
     r"margherita|vegetarian|portuguese|drink|soda|coke|sprite|guarana|"
     r"dessert|deliver|pizzeria|slice\s*pizza|house\s+special|"
+    r"meat|option|choice|favorite|favourite|"
+    r"what.*(recommend|suggest)|which.*(recommend|suggest)|"
     r"name|hello|hi|hey|thanks|thank|who\s+are|what\s+(can|do)\s+you|"
-    r"good\s+(morning|afternoon|evening)|what\s+is\s+(on\s+the\s+)?menu)\b",
+    r"good\s+(morning|afternoon|evening)|what.*(on\s+the\s+)?menu)\b",
     re.IGNORECASE,
 )
 
@@ -78,14 +80,17 @@ def _clean(text: str) -> str:
 
 
 def _build_prompt(request: ChatCompletionRequest) -> str:
-    """Serialize messages, auto-injecting system instruction when absent."""
+    """Serialize messages, prepending the inference primer for cold-start anchoring."""
     messages = list(request.messages)
     if not messages or messages[0].role != "system":
         messages.insert(0, ChatMessage(role="system", content=SYSTEM_INSTRUCTION))
-    return build_chat_context(
+    context = build_chat_context(
         [ContextMessage(role=m.role, content=m.content) for m in messages],
         include_assistant_marker=True,
     )
+    if not context.startswith(INFERENCE_PRIMER):
+        context = INFERENCE_PRIMER + context
+    return context
 
 
 def _last_user_message(messages: list[ChatMessage]) -> str:
