@@ -50,7 +50,7 @@ Regras:
 - Frontend: não aplicável no momento.
 - Backend: Python com FastAPI para camada HTTP compatível com OpenAI.
 - Banco de dados: não aplicável; persistência local em arquivos.
-- Infra/deploy: execução local e deploy da API em Kubernetes via GitHub Actions.
+- Infra/deploy: execução local e deploy da API em Kubernetes via GitHub Actions ou Argo CD.
 - Filas/jobs/workers: não aplicável.
 - Machine learning: PyTorch.
 - Testes: pytest.
@@ -75,6 +75,8 @@ Regras:
 | `checkpoints/llm_lessons.pt` | Checkpoint treinado do modelo | Artefato pequeno de estudo; deve entrar no versionamento para a API funcionar após clone |
 | `Dockerfile` | Imagem da API | Empacota código, dependências e checkpoint para execução no Kubernetes |
 | `k8s/llm-lessons-api.yaml` | Manifest Kubernetes da API | Expõe a API em `62.171.156.26:8000` e encaminha para o container `8000` |
+| `k8s/argocd/application.yaml` | Application do Argo CD | Sincroniza os manifests declarativos da API a partir do GitHub |
+| `k8s/argocd/app/llm-lessons-api.yaml` | Manifest Kubernetes da API para Argo CD | Versão sem placeholders para sync direto pelo Argo CD |
 | `.github/workflows/deploy-k8s.yml` | Pipeline de deploy | Testa, publica imagem no GHCR e aplica o manifest no host Kubernetes via SSH |
 | `requirements.txt` | Dependências Python | Não adicionar dependências fora da lista aprovada sem decisão |
 | `.gitignore` | Arquivos ignorados | Não deve ignorar `checkpoints/llm_lessons.pt`; outros artefatos temporários continuam fora do versionamento |
@@ -104,6 +106,7 @@ Regras:
 | Build | `none` |
 | Build Docker | `docker build -t llm-lessons-api .` |
 | Deploy | GitHub Actions: `Deploy API to Kubernetes` |
+| Deploy via Argo CD | `kubectl apply -f k8s/argocd/application.yaml` |
 
 Notas:
 
@@ -265,6 +268,7 @@ Cobertura esperada:
 | Nomear o projeto como LLM Lessons | Nome mais autoral e didático; mantém o domínio fictício Slice Pizza e comunica laboratório de estudo | 2026-05-18 / identidade do projeto |
 | Versionar `checkpoints/llm_lessons.pt` | O site/API de estudo deve funcionar após clone sem exigir treino local antes do primeiro teste | 2026-05-21 / decisão de distribuição do modelo gerado |
 | Adicionar deploy Kubernetes para a API | Permitir publicar a API em `62.171.156.26:8000` usando imagem GHCR e apply remoto via SSH | 2026-05-21 / deploy GitHub Actions |
+| Adicionar deploy via Argo CD | Permitir que o cluster sincronize os manifests declarativos da API diretamente do GitHub, sem renderização por placeholders | 2026-05-24 / deploy GitOps com Argo CD |
 
 ---
 

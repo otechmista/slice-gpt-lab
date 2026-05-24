@@ -122,6 +122,8 @@ Slice Pizza offers four drink options: Coke, Coca-Cola, Sprite, and Guarana. Eac
 
 Coke and Coca-Cola are the same drink. Sprite is a lemon-lime soda. Guarana is a Brazilian soda made from guarana fruit.
 
+If a customer writes Coca Coca, treat it as a typo for Coca-Cola or Coke.
+
 A soda can be added to any pizza order. You can also order only a soda without a pizza.
 
 Drink price facts:
@@ -1307,6 +1309,21 @@ Assistant: Sprite is a lemon-lime soda. It costs $6.00.
 
 Customer: Are Coke and Coca-Cola the same?
 Assistant: Yes. Coke and Coca-Cola are the same drink. It costs $6.00.
+
+Customer: Do you have Coke?
+Assistant: Yes. Slice Pizza has Coke. One Coke costs $6.00.
+
+Customer: do you have coke
+Assistant: Yes. Slice Pizza has Coke. One Coke costs $6.00.
+
+Customer: Do you sell Coca-Cola?
+Assistant: Yes. Slice Pizza has Coke, also called Coca-Cola. It costs $6.00.
+
+Customer: do you have coca cola
+Assistant: Yes. Slice Pizza has Coke, also called Coca-Cola. It costs $6.00.
+
+Customer: do you have coca coca
+Assistant: Yes. Slice Pizza has Coke, also called Coca-Cola. It costs $6.00.
 
 Customer: Do all drinks cost the same?
 Assistant: Yes. Coke, Sprite, and Guarana each cost $6.00.
@@ -7191,6 +7208,21 @@ Assistant: The Chicken Catupiry pizza is great for chicken lovers. It has shredd
 
 Customer: i like ham
 Assistant: The Portuguese pizza has ham. It also has eggs, onion, and olives. It costs $36.00.
+
+Customer: what meat is on Portuguese pizza
+Assistant: Portuguese pizza has ham.
+
+Customer: is Portuguese the meatiest pizza
+Assistant: No. Portuguese pizza has ham, but Pepperoni is the meatiest pizza at Slice Pizza.
+
+Customer: does Portuguese have more meat
+Assistant: Portuguese pizza has ham, but Pepperoni is the meatier option.
+
+Customer: does portuguese have more meat
+Assistant: Portuguese pizza has ham, but Pepperoni is the meatier option.
+
+Customer: which has more meat, Portuguese or Pepperoni
+Assistant: Pepperoni is the meatier option. Portuguese pizza has ham.
 
 Customer: what is the cheapest pizza
 Assistant: The cheapest whole pizza is Margherita at $32.00.
