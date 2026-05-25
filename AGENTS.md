@@ -74,9 +74,9 @@ Regras:
 | `docs/contexts/` | Views de contexto, container, componente e código | Fonte de decisão arquitetural por fase |
 | `checkpoints/llm_lessons.pt` | Checkpoint treinado do modelo | Artefato pequeno de estudo; deve entrar no versionamento para a API funcionar após clone |
 | `Dockerfile` | Imagem da API | Empacota código, dependências e checkpoint para execução no Kubernetes |
-| `k8s/llm-lessons-api.yaml` | Manifest Kubernetes da API | Expõe a API em `62.171.156.26:8000` e encaminha para o container `8000` |
-| `k8s/argocd/application.yaml` | Application do Argo CD | Sincroniza os manifests declarativos da API a partir do GitHub |
-| `k8s/argocd/app/llm-lessons-api.yaml` | Manifest Kubernetes da API para Argo CD | Versão sem placeholders para sync direto pelo Argo CD |
+| `k8s/llm-lessons-api.yaml` | Manifest Kubernetes da API | Expõe a API via Traefik Ingress em `api.camilomelo.com` e encaminha para o container `8000`; usado por GitHub Actions e Argo CD |
+| `k8s/traefik.yaml` | Manifest Kubernetes do Traefik | Instala Traefik como Ingress Controller e expõe o dashboard na porta `8080` |
+| `k8s/argocd.yaml` | Application do Argo CD | Sincroniza os manifests de `k8s/`, exceto o próprio app do Argo CD |
 | `.github/workflows/deploy-k8s.yml` | Pipeline de deploy | Testa, publica imagem no GHCR e aplica o manifest no host Kubernetes via SSH |
 | `requirements.txt` | Dependências Python | Não adicionar dependências fora da lista aprovada sem decisão |
 | `.gitignore` | Arquivos ignorados | Não deve ignorar `checkpoints/llm_lessons.pt`; outros artefatos temporários continuam fora do versionamento |
@@ -106,7 +106,7 @@ Regras:
 | Build | `none` |
 | Build Docker | `docker build -t llm-lessons-api .` |
 | Deploy | GitHub Actions: `Deploy API to Kubernetes` |
-| Deploy via Argo CD | `kubectl apply -f k8s/argocd/application.yaml` |
+| Deploy via Argo CD | `kubectl apply -f k8s/argocd.yaml` |
 
 Notas:
 
@@ -269,6 +269,7 @@ Cobertura esperada:
 | Versionar `checkpoints/llm_lessons.pt` | O site/API de estudo deve funcionar após clone sem exigir treino local antes do primeiro teste | 2026-05-21 / decisão de distribuição do modelo gerado |
 | Adicionar deploy Kubernetes para a API | Permitir publicar a API em `62.171.156.26:8000` usando imagem GHCR e apply remoto via SSH | 2026-05-21 / deploy GitHub Actions |
 | Adicionar deploy via Argo CD | Permitir que o cluster sincronize os manifests declarativos da API diretamente do GitHub, sem renderização por placeholders | 2026-05-24 / deploy GitOps com Argo CD |
+| Expor API por Traefik Ingress | Permitir acesso público pelo domínio `api.camilomelo.com` usando Traefik como Ingress Controller, com dashboard na porta `8080` | 2026-05-25 / publicação HTTP por domínio |
 
 ---
 

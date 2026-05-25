@@ -26,7 +26,7 @@ spec:
         imagePullPolicy: Always
         ports:
         - name: http
-          containerPort: DEPLOY_PORT_PLACEHOLDER
+          containerPort: 8000
         readinessProbe:
           httpGet:
             path: /health
@@ -56,11 +56,30 @@ metadata:
     app: llm-lessons-api
 spec:
   type: ClusterIP
-  externalIPs:
-  - DEPLOY_HOST_PLACEHOLDER
   selector:
     app: llm-lessons-api
   ports:
   - name: http
-    port: DEPLOY_PORT_PLACEHOLDER
+    port: 8000
     targetPort: http
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: llm-lessons-api
+  namespace: llm-lessons
+  labels:
+    app: llm-lessons-api
+spec:
+  ingressClassName: traefik
+  rules:
+  - host: api.camilomelo.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: llm-lessons-api
+            port:
+              number: 8000

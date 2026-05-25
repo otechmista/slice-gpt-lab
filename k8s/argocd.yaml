@@ -8,7 +8,10 @@ spec:
   source:
     repoURL: https://github.com/otechmista/mini-gpt-study.git
     targetRevision: main
-    path: k8s/argocd/app
+    path: k8s
+    directory:
+      include: "*.yaml"
+      exclude: argocd.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: llm-lessons
@@ -17,4 +20,4 @@ spec:
       prune: true
       selfHeal: true
     syncOptions:
-    - CreateNamespace=true
+      - CreateNamespace=true
